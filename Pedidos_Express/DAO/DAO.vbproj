@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BED2A6E1-109F-4C8F-8A86-7D0726A684A0}</ProjectGuid>
+    <ProjectGuid>{67A733E6-9B53-4D16-9032-3114385786C6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>DAO</RootNamespace>
     <AssemblyName>DAO</AssemblyName>
@@ -63,7 +63,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DAOPrueba.vb" />
+    <Compile Include="Class1.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
