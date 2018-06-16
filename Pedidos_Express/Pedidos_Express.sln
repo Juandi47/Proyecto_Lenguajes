@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27703.2026
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "UI", "UI\UI.vbproj", "{738345C5-DE9B-49D4-9C08-068E88E18D3E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BL", "BL\BL.csproj", "{DE5D9909-EDCB-423C-BEE0-4D5EB0CE5A3E}"
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DAO", "DAO\DAO.vbproj", "{93C8CB8A-5CB8-4B4B-9021-C9830E4FD0F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TO", "TO\TO.csproj", "{B3F53684-D60D-49C2-AE05-4442EF6AB5AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{93C8CB8A-5CB8-4B4B-9021-C9830E4FD0F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93C8CB8A-5CB8-4B4B-9021-C9830E4FD0F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93C8CB8A-5CB8-4B4B-9021-C9830E4FD0F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3F53684-D60D-49C2-AE05-4442EF6AB5AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3F53684-D60D-49C2-AE05-4442EF6AB5AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3F53684-D60D-49C2-AE05-4442EF6AB5AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3F53684-D60D-49C2-AE05-4442EF6AB5AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
