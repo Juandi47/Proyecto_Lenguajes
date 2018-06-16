@@ -1,5 +1,6 @@
 ﻿Public Class DAOCocina
 
-    ''las rosas son verdes
+    ''otro comentario
+
 
 End Class
