@@ -11,20 +11,14 @@
     <div>
     
         Hola!</div>
+    </form>
     <p>
-&nbsp;Juan Diego</p>
+&nbsp;Juan Diego!</p>
     <p>
         Hola Tannia</p>
     <p>
         Son</p>
     <p>
         Actualizacion descente TONY 4</p>
-    <p>
-        yugo</p>
-    <p>
-        primer push</p>
-        Buenas!<asp:Calendar ID="Calendar1" runat="server"></asp:Calendar>
-        segundo cambio</p>
-    </form>
-    </body>
+</body>
 </html>
