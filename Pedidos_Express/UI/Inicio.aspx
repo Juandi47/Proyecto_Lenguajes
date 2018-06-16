@@ -11,7 +11,6 @@
     <div>
     
         Hola!</div>
-    </form>
     <p>
 &nbsp;Juan Diego</p>
     <p>
@@ -24,6 +23,8 @@
         yugo</p>
     <p>
         primer push</p>
-        Buenas!</p>
-</body>
+        Buenas!<asp:Calendar ID="Calendar1" runat="server"></asp:Calendar>
+        </p>
+    </form>
+    </body>
 </html>
