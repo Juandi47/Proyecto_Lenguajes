@@ -7,18 +7,7 @@
     <title></title>
 </head>
 <body>
-    <form id="form1" runat="server">
-    <div>
-    
-        Hola!</div>
-    </form>
     <p>
-&nbsp;Juan Diego!</p>
-    <p>
-        Hola Tannia</p>
-    <p>
-        Son</p>
-    <p>
-        Actualizacion descente TONY 4</p>
+        Hola</p>
 </body>
 </html>
