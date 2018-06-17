@@ -78,6 +78,13 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="TO_Cliente.vb" />
+    <Compile Include="TO_Configuraciones.vb" />
+    <Compile Include="TO_Detalle_Orden.vb" />
+    <Compile Include="TO_Direccion.vb" />
+    <Compile Include="TO_Orden.vb" />
+    <Compile Include="TO_Plato.vb" />
+    <Compile Include="TO_Usuario.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">

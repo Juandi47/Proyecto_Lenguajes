@@ -63,7 +63,13 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DAOCocina.vb" />
+    <Compile Include="DAO_Cliente.vb" />
+    <Compile Include="DAO_Configuraciones.vb" />
+    <Compile Include="DAO_Detalle_Orden.vb" />
+    <Compile Include="DAO_Direccion.vb" />
+    <Compile Include="DAO_Orden.vb" />
+    <Compile Include="DAO_Plato.vb" />
+    <Compile Include="DAO_Usuario.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -98,6 +104,12 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TO\TO.vbproj">
+      <Project>{48a7fccf-650c-4642-aa10-31e1b9f808f3}</Project>
+      <Name>TO</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

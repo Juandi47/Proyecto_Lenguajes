@@ -96,6 +96,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BL\BL.vbproj">
+      <Project>{b114ea00-62d1-45c2-a93c-a2515b9b5677}</Project>
+      <Name>BL</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
