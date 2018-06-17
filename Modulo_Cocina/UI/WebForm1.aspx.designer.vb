@@ -11,14 +11,14 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class Ingreso
+Partial Public Class WebForm1
     
     '''<summary>
-    '''Label1 control.
+    '''form1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents form1 As Global.System.Web.UI.HtmlControls.HtmlForm
 End Class
