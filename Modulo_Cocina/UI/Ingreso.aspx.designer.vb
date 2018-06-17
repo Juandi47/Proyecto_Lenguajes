@@ -32,13 +32,13 @@ Partial Public Class Ingreso
     Protected WithEvents txtNombreUsario As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''RequiredFieldValidator1 control.
+    '''vldNombreUsuario control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents RequiredFieldValidator1 As Global.System.Web.UI.WebControls.RequiredFieldValidator
+    Protected WithEvents vldNombreUsuario As Global.System.Web.UI.WebControls.RequiredFieldValidator
     
     '''<summary>
     '''lbContrasenna control.
@@ -57,6 +57,15 @@ Partial Public Class Ingreso
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtContrasenna As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''vldContrasenna control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents vldContrasenna As Global.System.Web.UI.WebControls.RequiredFieldValidator
     
     '''<summary>
     '''Button1 control.
