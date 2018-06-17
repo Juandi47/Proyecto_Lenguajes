@@ -5,6 +5,7 @@
     <asp:Label ID="lbNombreUsuario" runat="server" Text="Nombre de usuario:"></asp:Label>
     <br />
     <asp:TextBox ID="txtNombreUsario" runat="server"></asp:TextBox>
+    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator>
     <br />
     <br />
     <asp:Label ID="lbContrasenna" runat="server" Text="Contraseña:"></asp:Label>
