@@ -12,7 +12,7 @@ Option Explicit On
 
 
 Partial Public Class Ingreso
-    
+
     '''<summary>
     '''Control lbNombreUsuario.
     '''</summary>
@@ -21,7 +21,7 @@ Partial Public Class Ingreso
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents lbNombreUsuario As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''Control txtNombreUsario.
     '''</summary>
@@ -30,7 +30,7 @@ Partial Public Class Ingreso
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents txtNombreUsario As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control vldNombreUsuario.
     '''</summary>
@@ -39,7 +39,7 @@ Partial Public Class Ingreso
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents vldNombreUsuario As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control lbContrasenna.
     '''</summary>
@@ -48,7 +48,7 @@ Partial Public Class Ingreso
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents lbContrasenna As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''Control txtContrasenna.
     '''</summary>
@@ -57,7 +57,7 @@ Partial Public Class Ingreso
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents txtContrasenna As Global.System.Web.UI.WebControls.TextBox
-    
+
     '''<summary>
     '''Control vldContrasenna.
     '''</summary>
@@ -66,7 +66,7 @@ Partial Public Class Ingreso
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents vldContrasenna As Global.System.Web.UI.WebControls.RequiredFieldValidator
-    
+
     '''<summary>
     '''Control Button1.
     '''</summary>
@@ -75,7 +75,7 @@ Partial Public Class Ingreso
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Button1 As Global.System.Web.UI.WebControls.Button
-    
+
     '''<summary>
     '''Control lblRegistrarse.
     '''</summary>
@@ -84,7 +84,7 @@ Partial Public Class Ingreso
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents lblRegistrarse As Global.System.Web.UI.WebControls.Label
-    
+
     '''<summary>
     '''Control btnRegistrarse.
     '''</summary>
