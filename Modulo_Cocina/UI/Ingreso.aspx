@@ -5,15 +5,16 @@
     <asp:Label ID="lbNombreUsuario" runat="server" Text="Nombre de usuario:"></asp:Label>
     <br />
     <asp:TextBox ID="txtNombreUsario" runat="server"></asp:TextBox>
-    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator>
+    <asp:RequiredFieldValidator ID="vldNombreUsuario" runat="server" ControlToValidate="txtNombreUsario" ErrorMessage="Debe completar los espacios" ValidationGroup="InicioSesion"></asp:RequiredFieldValidator>
     <br />
     <br />
     <asp:Label ID="lbContrasenna" runat="server" Text="Contraseña:"></asp:Label>
     <br />
     <asp:TextBox ID="txtContrasenna" runat="server"></asp:TextBox>
+    <asp:RequiredFieldValidator ID="vldContrasenna" runat="server" ErrorMessage="Debe completar los espacios" ValidationGroup="InicioSesion"></asp:RequiredFieldValidator>
+    &nbsp;s<br />
     <br />
-    <br />
-    <asp:Button ID="Button1" runat="server" Text="Iniciar sesión" />
+    <asp:Button ID="Button1" runat="server" Text="Iniciar sesión" ValidationGroup="InicioSesion" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <br />
     <br />
