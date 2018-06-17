@@ -12,7 +12,7 @@
     <br />
     <asp:TextBox ID="txtContrasenna" runat="server"></asp:TextBox>
     <asp:RequiredFieldValidator ID="vldContrasenna" runat="server" ErrorMessage="Debe completar los espacios" ValidationGroup="InicioSesion"></asp:RequiredFieldValidator>
-    &nbsp;<br />
+    &nbsp;s<br />
     <br />
     <asp:Button ID="Button1" runat="server" Text="Iniciar sesión" ValidationGroup="InicioSesion" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
