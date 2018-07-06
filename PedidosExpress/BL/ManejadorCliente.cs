@@ -11,16 +11,51 @@ namespace BL
     public class ManejadorCliente
     {       
 
-        public int bloquearCliente(string cedula)
+        DAOCliente daoCliente = new DAOCliente();
+
+        public string bloquearCliente(string cedula)
         {
-            DAOCliente daoCliente = new DAOCliente();
-            return daoCliente.bloquearCliente(cedula);
+            string bloquear = "";
+            if (daoCliente.bloquearCliente(cedula) > 0) {
+                bloquear = "Cliente bloqueado";
+            }
+
+            return bloquear;
+        }
+
+
+        public string verEstadoCliente(string cedula) {
+            string estado;
+            TOCliente cliente = daoCliente.buscarCliente(cedula);
+            if (cliente.cedula.Equals(""))
+            {
+                estado = "El cliente con el codigo " + cedula + " no esta registrado en el sistema";
+            }
+            else {
+                if (cliente.estadoCliente > 0)
+                {
+                    estado = "El cliente se encuentra bloqueado";
+                }
+                else {
+                    estado = "El cliente se encuentra desbloqueado";
+                }
+            }
+            return estado;
         }
 
         public void RegistrarCliente(String cedula, String Nombre, String Apellido1, String Apellido2, String correo, String contrasenna, String CodPostal, String NombreUsuario, String Provincia, String Canton, String Distrito) {
-            DAOCliente cliente = new DAOCliente();
+            daoCliente.RegistrarCliente(cedula, Nombre, Apellido1, Apellido2, correo, contrasenna, CodPostal, NombreUsuario, Provincia, Canton, Distrito);
+        }
 
-            cliente.RegistrarCliente(cedula, Nombre, Apellido1, Apellido2, correo, contrasenna, CodPostal, NombreUsuario, Provincia, Canton, Distrito);
+
+        public string desbloquearCliente(string cedula ) {
+            string bloquear = "";
+            if (daoCliente.desbloquearCliente(cedula) > 0)
+            {
+                bloquear = "Cliente bloqueado";
+            }
+
+            return bloquear;
         }
 
 

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using TO;
 using System.Data.SqlClient;
 using System.Data;
+using TO;
 
 namespace DAO
 {
@@ -13,11 +14,87 @@ namespace DAO
     {
 
         SqlConnection conexion = new SqlConnection(DAO.Properties.Settings.Default.ConnectionString);
-        
+        TOCliente cliente = new TOCliente();
+
+        public TOCliente buscarCliente(string cedula) {
+            if (conexion.State != ConnectionState.Open)
+            {
+                conexion.Open();
+            }
+
+            string query = "select * from Cliente where Cedula = @ced";
+            SqlCommand comand = new SqlCommand(query, conexion);
+            comand.Parameters.AddWithValue("@ced", cedula);
+
+            SqlDataReader reader = comand.ExecuteReader();
+
+            if (reader.HasRows)
+            {
+                while (reader.Read())
+                {
+                    cliente.cedula = reader["Cedula"].ToString();
+                    cliente.nombre = reader["Nombre"].ToString();
+                    cliente.apellido1 = reader["Apellido1"].ToString();
+                    cliente.apellido2 = reader["Apellido2"].ToString();
+                    cliente.correo = reader["Correo"].ToString();
+                    cliente.contrasenna = reader["Contrasenna"].ToString();
+                    cliente.estadoCliente = Int32.Parse(reader["Estado_cliente"].ToString());
+                    cliente.codigoPostal = reader["Codigo_postal"].ToString();
+                    cliente.nombreUsuario = reader["Nombre_usuario"].ToString();
+                }
+
+            }
+            else {
+                cliente.cedula = "";
+                cliente.nombre = "";
+                cliente.apellido1 = "";
+                cliente.apellido2 = "";
+                cliente.correo = "";
+                cliente.contrasenna = "";
+                cliente.estadoCliente = -1;
+                cliente.codigoPostal = "";
+                cliente.nombreUsuario = "";
+            }
+
+            if (conexion.State != ConnectionState.Closed)
+            {
+                conexion.Close();
+            }
+
+
+            return cliente;
+
+        }
 
         public int bloquearCliente(string cedula) {
             int modificado;
             int estado = 1;
+
+            if (conexion.State != ConnectionState.Open)
+            {
+                conexion.Open();
+            }
+            string query = "UPDATE Cliente set Estado_cliente = @est WHERE Cedula = @ced;";
+            SqlCommand comand = new SqlCommand(query, conexion);
+            comand.Parameters.AddWithValue("@ced", cedula);
+            comand.Parameters.AddWithValue("@est", estado);
+
+            int reader = comand.ExecuteNonQuery();
+            modificado = reader;
+
+            if (conexion.State != ConnectionState.Closed)
+            {
+                conexion.Close();
+            }
+
+            return modificado;
+
+        }
+
+        public int desbloquearCliente(string cedula)
+        {
+            int modificado;
+            int estado = 0;
 
             if (conexion.State != ConnectionState.Open)
             {

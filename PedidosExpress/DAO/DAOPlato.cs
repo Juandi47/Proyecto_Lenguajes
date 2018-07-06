@@ -15,6 +15,7 @@ namespace DAO
         SqlConnection conexion = new SqlConnection(DAO.Properties.Settings.Default.ConnectionString);
         string query;
 
+
         public TOPlato consultarPlato(string codigo) {
             query = "select *  from Plato where Codigo_Plato = @cod";
 
