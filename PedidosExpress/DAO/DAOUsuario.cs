@@ -9,7 +9,7 @@ using TO;
 
 namespace DAO
 {
-   public  class DAOUsuario
+    public class DAOUsuario
     {
 
         private SqlConnection conexion = new SqlConnection(Properties.Settings.Default.ConnectionString);
@@ -87,6 +87,7 @@ namespace DAO
 
         public TOUsuario buscarUsuario(string identificacion)
         {
+            TOUsuario toUsuario = new TOUsuario(); 
             establecerConexion();
 
             try
@@ -95,17 +96,25 @@ namespace DAO
                 sentencia.Connection = conexion;
 
 
-                //sentencia.CommandText = "SELECT  Identificacion,Nombre_usuario,contrasenna,rol FROM Usuario values(@Identificacion, @NombreUsuario, @Contrasenna, @Rol)";
-                //sentencia.Parameters.AddWithValue("@Identificacion", TOUsuario.);
-                //sentencia.Parameters.AddWithValue("@NombreUsuario", TOUsuario.Nombre);
-                //sentencia.Parameters.AddWithValue("@Contrasenna", TOUsuario.Contrasenna);
-                //sentencia.Parameters.AddWithValue("@Rol", TOUsuario.Rol);
+                sentencia.CommandText = "SELECT  Identificacion,Nombre_usuario,contrasenna,rol FROM Usuario WHERE Identificacion=@Identificacion;";
+                sentencia.Parameters.AddWithValue("@Identificacion", identificacion);
 
-                sentencia.ExecuteNonQuery();
-                transa.Commit();
+                using (SqlDataReader reader = sentencia.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        toUsuario.Nombre = reader["Nombre_usuario"].ToString();
+                        toUsuario.Contrasenna = reader["Contrasenna"].ToString();
+                        toUsuario.Rol = reader["Rol"].ToString();
+                    }
 
-                conexion.Close();
-               
+
+                    //sentencia.ExecuteNonQuery();
+                    //transa.Commit();
+
+                    
+                }
+
             }
 
 
@@ -113,8 +122,34 @@ namespace DAO
             {
                 Console.WriteLine(ex.ToString());
             }
+            conexion.Close();
+            return toUsuario;
+        }
 
-            return null;
+        public void modificarUsuario(string identificacion, string atributo, string nuevoValor)
+        {
+            establecerConexion();
+
+            try
+            {
+                sentencia.Transaction = transa;
+                sentencia.Connection = conexion;
+
+                sentencia.CommandText = " UPDATE Usuario SET @Atributo = @NuevoValor, WHERE Identificacion=@Identificacion;";
+                sentencia.Parameters.AddWithValue("@Identificacion", identificacion);
+                sentencia.Parameters.AddWithValue("@Atributo", atributo);
+                sentencia.Parameters.AddWithValue("@NuevoValor", nuevoValor);
+
+                sentencia.ExecuteNonQuery();
+                transa.Commit();
+
+                conexion.Close();
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
         }
     }
 }

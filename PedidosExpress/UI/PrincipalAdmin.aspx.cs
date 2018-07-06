@@ -16,7 +16,17 @@ namespace UI
 
         protected void btnAdministrarPlatos_Click(object sender, EventArgs e)
         {
-            Response.Redirect("");
+            Response.Redirect("AdministracionPlatos.aspx");
+        }
+
+        protected void btnAdministrarUsuario_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btnBloquear_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("BloquearClientes.aspx");
         }
     }
 }
