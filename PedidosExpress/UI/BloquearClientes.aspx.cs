@@ -20,19 +20,19 @@ namespace UI
         protected void btnBloquear_Click(object sender, EventArgs e)
         {
 
-            string bloqueado;
-            if (manejador.bloquearCliente(txtBloquear.Text) > 0)
-            {
-                bloqueado = "Ha sido bloqueado";
-            }
-            else {
-                bloqueado = "No ha sido bloqueado";
-            }
+            labelbloquear.Text = manejador.bloquearCliente(txtBloquear.Text);
+            
         }
 
         protected void btnVerEstado_Click(object sender, EventArgs e)
         {
             labelEstado.Text = manejador.verEstadoCliente(txtBuscarCliente.Text);
+        }
+
+        protected void btnDesbloquear_Click(object sender, EventArgs e)
+        {
+                labelDesbloquear.Text = manejador.desbloquearCliente(txtDesbloquear.Text);
+            
         }
     }
 }

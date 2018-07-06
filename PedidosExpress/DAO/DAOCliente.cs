@@ -91,6 +91,32 @@ namespace DAO
 
         }
 
+        public int desbloquearCliente(string cedula)
+        {
+            int modificado;
+            int estado = 0;
+
+            if (conexion.State != ConnectionState.Open)
+            {
+                conexion.Open();
+            }
+            string query = "UPDATE Cliente set Estado_cliente = @est WHERE Cedula = @ced;";
+            SqlCommand comand = new SqlCommand(query, conexion);
+            comand.Parameters.AddWithValue("@ced", cedula);
+            comand.Parameters.AddWithValue("@est", estado);
+
+            int reader = comand.ExecuteNonQuery();
+            modificado = reader;
+
+            if (conexion.State != ConnectionState.Closed)
+            {
+                conexion.Close();
+            }
+
+            return modificado;
+
+        }
+
         public void RegistrarCliente(String cedula, String Nombre, String Apellido1, String Apellido2, String correo, String contrasenna, String CodPostal, String NombreUsuario, String Provincia, String Canton, String Distrito) {
 
             DAODireccion direccion = new DAODireccion();

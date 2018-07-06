@@ -11,12 +11,13 @@
     <asp:Label ID="labelEstado" runat="server"></asp:Label>
     <br />
     <br />
-    <asp:Label ID="Label3" runat="server" Text="Codigo cleinte a desbloquear"></asp:Label>
+    <asp:Label ID="Label3" runat="server" Text="Codigo cliente a desbloquear"></asp:Label>
 &nbsp;&nbsp;&nbsp;
-    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+    <asp:TextBox ID="txtDesbloquear" runat="server"></asp:TextBox>
 &nbsp;&nbsp;&nbsp;
-    <asp:Button ID="btnDesbloquear" runat="server" Text="Desbloquear" />
+    <asp:Button ID="btnDesbloquear" runat="server" Text="Desbloquear" OnClick="btnDesbloquear_Click" />
 &nbsp;&nbsp;
+    <asp:Label ID="labelDesbloquear" runat="server"></asp:Label>
     <br />
     <br />
     <asp:Label ID="Label1" runat="server" Text="Codigo cliente a bloquear"></asp:Label>
@@ -24,5 +25,7 @@
     <asp:TextBox ID="txtBloquear" runat="server"></asp:TextBox>
 &nbsp;&nbsp; &nbsp;
     <asp:Button ID="btnBloquear" runat="server" OnClick="btnBloquear_Click" Text="Bloquear" Width="110px" />
-&nbsp;
+&nbsp;&nbsp;&nbsp;
+    <asp:Label ID="labelbloquear" runat="server"></asp:Label>
+&nbsp; 
 </asp:Content>
