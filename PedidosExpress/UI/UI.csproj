@@ -94,6 +94,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="BloquearClientes.aspx" />
     <Content Include="CocinaListaPedidosWF.aspx" />
     <Content Include="AdministracionPlatos.aspx" />
     <Content Include="Diseños\estilos.css" />
@@ -124,6 +125,13 @@
     </Compile>
     <Compile Include="AdministracionPlatos.aspx.designer.cs">
       <DependentUpon>AdministracionPlatos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BloquearClientes.aspx.cs">
+      <DependentUpon>BloquearClientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BloquearClientes.aspx.designer.cs">
+      <DependentUpon>BloquearClientes.aspx</DependentUpon>
     </Compile>
     <Compile Include="LoguearUsuarios.aspx.cs">
       <DependentUpon>LoguearUsuarios.aspx</DependentUpon>
