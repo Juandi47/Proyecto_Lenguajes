@@ -94,6 +94,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CocinaListaPedidosWF.aspx" />
     <Content Include="AdministracionPlatos.aspx" />
     <Content Include="LoguearUsuarios.aspx" />
     <Content Include="packages.config" />
@@ -129,6 +130,13 @@
     </Compile>
     <Compile Include="LoguearUsuarios.aspx.designer.cs">
       <DependentUpon>LoguearUsuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CocinaListaPedidosWF.aspx.cs">
+      <DependentUpon>CocinaListaPedidosWF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CocinaListaPedidosWF.aspx.designer.cs">
+      <DependentUpon>CocinaListaPedidosWF.aspx</DependentUpon>
     </Compile>
     <Compile Include="master.Master.cs">
       <DependentUpon>master.Master</DependentUpon>
