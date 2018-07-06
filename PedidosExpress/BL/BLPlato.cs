@@ -30,5 +30,9 @@ namespace BL
         public string imagen { get; set; }
 
 
+        public string informacion() {
+            return "Codigo del plato: " + codigoPlato + " Nombre del plato: " + nombrePlato +
+                " Descripcion: " + descripcionPlato + " Precio: " + precio + " Estado plato: " + estadoPlato; 
+        }
     }
 }
