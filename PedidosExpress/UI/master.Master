@@ -9,13 +9,23 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <form id="form1" runat="server">
-        <h1>cacfdfsa</h1>
-    <div>
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        
-        </asp:ContentPlaceHolder>
+    <div style="background-color: #D5DBDB">
+        <h1>&nbsp&nbsp&nbsp Sistema de Restaurante</h1>
+        <br />
+        <br />
     </div>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <div style="background-color: #D5DBDB">
+                <br />
+                <h5>&nbsp&nbsp&nbsp Hecho por 4 pelaos</h5>
+                <h5>&nbsp&nbsp&nbsp UCR. Chancletas</h5>
+                <br />
+            </div>
+        </div>
     </form>
 </body>
 </html>
