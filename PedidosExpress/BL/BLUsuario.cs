@@ -71,7 +71,7 @@ namespace BL
             {
                 rol = value;
             }
-        }
+        } 
 
     }
 }
