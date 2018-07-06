@@ -100,6 +100,9 @@
   <ItemGroup>
     <Content Include="AdministrarPedidos.aspx" />
     <Content Include="BloquearClientes.aspx" />
+    <Content Include="Cliente\cssInicioCliente.css" />
+    <Content Include="Cliente\InicioCliente.html" />
+    <Content Include="Cliente\ScriptInicioCliente.js" />
     <Content Include="CocinaListaPedidosWF.aspx" />
     <Content Include="AdministracionPlatos.aspx" />
     <Content Include="Diseños\estilos.css" />
