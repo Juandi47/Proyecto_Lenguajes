@@ -43,6 +43,7 @@
     <Compile Include="BLAdmin.cs" />
     <Compile Include="BLCliente.cs" />
     <Compile Include="BLDireccionCliente.cs" />
+    <Compile Include="BLOrden - Copy.cs" />
     <Compile Include="BLPlato.cs" />
     <Compile Include="BLUsuario.cs" />
     <Compile Include="ManejadorAdmin.cs" />
