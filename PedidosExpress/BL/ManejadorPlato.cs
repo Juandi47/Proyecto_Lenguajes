@@ -10,10 +10,10 @@ namespace BL
 {
     public class ManejadorPlato
     {
+        DAOPlato daoPlato = new DAOPlato();
         BLPlato plato = new BLPlato();
 
         public BLPlato buscarPlato(string codigo) {
-            DAOPlato daoPlato = new DAOPlato();
             
             TOPlato toPlato = daoPlato.consultarPlato(codigo);
             plato.codigoPlato = toPlato.codigoPlato;
@@ -24,6 +24,21 @@ namespace BL
             plato.imagen = toPlato.imagen;
             
             return plato;
+        }
+
+
+        public int modificarPlato(string codigo, string nombre, string descripcion, string precio, string estado, string imagen) {
+           return daoPlato.modificarPlato(codigo,  nombre,  descripcion,  precio,  estado,  imagen);
+        }
+
+
+        public int agregarPlato(string codigo, string nombre, string descripcion, string precio, string estado, string imagen) {
+            return daoPlato.agregarPlato( codigo,  nombre,  descripcion,  precio,  estado,  imagen);
+        }
+
+
+        public int eliminarPlato(string codigo) {
+            return daoPlato.eliminarPlato(codigo);
         }
     }
 }

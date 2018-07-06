@@ -44,8 +44,10 @@
     <Compile Include="BLPlato.cs" />
     <Compile Include="BLUsuario.cs" />
     <Compile Include="ManejadorAdmin.cs" />
+    <Compile Include="ManejadorOrden.cs" />
     <Compile Include="ManejadorPlato.cs" />
     <Compile Include="ManejadorUsuario.cs" />
+    <Compile Include="BLOrden.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
