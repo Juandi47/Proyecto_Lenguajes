@@ -24,7 +24,13 @@ namespace BL
 
         public int Cantidad { get; set; }
 
-        public BLOrden(string cedula, string nombre, string apellido1, string apellido2, int codigo_Orden, string codigo_Plato, string nombre_Plato, int cantidad)
+        public string Hora { get; set; }
+
+        
+
+        public BLOrden() { }
+
+        public BLOrden(string cedula, string nombre, string apellido1, string apellido2, int codigo_Orden, string codigo_Plato, string nombre_Plato, int cantidad, string tiempo)
         {
             Cedula = cedula;
             Nombre = nombre;
@@ -34,9 +40,7 @@ namespace BL
             Codigo_Plato = codigo_Plato;
             Nombre_Plato = nombre_Plato;
             Cantidad = cantidad;
+            Hora = tiempo;
         }
-
-        public BLOrden() { }  
-
     }
 }

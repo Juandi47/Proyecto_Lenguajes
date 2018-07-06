@@ -29,7 +29,7 @@ namespace DAO
             adapter.Fill(tabla);
 
             foreach (DataRow x in tabla.Rows) {
-                listaTO.Add(new TOOrden(x["Cedula"].ToString(), x["Nombre"].ToString(), x["Apellido1"].ToString(), x["Apellido2"].ToString(), Int32.Parse(x["Codigo_Orden"].ToString()), x["Codigo_Plato"].ToString(), x["Nombre_Plato"].ToString(), Int32.Parse(x["Cantidad"].ToString())));
+                listaTO.Add(new TOOrden(x["Cedula"].ToString(), x["Nombre"].ToString(), x["Apellido1"].ToString(), x["Apellido2"].ToString(), Int32.Parse(x["Codigo_Orden"].ToString()), x["Codigo_Plato"].ToString(), x["Nombre_Plato"].ToString(), Int32.Parse(x["Cantidad"].ToString()), x["Hora"].ToString()));
             }            
             return listaTO;
         }
