@@ -95,7 +95,12 @@
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\BL\BL.csproj">
+      <Project>{de5d9909-edcb-423c-bee0-4d5eb0ce5a3e}</Project>
+      <Name>BL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
     <Import Include="System" />
@@ -120,7 +125,10 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AdminPrincipal.aspx" />
+    <Content Include="CookPrincipal.aspx" />
     <Content Include="Disenos\footer-distributed.css" />
+    <Content Include="Login.aspx" />
     <Content Include="Principal.aspx" />
     <Content Include="Recursos\LG-G5-wallpapers-3.jpg" />
     <Content Include="scripts\ai.0.15.0-build58334.js" />
@@ -128,6 +136,27 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminPrincipal.aspx.designer.vb">
+      <DependentUpon>AdminPrincipal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPrincipal.aspx.vb">
+      <DependentUpon>AdminPrincipal.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CookPrincipal.aspx.designer.vb">
+      <DependentUpon>CookPrincipal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CookPrincipal.aspx.vb">
+      <DependentUpon>CookPrincipal.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
