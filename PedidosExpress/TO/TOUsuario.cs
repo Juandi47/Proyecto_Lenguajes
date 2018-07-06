@@ -22,6 +22,8 @@ namespace TO
                 this.rol = rol;
             }
 
+        public TOUsuario() { }
+
             public String Identificacion
             {
                 get
@@ -77,3 +79,4 @@ namespace TO
 
         }
     }
+

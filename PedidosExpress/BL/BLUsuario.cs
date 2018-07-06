@@ -16,7 +16,7 @@ namespace BL
         public BLUsuario(string identificacion, string nombre, string contrasenna, string rol)
         {
             this.identificacion = identificacion;
-            this.nombre = nombre;
+            this.nombre = nombre; 
             this.contrasenna = contrasenna;
             this.rol = rol;
         }
@@ -71,7 +71,7 @@ namespace BL
             {
                 rol = value;
             }
-        }
+        } 
 
     }
 }

@@ -26,13 +26,15 @@ namespace BL
 
         public BLUsuario buscarUsuario(string identificacion)
         {
+            
             TOUsuario toUsuario = daoUsuario.buscarUsuario(identificacion);
-            return null;
+            BLUsuario blUsuario = new BLUsuario(toUsuario.Identificacion, toUsuario.Nombre , toUsuario.Contrasenna , toUsuario.Rol);
+            return blUsuario;
         }
 
-        public void modificarUsuario(string identificacion, string nuevoValor, string atributo)
+        public void modificarUsuario(string identificacion, string atributo, string nuevoValor)
         {
-
+            daoUsuario.modificarUsuario(identificacion, atributo, nuevoValor);   
         }
     }
 }
