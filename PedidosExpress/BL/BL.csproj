@@ -42,7 +42,7 @@
   <ItemGroup>
     <Compile Include="BLCliente.cs" />
     <Compile Include="BLDireccionCliente.cs" />
-    <Compile Include="BLOrden - Copy.cs" />
+    <Compile Include="BLOrden.cs" />
     <Compile Include="BLPlato.cs" />
     <Compile Include="BLUsuario.cs" />
     <Compile Include="ManejadorCliente.cs" />
@@ -50,7 +50,6 @@
     <Compile Include="ManejadorOrden.cs" />
     <Compile Include="ManejadorPlato.cs" />
     <Compile Include="ManejadorUsuario.cs" />
-    <Compile Include="BLOrden.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

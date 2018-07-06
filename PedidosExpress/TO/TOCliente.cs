@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TO
 {
-    class TOCliente
+    public class TOCliente
     {
         public TOCliente(string cedula, string nombre, string apellido1, string apellido2, string correo, string contrasenna, int estadoCliente, string codigoPostal, string nombreUsuario)
         {
@@ -19,6 +19,10 @@ namespace TO
             this.estadoCliente = estadoCliente;
             this.codigoPostal = codigoPostal;
             this.nombreUsuario = nombreUsuario;
+        }
+
+        public TOCliente()
+        {
         }
 
         public string cedula { get; set; }
