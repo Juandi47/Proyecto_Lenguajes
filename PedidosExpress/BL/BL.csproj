@@ -40,6 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLAdmin.cs" />
+    <Compile Include="BLPlato.cs" />
+    <Compile Include="ManejadorAdmin.cs" />
+    <Compile Include="ManejadorPlato.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
