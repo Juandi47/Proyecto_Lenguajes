@@ -8,70 +8,23 @@ namespace BL
 {
     public class BLUsuario
     {
-        private string identificacion;
-        private string nombre;
-        private string contrasenna;
-        private string rol;
 
-        public BLUsuario(string identificacion, string nombre, string contrasenna, string rol)
+
+        public BLUsuario()
         {
-            this.identificacion = identificacion;
-            this.nombre = nombre; 
-            this.contrasenna = contrasenna;
+        }
+
+        public BLUsuario(string nombreUsuario, string contrasennaUsuario, string rol)
+        {
+            this.nombreUsuario = nombreUsuario;
+            this.contrasennaUsuario = contrasennaUsuario;
             this.rol = rol;
         }
 
-        public String Identificacion
-        {
-            get
-            {
-                return identificacion;
-            }
-            set
-            {
-                identificacion = value;
-            }
-
-
-        }
-
-        public String Nombre
-        {
-            get
-            {
-                return nombre;
-            }
-            set
-            {
-                nombre = value;
-            }
-        }
-
-        public String Contrasenna
-        {
-            get
-            {
-                return contrasenna;
-            }
-            set
-            {
-                contrasenna = value;
-            }
-
-
-        }
-
-        public String Rol
-        {
-            get
-            {
-                return rol;
-            }
-            set
-            {
-                rol = value;
-            }
-        } 
+        public string nombreUsuario { get; set; }
+        public string contrasennaUsuario{ get; set; }
+        public string rol { get; set; }
+        
 
     }
 }

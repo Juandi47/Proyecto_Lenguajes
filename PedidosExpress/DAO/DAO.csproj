@@ -40,7 +40,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DAOAdmin.cs" />
     <Compile Include="DAOCliente.cs" />
     <Compile Include="DAODireccion.cs" />
     <Compile Include="DAOOrden.cs" />

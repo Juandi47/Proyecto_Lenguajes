@@ -15,7 +15,7 @@ namespace BL
 
         public void agregarUsuario(BLUsuario usuario)
         {
-            TOUsuario toUsuario = new TOUsuario(usuario.Identificacion, usuario.Nombre, usuario.Contrasenna, usuario.Rol);
+            TOUsuario toUsuario = new TOUsuario(usuario.nombreUsuario, usuario.contrasennaUsuario, usuario.rol);
             daoUsuario.insertarUsuario(toUsuario);
         }
 
@@ -24,17 +24,21 @@ namespace BL
             daoUsuario.eliminarUsuario(identificacion);
         }
 
-        public BLUsuario buscarUsuario(string identificacion)
-        {
-            
-            TOUsuario toUsuario = daoUsuario.buscarUsuario(identificacion);
-            BLUsuario blUsuario = new BLUsuario(toUsuario.Identificacion, toUsuario.Nombre , toUsuario.Contrasenna , toUsuario.Rol);
-            return blUsuario;
-        }
-
         public void modificarUsuario(string identificacion, string atributo, string nuevoValor)
         {
             daoUsuario.modificarUsuario(identificacion, atributo, nuevoValor);   
         }
+
+        Boolean existe;
+
+        public BLUsuario consultarUsuario(string nombre, string contrasenna)
+        {
+            TOUsuario usuario = daoUsuario.buscarUsuario(nombre, contrasenna);
+            BLUsuario usuarioBl = new BLUsuario(usuario.Nombre, usuario.Contrasenna, usuario.Rol);
+
+            return usuarioBl;
+        }
+
+
     }
 }

@@ -9,36 +9,21 @@ namespace TO
     public class TOUsuario
     {
        
-            private string identificacion;
             private string nombre;
             private string contrasenna;
             private string rol;
 
-            public TOUsuario(string identificacion, string nombre, string contrasenna, string rol)
-            {
-                this.identificacion = identificacion;
-                this.nombre = nombre;
-                this.contrasenna = contrasenna;
-                this.rol = rol;
-            }
 
         public TOUsuario() { }
 
-            public String Identificacion
-            {
-                get
-                {
-                    return identificacion;
-                }
-                set
-                {
-                    identificacion = value;
-                }
+        public TOUsuario(string nombre, string contrasenna, string rol)
+        {
+            this.nombre = nombre;
+            this.contrasenna = contrasenna;
+            this.rol = rol;
+        }
 
-
-            }
-
-            public String Nombre
+        public String Nombre
             {
                 get
                 {

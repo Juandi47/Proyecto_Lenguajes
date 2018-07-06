@@ -39,7 +39,7 @@ namespace DAO
                 sentencia.Connection = conexion;
 
                 sentencia.CommandText = "Insert into Usuario(Identificacion,Nombre_usuario,contrasenna,rol) values(@Identificacion, @NombreUsuario, @Contrasenna, @Rol)";
-                sentencia.Parameters.AddWithValue("@Identificacion", toUsuario.Identificacion);
+               
                 sentencia.Parameters.AddWithValue("@NombreUsuario", toUsuario.Nombre);
                 sentencia.Parameters.AddWithValue("@Contrasenna", toUsuario.Contrasenna);
                 sentencia.Parameters.AddWithValue("@Rol", toUsuario.Rol);
@@ -84,10 +84,9 @@ namespace DAO
 
 
 
-
-        public TOUsuario buscarUsuario(string identificacion)
+        public TOUsuario buscarUsuario(string nombre, string contrasenna)
         {
-            TOUsuario toUsuario = new TOUsuario(); 
+            TOUsuario toUsuario = new TOUsuario();
             establecerConexion();
 
             try
@@ -96,23 +95,28 @@ namespace DAO
                 sentencia.Connection = conexion;
 
 
-                sentencia.CommandText = "SELECT  Identificacion,Nombre_usuario,contrasenna,rol FROM Usuario WHERE Identificacion=@Identificacion;";
-                sentencia.Parameters.AddWithValue("@Identificacion", identificacion);
+                sentencia.CommandText = "SELECT  Nombre_usuario, Contrasenna, Rol FROM Usuario WHERE Nombre_usuario = @nom and Contrasenna = @cont;";
+                sentencia.Parameters.AddWithValue("@nom", nombre);
+                sentencia.Parameters.AddWithValue("@cont", contrasenna);
 
                 using (SqlDataReader reader = sentencia.ExecuteReader())
                 {
-                    while (reader.Read())
+                    if (reader.HasRows)
                     {
-                        toUsuario.Nombre = reader["Nombre_usuario"].ToString();
-                        toUsuario.Contrasenna = reader["Contrasenna"].ToString();
-                        toUsuario.Rol = reader["Rol"].ToString();
+                        while (reader.Read())
+                        {
+                            toUsuario.Nombre = reader["Nombre_usuario"].ToString();
+                            toUsuario.Contrasenna = reader["Contrasenna"].ToString();
+                            toUsuario.Rol = reader["Rol"].ToString();
+                        }
                     }
+                    else {
+                        toUsuario.Nombre = "";
+                        toUsuario.Contrasenna = "";
+                        toUsuario.Rol = "";
+                    }
+                   
 
-
-                    //sentencia.ExecuteNonQuery();
-                    //transa.Commit();
-
-                    
                 }
 
             }
@@ -125,6 +129,9 @@ namespace DAO
             conexion.Close();
             return toUsuario;
         }
+
+
+
 
         public void modificarUsuario(string identificacion, string atributo, string nuevoValor)
         {

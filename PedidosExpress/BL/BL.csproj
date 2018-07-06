@@ -40,13 +40,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BLAdmin.cs" />
     <Compile Include="BLCliente.cs" />
     <Compile Include="BLDireccionCliente.cs" />
     <Compile Include="BLOrden.cs" />
     <Compile Include="BLPlato.cs" />
     <Compile Include="BLUsuario.cs" />
-    <Compile Include="ManejadorAdmin.cs" />
     <Compile Include="ManejadorCliente.cs" />
     <Compile Include="ManejadorDireccionCliente.cs" />
     <Compile Include="ManejadorOrden.cs" />

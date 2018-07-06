@@ -13,6 +13,6 @@
     <br />
     <br />
 &nbsp;&nbsp;
-    <asp:Button ID="btnRegistrarAdmin" runat="server" OnClick="btnRegistrarAdmin_Click" Text="Registrar" />
+    <asp:Button ID="btnRegistrarUsuario" runat="server" OnClick="btnRegistrarUsuario_Click" Text="Registrar" />
 &nbsp;
 </asp:Content>
