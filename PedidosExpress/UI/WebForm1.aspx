@@ -1,16 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="UI.WebForm1" %>
-
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-    <div>
-    Hola
-    </div>
-    </form>
-</body>
-</html>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/master.Master"  UICulture="auto" CodeBehind="WebForm1.aspx.cs" Inherits="UI.WebForm1" %>
+<asp:Content ID="content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <p>Las rosas feas</p>
+</asp:Content>
