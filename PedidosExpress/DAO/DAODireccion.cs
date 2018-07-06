@@ -20,9 +20,9 @@ namespace DAO
             SqlCommand comando = new SqlCommand(query, conexion);
 
             comando.Parameters.AddWithValue("@cod", CodPostal);
-            comando.Parameters.AddWithValue("@prov", CodPostal);
-            comando.Parameters.AddWithValue("@cant", CodPostal);
-            comando.Parameters.AddWithValue("@dist", CodPostal);
+            comando.Parameters.AddWithValue("@prov", Provincia);
+            comando.Parameters.AddWithValue("@cant", Canton);
+            comando.Parameters.AddWithValue("@dist", Distrito);
 
             if (ConnectionState.Open != conexion.State) {
                 conexion.Open();
