@@ -94,6 +94,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CocinaListaPedidosWF.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -113,6 +114,13 @@
     <Content Include="Login.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CocinaListaPedidosWF.aspx.cs">
+      <DependentUpon>CocinaListaPedidosWF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CocinaListaPedidosWF.aspx.designer.cs">
+      <DependentUpon>CocinaListaPedidosWF.aspx</DependentUpon>
+    </Compile>
     <Compile Include="master.Master.cs">
       <DependentUpon>master.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
