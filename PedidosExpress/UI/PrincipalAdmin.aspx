@@ -8,7 +8,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <asp:Button ID="btnBloquear" runat="server" Text="Bloquear clientes" OnClick="btnBloquear_Click" />
 &nbsp;&nbsp;&nbsp;&nbsp;
-    <asp:Button ID="btnAdministrarPedidos" runat="server" Text="Administracion de pedidos" />
+    <asp:Button ID="btnAdministrarPedidos" runat="server" Text="Administracion de pedidos" OnClick="btnAdministrarPedidos_Click" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <asp:Button ID="btnAdministrarEstados" runat="server" Text="Administrar Estados" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 

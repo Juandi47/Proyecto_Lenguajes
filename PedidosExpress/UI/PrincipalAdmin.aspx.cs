@@ -28,5 +28,10 @@ namespace UI
         {
             Response.Redirect("BloquearClientes.aspx");
         }
+
+        protected void btnAdministrarPedidos_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
