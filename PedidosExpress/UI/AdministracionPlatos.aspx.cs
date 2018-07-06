@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using BL;
 
 namespace UI
 {
@@ -16,7 +17,9 @@ namespace UI
 
         protected void btnBuscar_Click(object sender, EventArgs e)
         {
-
+            ManejadorPlato manejador = new ManejadorPlato();
+            BLPlato plato = manejador.buscarPlato(txtPlato.Text);
+            
         }
     }
 }
