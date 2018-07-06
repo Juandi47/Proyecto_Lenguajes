@@ -96,6 +96,7 @@
   <ItemGroup>
     <Content Include="CocinaListaPedidosWF.aspx" />
     <Content Include="AdministracionPlatos.aspx" />
+    <Content Include="Diseños\estilos.css" />
     <Content Include="LoguearUsuarios.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
@@ -167,9 +168,7 @@
       <Name>BL</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Diseños\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
