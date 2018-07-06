@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAOCliente.cs" />
+    <Compile Include="DAODireccion.cs" />
     <Compile Include="DAOOrden.cs" />
     <Compile Include="DAOPlato.cs" />
     <Compile Include="DAOUsuario.cs" />
