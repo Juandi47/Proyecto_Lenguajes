@@ -13,15 +13,6 @@ namespace UI {
     public partial class CocinaListaPedidosWF {
         
         /// <summary>
-        /// grdInfoOrden1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView grdInfoOrden1;
-        
-        /// <summary>
         /// estadoO1 control.
         /// </summary>
         /// <remarks>
@@ -47,15 +38,6 @@ namespace UI {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button entregarBTN1;
-        
-        /// <summary>
-        /// grdInfoOrden2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView grdInfoOrden2;
         
         /// <summary>
         /// estadoO2 control.
@@ -85,15 +67,6 @@ namespace UI {
         protected global::System.Web.UI.WebControls.Button entregarBTN2;
         
         /// <summary>
-        /// grdInfoOrden3 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView grdInfoOrden3;
-        
-        /// <summary>
         /// estadoO3 control.
         /// </summary>
         /// <remarks>
@@ -121,15 +94,6 @@ namespace UI {
         protected global::System.Web.UI.WebControls.Button entregarBTN3;
         
         /// <summary>
-        /// grdInfoOrden4 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView grdInfoOrden4;
-        
-        /// <summary>
         /// estadoO4 control.
         /// </summary>
         /// <remarks>
@@ -155,15 +119,6 @@ namespace UI {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button entregarBTN4;
-        
-        /// <summary>
-        /// grdInfoOrden5 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView grdInfoOrden5;
         
         /// <summary>
         /// estadoO5 control.
