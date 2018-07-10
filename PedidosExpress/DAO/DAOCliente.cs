@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using TO;
 using System.Data.SqlClient;
 using System.Data;
-using TO;
 
 namespace DAO
 {
@@ -15,6 +14,36 @@ namespace DAO
 
         SqlConnection conexion = new SqlConnection(DAO.Properties.Settings.Default.ConnectionString);
         TOCliente cliente = new TOCliente();
+        List<TOCliente> listaClientes = new List<TOCliente>();
+
+        public List<TOCliente> listaCliente()
+        {
+            if (conexion.State != ConnectionState.Open)
+            {
+                conexion.Open();
+            }
+
+            string query = "select * from Cliente";
+            SqlCommand comand = new SqlCommand(query, conexion);
+            SqlDataReader reader = comand.ExecuteReader();
+
+            if (reader.HasRows)
+            {
+                while (reader.Read()) {
+                    listaClientes.Add(new TOCliente(reader["Cedula"].ToString(), reader["Nombre"].ToString(),
+                        reader["Apellido1"].ToString(), reader["Apellido2"].ToString(), reader["Correo"].ToString(),
+                        reader["Contrasenna"].ToString(), Int32.Parse(reader["Estado_cliente"].ToString()), reader["Codigo_postal"].ToString(),
+                        reader["Nombre_usuario"].ToString()));
+                }
+            }
+
+            if (conexion.State != ConnectionState.Closed)
+            {
+                conexion.Close();
+            }
+            return listaClientes;
+        }
+
 
         public TOCliente buscarCliente(string cedula) {
             if (conexion.State != ConnectionState.Open)
