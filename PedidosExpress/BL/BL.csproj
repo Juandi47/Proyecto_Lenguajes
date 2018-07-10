@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLCliente.cs" />
+    <Compile Include="BLDetalleOrden.cs" />
     <Compile Include="BLDireccionCliente.cs" />
     <Compile Include="BLOrden.cs" />
     <Compile Include="InfoOrdenView.cs" />

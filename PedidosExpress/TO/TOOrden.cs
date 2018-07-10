@@ -18,7 +18,7 @@ namespace TO
         }
 
         public TOOrden()
-        {
+    {
         }
 
         public int Codigo_Orden { get; set; }
