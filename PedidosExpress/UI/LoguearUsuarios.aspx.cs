@@ -29,7 +29,7 @@ namespace UI
                     Response.Redirect("PrincipalAdmin.aspx");
                 }
                 else {
-                    Response.Redirect("");
+                    Response.Redirect("CocinaListaPedidosWF.aspx");
                 }
             }
         }

@@ -3,35 +3,33 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TO;
 
 namespace BL
 {
     public class BLOrden
     {
-        public int Codigo_Orden { get; set; }
-        public string Cedula { get; set; }
-        public string Nombre { get; set; }
-        public string Apellido1 { get; set; }
-        public string Apellido2 { get; set; }
-        public string Hora { get; set; }
-
-        public List<BLPlato> detallesOrden { get; set; }
 
 
-
-        public BLOrden() {
-            this.detallesOrden = new List<BLPlato>();
-        }
-
-        public BLOrden(string cedula, string nombre, string apellido1, string apellido2, int codigo_Orden, string tiempo)
+        public BLOrden()
         {
-            Cedula = cedula;
-            Nombre = nombre;
-            Apellido1 = apellido1;
-            Apellido2 = apellido2;
-            Codigo_Orden = codigo_Orden;
-            Hora = tiempo;
-            this.detallesOrden = new List<BLPlato>();
         }
+
+        public BLOrden(int codigo_Orden, string fecha_Hora, string cedula, string estado_Pedido, double costo_Total)
+        {
+            Codigo_Orden = codigo_Orden;
+            Fecha_Hora = fecha_Hora;
+            Cedula = cedula;
+            Estado_Pedido = estado_Pedido;
+            Costo_Total = costo_Total;
+        }
+
+        public int Codigo_Orden { get; set; }
+        public string Fecha_Hora { get; set; }
+        public string Cedula { get; set; }
+        public string Estado_Pedido { get; set; }
+        public double Costo_Total { get; set; }
+
+
     }
 }

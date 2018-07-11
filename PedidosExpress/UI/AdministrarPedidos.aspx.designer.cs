@@ -10,141 +10,159 @@
 namespace UI {
     
     
-    public partial class CocinaListaPedidosWF {
+    public partial class AdministrarPedidos {
         
         /// <summary>
-        /// estadoO1 control.
+        /// btnVerTodosClientes control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label estadoO1;
+        protected global::System.Web.UI.WebControls.Button btnVerTodosClientes;
         
         /// <summary>
-        /// res_estadoO1 control.
+        /// Label1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label res_estadoO1;
+        protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
-        /// entregarBTN1 control.
+        /// checkHabilitarCliente control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button entregarBTN1;
+        protected global::System.Web.UI.WebControls.CheckBox checkHabilitarCliente;
         
         /// <summary>
-        /// estadoO2 control.
+        /// txtBuscarPorCliente control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label estadoO2;
+        protected global::System.Web.UI.WebControls.TextBox txtBuscarPorCliente;
         
         /// <summary>
-        /// res_estadoO2 control.
+        /// validaFiltroBuscarCliente control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label res_estadoO2;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator validaFiltroBuscarCliente;
         
         /// <summary>
-        /// entregarBTN2 control.
+        /// btnFiltroBuscarCliente control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button entregarBTN2;
+        protected global::System.Web.UI.WebControls.Button btnFiltroBuscarCliente;
         
         /// <summary>
-        /// estadoO3 control.
+        /// labelFecha control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label estadoO3;
+        protected global::System.Web.UI.WebControls.Label labelFecha;
         
         /// <summary>
-        /// res_estadoO3 control.
+        /// checkFiltrarPorFecha control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label res_estadoO3;
+        protected global::System.Web.UI.WebControls.CheckBox checkFiltrarPorFecha;
         
         /// <summary>
-        /// entregarBTN3 control.
+        /// Calendar1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button entregarBTN3;
+        protected global::System.Web.UI.WebControls.Calendar Calendar1;
         
         /// <summary>
-        /// estadoO4 control.
+        /// btnBuscarPorFecha control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label estadoO4;
+        protected global::System.Web.UI.WebControls.Button btnBuscarPorFecha;
         
         /// <summary>
-        /// res_estadoO4 control.
+        /// Label2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label res_estadoO4;
+        protected global::System.Web.UI.WebControls.Label Label2;
         
         /// <summary>
-        /// entregarBTN4 control.
+        /// checkHabilitarEstado control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button entregarBTN4;
+        protected global::System.Web.UI.WebControls.CheckBox checkHabilitarEstado;
         
         /// <summary>
-        /// estadoO5 control.
+        /// Label3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label estadoO5;
+        protected global::System.Web.UI.WebControls.Label Label3;
         
         /// <summary>
-        /// res_estadoO5 control.
+        /// txtCambiarEstado control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label res_estadoO5;
+        protected global::System.Web.UI.WebControls.TextBox txtCambiarEstado;
         
         /// <summary>
-        /// entregarBTN5 control.
+        /// btnCambiarEstado control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button entregarBTN5;
+        protected global::System.Web.UI.WebControls.Button btnCambiarEstado;
+        
+        /// <summary>
+        /// grdClientes control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView grdClientes;
+        
+        /// <summary>
+        /// labelnformacion control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label labelnformacion;
     }
 }

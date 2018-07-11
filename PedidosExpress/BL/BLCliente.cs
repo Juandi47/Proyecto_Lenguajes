@@ -21,6 +21,12 @@ namespace BL
             this.nombreUsuario = nombreUsuario;
         }
 
+        public BLCliente()
+        {
+
+        }
+
+
         public string cedula { get; set; }
         public string nombre { get; set; }
         public string apellido1 { get; set; }

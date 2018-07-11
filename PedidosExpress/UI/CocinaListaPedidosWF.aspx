@@ -8,16 +8,17 @@
 
 </asp:Content>
 <asp:Content ID="content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
+    
     <div class="container" "background-color:#FFFFFF">
 
         <div class="row fila">
+            <h3>&nbsp;</h3>
             <h3>Orden 1:</h3>
             <div class="col-md-2">
             </div>
             <div class="col-md-8" style="background-color: #FDEBD0">
-                <asp:GridView ID="grdInfoOrden1" runat="server">
-                    </asp:GridView>
+                <p id="grdInfoOrden1" accesskey="grdInfoOrden1" ></p>
+                <textarea id="txt" name="S1" rows="1"></textarea><br />
                 <asp:Label ID="estadoO1" runat="server" Text="Estado: "></asp:Label>
                 <asp:Label ID="res_estadoO1" runat="server" Text="Desconocido"></asp:Label>
                 <br />
@@ -36,8 +37,7 @@
             <div class="col-md-2">
             </div>
             <div class="col-md-8" style="background-color: #EAEDED">
-                <asp:GridView ID="grdInfoOrden2" runat="server">
-                    </asp:GridView>
+                <p id="grdInfoOrden2" ></p>
                 <asp:Label ID="estadoO2" runat="server" Text="Estado: "></asp:Label>
                 <asp:Label ID="res_estadoO2" runat="server" Text="Desconocido"></asp:Label>
                 <br />
@@ -56,8 +56,7 @@
             <div class="col-md-2">
             </div>
             <div class="col-md-8" style="background-color: #FDEBD0">
-                <asp:GridView ID="grdInfoOrden3" runat="server">
-                     </asp:GridView>
+                <p id="grdInfoOrden3" ></p>
                 <asp:Label ID="estadoO3" runat="server" Text="Estado: "></asp:Label>
                 <asp:Label ID="res_estadoO3" runat="server" Text="Desconocido"></asp:Label>
                 <br />
@@ -76,8 +75,7 @@
             <div class="col-md-2">
             </div>
             <div class="col-md-8" style="background-color: #EAEDED">
-                <asp:GridView ID="grdInfoOrden4" runat="server">
-                    </asp:GridView>
+                <p id="grdInfoOrden4" ></p>
                 <asp:Label ID="estadoO4" runat="server" Text="Estado: "></asp:Label>
                 <asp:Label ID="res_estadoO4" runat="server" Text="Desconocido"></asp:Label>
                 <br />
@@ -96,8 +94,7 @@
             <div class="col-md-2">
             </div>
             <div class="col-md-8" style="background-color: #FDEBD0">
-                <asp:GridView ID="grdInfoOrden5" runat="server">
-                    </asp:GridView>
+                <p id="grdInfoOrden5" ></p>
                 <asp:Label ID="estadoO5" runat="server" Text="Estado: "></asp:Label>
                 <asp:Label ID="res_estadoO5" runat="server" Text="Desconocido"></asp:Label>
                 <br />

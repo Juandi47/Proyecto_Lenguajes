@@ -41,13 +41,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLCliente.cs" />
+    <Compile Include="BLDetalleOrden.cs" />
     <Compile Include="BLDireccionCliente.cs" />
     <Compile Include="BLOrden.cs" />
+    <Compile Include="InfoOrdenView.cs" />
+    <Compile Include="BLOrdenCliente.cs" />
     <Compile Include="BLPlato.cs" />
     <Compile Include="BLUsuario.cs" />
     <Compile Include="ManejadorCliente.cs" />
     <Compile Include="ManejadorDireccionCliente.cs" />
+    <Compile Include="ManejadorInfoOrdenView.cs" />
     <Compile Include="ManejadorOrden.cs" />
+    <Compile Include="ManejadorOrdenCliente.cs" />
     <Compile Include="ManejadorPlato.cs" />
     <Compile Include="ManejadorUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

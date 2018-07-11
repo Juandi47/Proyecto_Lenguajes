@@ -29,7 +29,7 @@ namespace DAO
             transa = conexion.BeginTransaction();
         }
 
-        public void insertarUsuario(TOUsuario toUsuario)
+        public void insertarUsuario( string nombre, string contrasenna, string rol)
         {
             establecerConexion();
 
@@ -38,11 +38,11 @@ namespace DAO
                 sentencia.Transaction = transa;
                 sentencia.Connection = conexion;
 
-                sentencia.CommandText = "Insert into Usuario(Identificacion,Nombre_usuario,contrasenna,rol) values(@Identificacion, @NombreUsuario, @Contrasenna, @Rol)";
+                sentencia.CommandText = "Insert into Usuario values(@NombreUsuario, @Contrasenna, @Rol)";
                
-                sentencia.Parameters.AddWithValue("@NombreUsuario", toUsuario.Nombre);
-                sentencia.Parameters.AddWithValue("@Contrasenna", toUsuario.Contrasenna);
-                sentencia.Parameters.AddWithValue("@Rol", toUsuario.Rol);
+                sentencia.Parameters.AddWithValue("@NombreUsuario", nombre);
+                sentencia.Parameters.AddWithValue("@Contrasenna", contrasenna);
+                sentencia.Parameters.AddWithValue("@Rol", rol);
 
                 sentencia.ExecuteNonQuery();
                 transa.Commit();
@@ -57,7 +57,7 @@ namespace DAO
         }
 
 
-        public void eliminarUsuario(string identificacion)
+        public void eliminarUsuario(string nombre, string contrasena)
         {
             establecerConexion();
 
@@ -67,8 +67,9 @@ namespace DAO
                 sentencia.Connection = conexion;
 
 
-                sentencia.CommandText = " DELETE FROM Usuario WHERE Identificacion=@Identificacion";
-                sentencia.Parameters.AddWithValue("@Identificacion", identificacion);
+                sentencia.CommandText = " DELETE FROM Usuario WHERE Nombre_usuario=@NombreUsuario AND Contrasenna=@Contrasena";
+                sentencia.Parameters.AddWithValue("@NombreUsuario", nombre);
+                sentencia.Parameters.AddWithValue("@Contrasena", contrasena);
 
                 sentencia.ExecuteNonQuery();
                 transa.Commit();
@@ -115,7 +116,7 @@ namespace DAO
                         toUsuario.Contrasenna = "";
                         toUsuario.Rol = "";
                     }
-                   
+
 
                 }
 
@@ -133,7 +134,7 @@ namespace DAO
 
 
 
-        public void modificarUsuario(string identificacion, string atributo, string nuevoValor)
+        public void modificarUsuario(string nombre, string contrasenna, string rol)
         {
             establecerConexion();
 
@@ -141,11 +142,10 @@ namespace DAO
             {
                 sentencia.Transaction = transa;
                 sentencia.Connection = conexion;
-
-                sentencia.CommandText = " UPDATE Usuario SET @Atributo = @NuevoValor, WHERE Identificacion=@Identificacion;";
-                sentencia.Parameters.AddWithValue("@Identificacion", identificacion);
-                sentencia.Parameters.AddWithValue("@Atributo", atributo);
-                sentencia.Parameters.AddWithValue("@NuevoValor", nuevoValor);
+                sentencia.CommandText = "UPDATE Usuario SET Nombre_usuario = @NombreUsuario, Contrasenna=@contrasenna, Rol=@Rol WHERE Nombre_usuario=@NombreUsuario AND Contrasenna=@Contrasenna;";
+                sentencia.Parameters.AddWithValue("@NombreUsuario", nombre);
+                sentencia.Parameters.AddWithValue("@Contrasenna", contrasenna);
+                sentencia.Parameters.AddWithValue("@Rol", rol);
 
                 sentencia.ExecuteNonQuery();
                 transa.Commit();

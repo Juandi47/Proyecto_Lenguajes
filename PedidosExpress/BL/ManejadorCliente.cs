@@ -64,5 +64,18 @@ namespace BL
         }
 
 
+        public BLCliente buscarCliente(string cedula) {
+            BLCliente cliente = new BLCliente();
+            TOCliente clienteTo = new TOCliente();
+
+            clienteTo = daoCliente.buscarCliente(cedula);
+
+            cliente = new BLCliente(clienteTo.cedula, clienteTo.nombre, clienteTo.apellido1, clienteTo.apellido2,
+                clienteTo.correo, clienteTo.contrasenna, clienteTo.estadoCliente, clienteTo.codigoPostal, 
+                clienteTo.nombreUsuario);
+            return cliente;
+        }
+
+
     }
 }

@@ -42,7 +42,9 @@
   <ItemGroup>
     <Compile Include="DAOCliente.cs" />
     <Compile Include="DAODireccion.cs" />
+    <Compile Include="DAOInfoOrdenView.cs" />
     <Compile Include="DAOOrden.cs" />
+    <Compile Include="DAOOrdenCliente.cs" />
     <Compile Include="DAOPlato.cs" />
     <Compile Include="DAOUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

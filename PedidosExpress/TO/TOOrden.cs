@@ -7,38 +7,25 @@ using System.Threading.Tasks;
 namespace TO
 {
     public class TOOrden
-
     {
-        public string Cedula { get; set; }
 
-        public string Nombre { get; set; }
 
-        public string Apellido1 { get; set; }
+        public TOOrden()
+    {}
 
-        public string Apellido2 { get; set; }
+        public TOOrden(int codigo_Orden, string fecha_Hora, string cedula, string estado_Pedido, double costo_Total)
+        {
+            Codigo_Orden = codigo_Orden;
+            Fecha_Hora = fecha_Hora;
+            Cedula = cedula;
+            Estado_Pedido = estado_Pedido;
+            Costo_Total = costo_Total;
+        }
 
         public int Codigo_Orden { get; set; }
-
-        public string Codigo_Plato { get; set; }
-
-        public string Nombre_Plato { get; set; }
-
-        public int Cantidad { get; set; }
-
-        public string Hora { get; set; }
-
-
-        public TOOrden(string cedula, string nombre, string apellido1, string apellido2, int codigo_Orden, string codigo_Plato, string nombre_Plato, int cantidad, string tiempo)
-        {
-            Cedula = cedula;
-            Nombre = nombre;
-            Apellido1 = apellido1;
-            Apellido2 = apellido2;
-            Codigo_Orden = codigo_Orden;
-            Codigo_Plato = codigo_Plato;
-            Nombre_Plato = nombre_Plato;
-            Cantidad = cantidad;
-            Hora = tiempo;
-        }
+        public string Fecha_Hora { get; set; }
+        public string Cedula { get; set; }
+        public string Estado_Pedido { get; set; }
+        public double Costo_Total { get; set; }
     }
 }
