@@ -101,6 +101,7 @@ namespace UI
                         else {
                             if (radioEstadoEntregado.Checked)
                             {
+
                                 cambio = blOrdenCliente.cambiarEstadoOrden(txtCambiarEstado.Text, "Entregado");
                             }
                         }
