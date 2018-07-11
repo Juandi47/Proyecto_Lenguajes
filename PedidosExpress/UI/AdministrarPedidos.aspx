@@ -15,7 +15,7 @@
             &nbsp;&nbsp;&nbsp;
     <asp:Label ID="Label1" runat="server" Text="Filtrar busqueda por cliente"></asp:Label>
     <br />
-    <asp:CheckBox ID="checkHabilitarCliente" runat="server" OnCheckedChanged="checkHabilitarCliente_CheckedChanged" />
+            <asp:CheckBox ID="checkHabilitarCliente" runat="server" />
             <asp:TextBox ID="txtBuscarPorCliente" runat="server"></asp:TextBox>
 &nbsp;<asp:RequiredFieldValidator ID="validaFiltroBuscarCliente" runat="server" ControlToValidate="txtBuscarPorCliente" ErrorMessage="*Informacion Requerida" ForeColor="Red" ValidationGroup="validaFiltroBuscarCliente"></asp:RequiredFieldValidator>
             <asp:Button ID="btnFiltroBuscarCliente" runat="server" Text="Buscar" OnClick="btnBuscar_Click" ValidationGroup="validaFiltroBuscarCliente" />

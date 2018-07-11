@@ -98,6 +98,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AdministrarPedidos.aspx" />
     <Content Include="BloquearClientes.aspx" />
     <Content Include="Cliente\cssInicioCliente.css" />
     <Content Include="Cliente\InicioCliente.html" />
@@ -134,6 +135,13 @@
     </Compile>
     <Compile Include="AdministracionPlatos.aspx.designer.cs">
       <DependentUpon>AdministracionPlatos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdministrarPedidos.aspx.cs">
+      <DependentUpon>AdministrarPedidos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministrarPedidos.aspx.designer.cs">
+      <DependentUpon>AdministrarPedidos.aspx</DependentUpon>
     </Compile>
     <Compile Include="BloquearClientes.aspx.cs">
       <DependentUpon>BloquearClientes.aspx</DependentUpon>
