@@ -13,40 +13,22 @@ namespace UI {
     public partial class CocinaListaPedidosWF {
         
         /// <summary>
-        /// infoO1 control.
+        /// infoOrden1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox infoO1;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText infoOrden1;
         
         /// <summary>
-        /// estadoO1 control.
+        /// estado1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label estadoO1;
-        
-        /// <summary>
-        /// res_estadoO1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label res_estadoO1;
-        
-        /// <summary>
-        /// entregarBTN1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button entregarBTN1;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl estado1;
         
         /// <summary>
         /// detallesO1 control.
@@ -58,111 +40,111 @@ namespace UI {
         protected global::System.Web.UI.WebControls.TextBox detallesO1;
         
         /// <summary>
-        /// estadoO2 control.
+        /// infoOrden2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label estadoO2;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText infoOrden2;
         
         /// <summary>
-        /// res_estadoO2 control.
+        /// estado2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label res_estadoO2;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl estado2;
         
         /// <summary>
-        /// entregarBTN2 control.
+        /// detallesO2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button entregarBTN2;
+        protected global::System.Web.UI.WebControls.TextBox detallesO2;
         
         /// <summary>
-        /// estadoO3 control.
+        /// infoOrden3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label estadoO3;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText infoOrden3;
         
         /// <summary>
-        /// res_estadoO3 control.
+        /// estado3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label res_estadoO3;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl estado3;
         
         /// <summary>
-        /// entregarBTN3 control.
+        /// detallesO3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button entregarBTN3;
+        protected global::System.Web.UI.WebControls.TextBox detallesO3;
         
         /// <summary>
-        /// estadoO4 control.
+        /// infoOrden4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label estadoO4;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText infoOrden4;
         
         /// <summary>
-        /// res_estadoO4 control.
+        /// estado4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label res_estadoO4;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl estado4;
         
         /// <summary>
-        /// entregarBTN4 control.
+        /// detallesO4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button entregarBTN4;
+        protected global::System.Web.UI.WebControls.TextBox detallesO4;
         
         /// <summary>
-        /// estadoO5 control.
+        /// infoOrden5 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label estadoO5;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText infoOrden5;
         
         /// <summary>
-        /// res_estadoO5 control.
+        /// estado5 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label res_estadoO5;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl estado5;
         
         /// <summary>
-        /// entregarBTN5 control.
+        /// detallesO5 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button entregarBTN5;
+        protected global::System.Web.UI.WebControls.TextBox detallesO5;
     }
 }
