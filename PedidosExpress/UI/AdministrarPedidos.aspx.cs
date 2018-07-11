@@ -10,53 +10,227 @@ namespace UI
 {
     public partial class AdministrarPedidos : System.Web.UI.Page
     {
-        
+
+
+        ManejadorOrdenCliente blOrdenCliente = new ManejadorOrdenCliente();
+
+        List<string> coleccionFechas = new List<string>();
         
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            //ManejadorOrdenCliente blOrdenCliente = new ManejadorOrdenCliente();
-            //List<BLOrdenCliente> lista = new List<BLOrdenCliente>();
-            //lista = blOrdenCliente.listaOrdenCliente();
-            //String orden = lista[0].cliente.nombre;
-            //if (orden.Equals("")) {
-            //    String mensaje = "No hay datos";
-            //} else {
-            //    grdClientes.DataSource = lista;
-            //    grdClientes.DataBind();
-            //}
+            if (!IsPostBack) {
+                ViewState["ListaFechas"] = coleccionFechas;
+            }
+
+            coleccionFechas = (List<string>)ViewState["ListaFechas"];
+            
+
+            List<BLOrdenCliente> lista = new List<BLOrdenCliente>();
+            lista = blOrdenCliente.listaOrdenCliente();
+            String orden = lista[0].nombre;
+            if (orden.Equals(""))
+            {
+                String mensaje = "No hay datos";
+            }
+            else {
+
+                grdClientes.DataSource = lista;
+                grdClientes.DataBind();
+            }
+            
         }
 
         protected void btnVerTodosClientes_Click(object sender, EventArgs e)
         {
             
+            List<BLOrdenCliente> lista = new List<BLOrdenCliente>();
+            lista = blOrdenCliente.listaOrdenCliente();
+            String orden = lista[0].nombre;
+            if (orden.Equals(""))
+            {
+                String mensaje = "No hay datos";
+            }
+            else {
+
+                grdClientes.DataSource = lista;
+                grdClientes.DataBind();
+            }
+
         }
 
         protected void btnBuscar_Click(object sender, EventArgs e)
         {
-            //List<BLCliente> elCliente = new List<BLCliente>();
-            //ManejadorCliente manejadorCliente = new ManejadorCliente();
-            //if (checkHabilitarCliente.Checked)
-            //{
-            //    BLCliente cliente = manejadorCliente.buscarCliente(txtBuscarPorCliente.Text);
-            //    if (cliente.nombre.Equals(""))
-            //    {
-            //        string muestra = "El cliente no cin cedula " + txtBuscarPorCliente.Text + " no se encuentra registrado en el sistema";
-            //    }
-            //    else {
-            //        elCliente.Add(cliente);
-            //        grdClientes.DataSource = elCliente;
-            //        grdClientes.DataBind();
-            //    }
-            //}
-            //else {
-            //    string mostrar = "Debe habilitar el filtro"; 
-            //}
+            if (checkHabilitarCliente.Checked) {
+                List<BLOrden> lista = new List<BLOrden>();
+                lista = blOrdenCliente.buscarPedidosCliente(txtBuscarPorCliente.Text);
+                grdClientes.DataSource = lista;
+                grdClientes.DataBind();
+            }
+            else {
+                string mensaje = " Debe habilitar el filtro de busqueda";
+            }
         }
 
         protected void btnCambiarEstado_Click(object sender, EventArgs e)
         {
 
+        }
+
+        protected void btnBuscarPorFecha_Click(object sender, EventArgs e)
+        {
+            List<string> fechas = new List<string>();
+            string fecha1;
+            string fecha2;
+            if (checkFiltrarPorFecha.Checked)
+            {
+                if (coleccionFechas.Count > 1)
+                {
+                    string actual = DateTime.Now.Year.ToString() + "/" + DateTime.Now.Month.ToString() + "/" + DateTime.Now.Day.ToString();
+                    fecha1 = coleccionFechas[coleccionFechas.Count - 2];
+                    fecha2 = coleccionFechas[coleccionFechas.Count - 1];
+                    //!(DateTime.Compare(Convert.ToDateTime(fechas[0]), DateTime.Now) > 1)
+                    //if ((fecha1.CompareTo(actual) > 0) && (fecha2.CompareTo(actual) > 0))
+                    {
+                        if (txtBuscarPorCliente.Text.Equals(""))
+                        {
+                            List<BLOrden> lista = new List<BLOrden>();
+                            fechas.Add(fecha1);
+                            fechas.Add(fecha2);
+                            fechas.Sort();
+
+                            lista = blOrdenCliente.buscarPedidosPorFecha(fechas);
+                            grdClientes.DataSource = lista;
+                            grdClientes.DataBind();
+                        }
+                        else {
+                            List<BLOrden> lista = new List<BLOrden>();
+                            fechas.Add(fecha1);
+                            fechas.Add(fecha2);
+                            fechas.Sort();
+
+                            lista = blOrdenCliente.buscarPedidosClientePorFecha(fechas, txtBuscarPorCliente.Text);
+                            grdClientes.DataSource = lista;
+                            grdClientes.DataBind();
+                        }
+                    }
+                    //else {
+                    //    string texto = "Las fechas elegidas deben ser anteriores a la fecha actual";
+                    //}
+                    
+                }
+                else {
+                    string error = "Debe seleccionar al menos dos fechas";
+                }
+
+            }
+            else {
+                string mensaje = "Debe activar el filtro de busqueda";
+            }
+        }
+
+        protected void calendarioFiltro_SelectionChanged(object sender, EventArgs e)
+        {
+            string fecha = calendarioFiltro.SelectedDate.Year.ToString();
+            fecha += "/0" + calendarioFiltro.SelectedDate.Month.ToString();
+            fecha += "/" + calendarioFiltro.SelectedDate.Day.ToString();
+
+            coleccionFechas.Add(fecha);
+            
+        }
+
+        protected void btnBuscarPorEstados_Click(object sender, EventArgs e)
+        {
+            //List<BLOrden> lista = new List<BLOrden>();
+
+
+            //if (checkATiempo.Checked)
+            //{
+
+            //    if (txtBuscarPorCliente.Text.Equals(""))
+            //    {//para todos 
+                    
+            //        lista = blOrdenCliente.buscarPedidosEstado("A Tiempo");
+            //        grdClientes.DataSource = lista;
+            //        grdClientes.DataBind();
+                    
+            //    }
+            //    else {
+            //        lista = blOrdenCliente.buscarPedidosClienteEstado("A Tiempo", txtBuscarPorCliente.Text);
+            //        grdClientes.DataSource = lista;
+            //        grdClientes.DataBind();
+            //    }
+
+                
+            //}
+            //else {
+            //    if (checkSobreTiempo.Checked)
+            //    {
+            //        if (txtBuscarPorCliente.Text.Equals(""))
+            //        {//para todos 
+
+            //            lista = blOrdenCliente.buscarPedidosEstado("Sobre Tiempo");
+            //            grdClientes.DataSource = lista;
+            //            grdClientes.DataBind();
+
+
+            //        }
+            //        else {
+            //            //para solo un cliente 
+            //        }
+            //    }
+            //    else {
+            //        if (checkDemorado.Checked)
+            //        {
+            //            if (txtBuscarPorCliente.Text.Equals(""))
+            //            {//para todos 
+
+            //                lista = blOrdenCliente.buscarPedidosEstado("Demorado");
+            //                grdClientes.DataSource = lista;
+            //                grdClientes.DataBind();
+
+
+            //            }
+            //            else {
+            //                //para solo un cliente 
+            //            }
+            //        }
+            //        else {
+            //            if (checkAnulado.Checked)
+            //            {
+            //                if (txtBuscarPorCliente.Text.Equals(""))
+            //                {//para todos 
+
+            //                    lista = blOrdenCliente.buscarPedidosEstado("Anulado");
+            //                    grdClientes.DataSource = lista;
+            //                    grdClientes.DataBind();
+
+
+            //                }
+            //                else {
+            //                    //para solo un cliente 
+            //                }
+            //            }
+            //            else {
+            //                if (txtBuscarPorCliente.Text.Equals(""))
+            //                {//para todos 
+
+            //                    lista = blOrdenCliente.buscarPedidosEstado("Entregado");
+            //                    grdClientes.DataSource = lista;
+            //                    grdClientes.DataBind();
+
+
+            //                }
+            //                else {
+            //                    //para solo un cliente 
+            //                }
+            //            }
+            //        }
+            //    }
+
+                
+            //}
+           
         }
     }
 }

@@ -15,7 +15,7 @@
             &nbsp;&nbsp;&nbsp;
     <asp:Label ID="Label1" runat="server" Text="Filtrar busqueda por cliente"></asp:Label>
     <br />
-    <asp:CheckBox ID="checkHabilitarCliente" runat="server" />
+    <asp:CheckBox ID="checkHabilitarCliente" runat="server" OnCheckedChanged="checkHabilitarCliente_CheckedChanged" />
             <asp:TextBox ID="txtBuscarPorCliente" runat="server"></asp:TextBox>
 &nbsp;<asp:RequiredFieldValidator ID="validaFiltroBuscarCliente" runat="server" ControlToValidate="txtBuscarPorCliente" ErrorMessage="*Informacion Requerida" ForeColor="Red" ValidationGroup="validaFiltroBuscarCliente"></asp:RequiredFieldValidator>
             <asp:Button ID="btnFiltroBuscarCliente" runat="server" Text="Buscar" OnClick="btnBuscar_Click" ValidationGroup="validaFiltroBuscarCliente" />
@@ -29,15 +29,27 @@
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Label ID="labelFecha" runat="server" Text="Filtrar por fecha"></asp:Label>
             <asp:CheckBox ID="checkFiltrarPorFecha" runat="server" />
-            <asp:Calendar ID="Calendar1" runat="server"></asp:Calendar>
-            <asp:Button ID="btnBuscarPorFecha" runat="server" Text="Buscar" />
+            <asp:Calendar ID="calendarioFiltro" runat="server" OnSelectionChanged="calendarioFiltro_SelectionChanged" SelectedDate="07/10/2018 23:13:22"></asp:Calendar>
+            <asp:Button ID="btnBuscarPorFecha" runat="server" Text="Inicio fecha" OnClick="btnBuscarPorFecha_Click" />
             <br />
 
         </div>
         <div class="col-md-3">
             <asp:Label ID="Label2" runat="server" Text="Filtrar busqueda por estados de pedido"></asp:Label>
             <br />
-            <asp:CheckBox ID="checkHabilitarEstado" runat="server" />
+            <br />
+            <asp:CheckBox ID="checkATiempo" runat="server" Text="Estado a tiempo" />
+&nbsp;&nbsp;&nbsp;
+            <asp:CheckBox ID="checkSobreTiempo" runat="server" Text="Sobre tiempo" />
+&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:CheckBox ID="checkDemorado" runat="server" Text="Demorado" />
+&nbsp;&nbsp;&nbsp;
+            <asp:CheckBox ID="checkAnulado" runat="server" Text="Anulado" />
+&nbsp;&nbsp;&nbsp;
+            <asp:CheckBox ID="checkEntregado" runat="server" Text="Entregado" />
+            <br />
+            <br />
+            <asp:Button ID="btnBuscarPorEstados" runat="server" OnClick="btnBuscarPorEstados_Click" Text="Buscar" />
             <br />
             <br />
         </div>
@@ -47,19 +59,23 @@
 
             <div class="col-md-9">
             
-            <asp:Label ID="Label3" runat="server" Text="Ingrese el codigo de la orden"></asp:Label>
-            &nbsp;&nbsp;
-                <asp:TextBox ID="txtCambiarEstado" runat="server"></asp:TextBox>
-&nbsp;&nbsp;
-            <asp:Button ID="btnCambiarEstado" runat="server" Text="Cambiar Estado" OnClick="btnCambiarEstado_Click" />
+                <br />
+            <asp:GridView ID="grdClientes" runat="server"></asp:GridView>
+            <asp:Label ID="labelnformacion" runat="server"></asp:Label>
+                <br />
             
         </div>
 
         <div class="col-md-9">
             <br />
             <br />
-            <asp:GridView ID="grdClientes" runat="server"></asp:GridView>
-            <asp:Label ID="labelnformacion" runat="server"></asp:Label>
+            
+            <asp:Label ID="Label3" runat="server" Text="Ingrese el codigo de la orden"></asp:Label>
+            &nbsp;&nbsp;
+                <asp:TextBox ID="txtCambiarEstado" runat="server"></asp:TextBox>
+&nbsp;&nbsp;
+            <asp:Button ID="btnCambiarEstado" runat="server" Text="Cambiar Estado" OnClick="btnCambiarEstado_Click" />
+            
             <br />
             <br />
             <br />

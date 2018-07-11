@@ -114,6 +114,8 @@
     </Content>
     <Content Include="master.Master" />
     <Content Include="WSRest\WSCliente.svc" />
+    <None Include="Properties\PublishProfiles\Default Settings %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\Default Settings.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

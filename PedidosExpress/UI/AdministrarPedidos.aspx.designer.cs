@@ -85,13 +85,13 @@ namespace UI {
         protected global::System.Web.UI.WebControls.CheckBox checkFiltrarPorFecha;
         
         /// <summary>
-        /// Calendar1 control.
+        /// calendarioFiltro control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar Calendar1;
+        protected global::System.Web.UI.WebControls.Calendar calendarioFiltro;
         
         /// <summary>
         /// btnBuscarPorFecha control.
@@ -112,13 +112,76 @@ namespace UI {
         protected global::System.Web.UI.WebControls.Label Label2;
         
         /// <summary>
-        /// checkHabilitarEstado control.
+        /// checkATiempo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox checkHabilitarEstado;
+        protected global::System.Web.UI.WebControls.CheckBox checkATiempo;
+        
+        /// <summary>
+        /// checkSobreTiempo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox checkSobreTiempo;
+        
+        /// <summary>
+        /// checkDemorado control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox checkDemorado;
+        
+        /// <summary>
+        /// checkAnulado control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox checkAnulado;
+        
+        /// <summary>
+        /// checkEntregado control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox checkEntregado;
+        
+        /// <summary>
+        /// btnBuscarPorEstados control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnBuscarPorEstados;
+        
+        /// <summary>
+        /// grdClientes control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView grdClientes;
+        
+        /// <summary>
+        /// labelnformacion control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label labelnformacion;
         
         /// <summary>
         /// Label3 control.
@@ -146,23 +209,5 @@ namespace UI {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnCambiarEstado;
-        
-        /// <summary>
-        /// grdClientes control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView grdClientes;
-        
-        /// <summary>
-        /// labelnformacion control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label labelnformacion;
     }
 }

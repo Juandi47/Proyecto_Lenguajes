@@ -31,7 +31,7 @@ namespace UI
 
         protected void btnAdministrarPedidos_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("AdministrarPedidos.aspx");
         }
     }
 }
