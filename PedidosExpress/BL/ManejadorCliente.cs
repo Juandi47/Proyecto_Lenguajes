@@ -43,8 +43,13 @@ namespace BL
             return estado;
         }
 
-        public void RegistrarCliente(String cedula, String Nombre, String Apellido1, String Apellido2, String correo, String contrasenna, String CodPostal, String NombreUsuario, String Provincia, String Canton, String Distrito) {
-            daoCliente.RegistrarCliente(cedula, Nombre, Apellido1, Apellido2, correo, contrasenna, CodPostal, NombreUsuario, Provincia, Canton, Distrito);
+        public String RegistrarCliente(String cedula, String Nombre, String Apellido1, String Apellido2, String correo, String contrasenna, String CodPostal, String NombreUsuario, String Provincia, String Canton, String Distrito) {
+            return daoCliente.RegistrarCliente(cedula, Nombre, Apellido1, Apellido2, correo, contrasenna, CodPostal, NombreUsuario, Provincia, Canton, Distrito);
+        }
+
+        public Boolean loguearCliente(String NombreUsuario, String contrasenna) {
+            return daoCliente.logueo(NombreUsuario, contrasenna);
+
         }
 
 

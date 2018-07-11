@@ -117,13 +117,19 @@ namespace DAO
 
         }
 
-        public void RegistrarCliente(String cedula, String Nombre, String Apellido1, String Apellido2, String correo, String contrasenna, String CodPostal, String NombreUsuario, String Provincia, String Canton, String Distrito) {
+        public String RegistrarCliente(String cedula, String Nombre, String Apellido1, String Apellido2, String correo, String contrasenna, String CodPostal, String NombreUsuario, String Provincia, String Canton, String Distrito) {
+
+            if (validarCedulaYUsuario(cedula, NombreUsuario)) {
+                return "Ya hay un cliente con este número de cedula";
+            }
 
             DAODireccion direccion = new DAODireccion();
 
             direccion.IngresarDireccion(CodPostal, Provincia, Canton, Distrito);
 
             String query = "Insert into Cliente values(@ced,@nomb,@ape1,@ape2,@cor,@cont,0,@cod,@nombUs);";
+
+            
 
             SqlCommand comando = new SqlCommand(query,conexion);
 
@@ -147,6 +153,61 @@ namespace DAO
             {
                 conexion.Close();
             }
+
+            return "Registrado exitosamente";
+
+        }
+
+        public Boolean logueo(String NombreUsuario, String contrasenna) {
+            String query = "select count(*) from Cliente where Nombre_usuario = @nombUs and Contrasenna = @cont;";
+
+            SqlCommand comando = new SqlCommand(query, conexion);
+
+            comando.Parameters.AddWithValue("@nombUs", NombreUsuario);
+            comando.Parameters.AddWithValue("@cont", contrasenna);
+
+            int existencia = 0;
+
+            if (ConnectionState.Open != conexion.State)
+            {
+                conexion.Open();
+            }
+
+            existencia = Int32.Parse(comando.ExecuteScalar().ToString());
+
+            if (ConnectionState.Closed != conexion.State)
+            {
+                conexion.Close();
+            }
+
+            return existencia > 0 ? true : false;
+
+        }
+
+        public Boolean validarCedulaYUsuario(String cedula, String NombreUsuario) {
+
+            String query = "select count(*) from Cliente where Cedula = @ced or Nombre_usuario = @nombUs;";
+
+            SqlCommand comando = new SqlCommand(query, conexion);
+
+            comando.Parameters.AddWithValue("@ced", cedula);
+            comando.Parameters.AddWithValue("@nombUs", NombreUsuario);
+
+            int existencia = 0;
+
+            if (ConnectionState.Open != conexion.State)
+            {
+                conexion.Open();
+            }
+
+            existencia = Int32.Parse(comando.ExecuteScalar().ToString());
+
+            if (ConnectionState.Closed != conexion.State)
+            {
+                conexion.Close();
+            }
+
+            return existencia > 0 ? true : false;
 
         }
            

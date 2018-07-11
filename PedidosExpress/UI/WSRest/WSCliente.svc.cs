@@ -12,9 +12,19 @@ namespace UI.WSRest
     // NOTE: In order to launch WCF Test Client for testing this service, please select WSCliente.svc or WSCliente.svc.cs at the Solution Explorer and start debugging.
     public class WSCliente : IWSCliente
     {
-        public void RegistrarCliente(string cedula, string Nombre, string Apellido1, string Apellido2, string correo, string contrasenna, string CodPostal, string NombreUsuario, string Provincia, string Canton, string Distrito)
+        public List<BLPlato> listaPlatos()
         {
-            new ManejadorCliente().RegistrarCliente(cedula, Nombre, Apellido1, Apellido2, correo, contrasenna, CodPostal, NombreUsuario, Provincia, Canton, Distrito);
+            return new ManejadorPlato().listaPlatos();
+        }
+
+        public bool logueo(string NombreUsuario, string contrasenna)
+        {
+            return new ManejadorCliente().loguearCliente(NombreUsuario, contrasenna);
+        }
+
+        public String RegistrarCliente(string cedula, string Nombre, string Apellido1, string Apellido2, string correo, string contrasenna, string CodPostal, string NombreUsuario, string Provincia, string Canton, string Distrito)
+        {
+            return new ManejadorCliente().RegistrarCliente(cedula, Nombre, Apellido1, Apellido2, correo, contrasenna, CodPostal, NombreUsuario, Provincia, Canton, Distrito);
         }
     }
 }

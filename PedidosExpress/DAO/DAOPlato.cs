@@ -131,6 +131,38 @@ namespace DAO
             return eliminar;
         }
 
+        public List<TOPlato> consultarPlatos()
+        {
+            query = "select * from plato where Estado_plato = 'ACTIVO';";
+
+            if (conexion.State != ConnectionState.Open)
+            {
+                conexion.Open();
+            }
+            SqlCommand comand = new SqlCommand(query, conexion);
+            SqlDataReader reader = comand.ExecuteReader();
+
+            List<TOPlato> lista = new List<TOPlato>();
+
+            if (reader.HasRows)
+            {
+                while (reader.Read())
+                {
+                    lista.Add(new TOPlato(reader["Codigo_Plato"].ToString(), reader["Nombre_plato"].ToString(), reader["Descripcion"].ToString(), Convert.ToDouble(reader["Precio"]), reader["Estado_plato"].ToString(), reader["Imagen"].ToString()));
+                }
+
+            }
+
+            if (conexion.State != ConnectionState.Closed)
+            {
+                conexion.Close();
+            }
+
+            return lista;
+        }
+
+        
+
 
     }
 }
