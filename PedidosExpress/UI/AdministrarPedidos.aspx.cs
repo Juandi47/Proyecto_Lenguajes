@@ -15,16 +15,16 @@ namespace UI
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            ManejadorOrdenCliente blOrdenCliente = new ManejadorOrdenCliente();
-            List<BLOrdenCliente> lista = new List<BLOrdenCliente>();
-            lista = blOrdenCliente.listaOrdenCliente();
-            String orden = lista[0].cliente.nombre;
-            if (orden.Equals("")) {
-                String mensaje = "No hay datos";
-            } else {
-                grdClientes.DataSource = lista;
-                grdClientes.DataBind();
-            }
+            //ManejadorOrdenCliente blOrdenCliente = new ManejadorOrdenCliente();
+            //List<BLOrdenCliente> lista = new List<BLOrdenCliente>();
+            //lista = blOrdenCliente.listaOrdenCliente();
+            //String orden = lista[0].cliente.nombre;
+            //if (orden.Equals("")) {
+            //    String mensaje = "No hay datos";
+            //} else {
+            //    grdClientes.DataSource = lista;
+            //    grdClientes.DataBind();
+            //}
         }
 
         protected void btnVerTodosClientes_Click(object sender, EventArgs e)
