@@ -36,7 +36,6 @@
   padding: 15px;
   color: #FFFFFF;
   font-size: 14px;
-
   cursor: pointer;
 }
 .form button:hover,.form button:active,.form button:focus {
@@ -50,9 +49,6 @@
 .form .message a {
   color: #4CAF50;
   text-decoration: none;
-}
-.form .register-form {
-  display: none;
 }
 .container {
   position: relative;
@@ -87,6 +83,7 @@
 .container .info span .fa {
   color: #EF3B3A;
 }
+
 body {
   background: #76b852; /* fallback for old browsers */
   background: -webkit-linear-gradient(right, #76b852, #8DC26F);
@@ -94,5 +91,5 @@ body {
   background: -o-linear-gradient(right, #76b852, #8DC26F);
   background: linear-gradient(to left, #76b852, #8DC26F);
   font-family: "Roboto", sans-serif;
-  -webkit-font-smoothing: antialiased;   
+  -webkit-font-smoothing: antialiased;
 }
