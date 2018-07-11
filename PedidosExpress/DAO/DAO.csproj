@@ -42,7 +42,9 @@
   <ItemGroup>
     <Compile Include="DAOCliente.cs" />
     <Compile Include="DAODireccion.cs" />
+    <Compile Include="DAOInfoOrdenView.cs" />
     <Compile Include="DAOOrden.cs" />
+    <Compile Include="DAOOrdenCliente.cs" />
     <Compile Include="DAOPlato.cs" />
     <Compile Include="DAOUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -64,6 +66,9 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

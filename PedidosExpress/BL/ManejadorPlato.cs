@@ -26,6 +26,19 @@ namespace BL
             return plato;
         }
 
+        public List<BLPlato> listaPlatos() {
+            List<TOPlato> to = new List<TOPlato>();
+            DAOPlato dao = new DAOPlato();
+            List<BLPlato> lista = new List<BLPlato>();
+
+            to = dao.consultarPlatos();
+
+            foreach (TOPlato x in to) {
+                lista.Add(new BLPlato(x.codigoPlato,x.nombrePlato,x.descripcionPlato,x.precio,x.estadoPlato,x.imagen));
+            }
+            return lista;
+        }
+
 
         public int modificarPlato(string codigo, string nombre, string descripcion, string precio, string estado, string imagen) {
            return daoPlato.modificarPlato(codigo,  nombre,  descripcion,  precio,  estado,  imagen);
