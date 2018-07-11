@@ -17,8 +17,12 @@ namespace UI
         List<string> coleccionFechas = new List<string>();
         
 
+        
+
         protected void Page_Load(object sender, EventArgs e)
         {
+
+            
             if (!IsPostBack) {
                 ViewState["ListaFechas"] = coleccionFechas;
             }
@@ -74,7 +78,43 @@ namespace UI
 
         protected void btnCambiarEstado_Click(object sender, EventArgs e)
         {
+            string cambio;
+            if (radioEstadoAtiempo.Checked)
+            {
+                cambio = blOrdenCliente.cambiarEstadoOrden(txtCambiarEstado.Text, "A Tiempo");
+            }
+            else {
+                if (radioEstadoSobreTiempo.Checked)
+                {
+                    cambio = blOrdenCliente.cambiarEstadoOrden(txtCambiarEstado.Text, "Sobre Tiempo");
+                }
+                else {
+                    if (radioEstadoDemorado.Checked)
+                    {
+                        cambio = blOrdenCliente.cambiarEstadoOrden(txtCambiarEstado.Text, "Demorado");
+                    }
+                    else {
+                        if (radioEstadoAnulado.Checked)
+                        {
+                            cambio = blOrdenCliente.cambiarEstadoOrden(txtCambiarEstado.Text, "Anulado");
+                        }
+                        else {
+                            if (radioEstadoEntregado.Checked)
+                            {
+                                cambio = blOrdenCliente.cambiarEstadoOrden(txtCambiarEstado.Text, "Entregado");
+                            }
+                        }
+                    }
+                }
+            }
 
+            List<BLOrdenCliente> lista = new List<BLOrdenCliente>();
+            lista = blOrdenCliente.listaOrdenCliente();
+            
+
+                grdClientes.DataSource = lista;
+                grdClientes.DataBind();
+        
         }
 
         protected void btnBuscarPorFecha_Click(object sender, EventArgs e)
@@ -141,96 +181,111 @@ namespace UI
 
         protected void btnBuscarPorEstados_Click(object sender, EventArgs e)
         {
-            //List<BLOrden> lista = new List<BLOrden>();
+            List<BLOrden> lista = new List<BLOrden>();
 
 
-            //if (checkATiempo.Checked)
-            //{
+            if (radioAtiempo.Checked)
+            {
 
-            //    if (txtBuscarPorCliente.Text.Equals(""))
-            //    {//para todos 
-                    
-            //        lista = blOrdenCliente.buscarPedidosEstado("A Tiempo");
-            //        grdClientes.DataSource = lista;
-            //        grdClientes.DataBind();
-                    
-            //    }
-            //    else {
-            //        lista = blOrdenCliente.buscarPedidosClienteEstado("A Tiempo", txtBuscarPorCliente.Text);
-            //        grdClientes.DataSource = lista;
-            //        grdClientes.DataBind();
-            //    }
+                if (txtBuscarPorCliente.Text.Equals(""))
+                {//para todos 
+                   
 
-                
-            //}
-            //else {
-            //    if (checkSobreTiempo.Checked)
-            //    {
-            //        if (txtBuscarPorCliente.Text.Equals(""))
-            //        {//para todos 
+                    lista = blOrdenCliente.buscarPedidosEstado("A Tiempo");
+                    grdClientes.DataSource = lista;
+                    grdClientes.DataBind();
 
-            //            lista = blOrdenCliente.buscarPedidosEstado("Sobre Tiempo");
-            //            grdClientes.DataSource = lista;
-            //            grdClientes.DataBind();
+                }
+                else {
+                    //uno solo
+                    lista = blOrdenCliente.buscarPedidosClienteEstado("A Tiempo", txtBuscarPorCliente.Text);
+                    grdClientes.DataSource = lista;
+                    grdClientes.DataBind();
+                }
 
 
-            //        }
-            //        else {
-            //            //para solo un cliente 
-            //        }
-            //    }
-            //    else {
-            //        if (checkDemorado.Checked)
-            //        {
-            //            if (txtBuscarPorCliente.Text.Equals(""))
-            //            {//para todos 
+            }
+            else {
+                if (radioSobreTiempo.Checked)
+                {
+                    if (txtBuscarPorCliente.Text.Equals(""))
+                    {//para todos 
 
-            //                lista = blOrdenCliente.buscarPedidosEstado("Demorado");
-            //                grdClientes.DataSource = lista;
-            //                grdClientes.DataBind();
+                        lista = blOrdenCliente.buscarPedidosEstado("Sobre Tiempo");
+                        grdClientes.DataSource = lista;
+                        grdClientes.DataBind();
 
 
-            //            }
-            //            else {
-            //                //para solo un cliente 
-            //            }
-            //        }
-            //        else {
-            //            if (checkAnulado.Checked)
-            //            {
-            //                if (txtBuscarPorCliente.Text.Equals(""))
-            //                {//para todos 
+                    }
+                    else {
+                        //para solo un cliente 
+                        lista = blOrdenCliente.buscarPedidosClienteEstado("Sobre Tiempo", txtBuscarPorCliente.Text);
+                        grdClientes.DataSource = lista;
+                        grdClientes.DataBind();
+                    }
+                }
+                else {
+                    if (radioDemorado.Checked)
+                    {
+                        if (txtBuscarPorCliente.Text.Equals(""))
+                        {//para todos 
 
-            //                    lista = blOrdenCliente.buscarPedidosEstado("Anulado");
-            //                    grdClientes.DataSource = lista;
-            //                    grdClientes.DataBind();
-
-
-            //                }
-            //                else {
-            //                    //para solo un cliente 
-            //                }
-            //            }
-            //            else {
-            //                if (txtBuscarPorCliente.Text.Equals(""))
-            //                {//para todos 
-
-            //                    lista = blOrdenCliente.buscarPedidosEstado("Entregado");
-            //                    grdClientes.DataSource = lista;
-            //                    grdClientes.DataBind();
+                            lista = blOrdenCliente.buscarPedidosEstado("Demorado");
+                            grdClientes.DataSource = lista;
+                            grdClientes.DataBind();
 
 
-            //                }
-            //                else {
-            //                    //para solo un cliente 
-            //                }
-            //            }
-            //        }
-            //    }
+                        }
+                        else {
+                            //para solo un cliente 
 
-                
-            //}
-           
+                            lista = blOrdenCliente.buscarPedidosClienteEstado("Demorado", txtBuscarPorCliente.Text);
+                            grdClientes.DataSource = lista;
+                            grdClientes.DataBind();
+                        }
+                    }
+                    else {
+                        if (radioAnulado.Checked)
+                        {
+                            if (txtBuscarPorCliente.Text.Equals(""))
+                            {//para todos 
+
+                                lista = blOrdenCliente.buscarPedidosEstado("Anulado");
+                                grdClientes.DataSource = lista;
+                                grdClientes.DataBind();
+
+
+                            }
+                            else {
+                                //para solo un cliente 
+                                lista = blOrdenCliente.buscarPedidosClienteEstado("Anulado", txtBuscarPorCliente.Text);
+                                grdClientes.DataSource = lista;
+                                grdClientes.DataBind();
+                            }
+                        }
+                        else {
+                            if (txtBuscarPorCliente.Text.Equals(""))
+                            {//para todos 
+
+                                lista = blOrdenCliente.buscarPedidosEstado("Entregado");
+                                grdClientes.DataSource = lista;
+                                grdClientes.DataBind();
+
+
+                            }
+                            else {
+                                //para solo un cliente 
+                                lista = blOrdenCliente.buscarPedidosClienteEstado("Entregado", txtBuscarPorCliente.Text);
+                                grdClientes.DataSource = lista;
+                                grdClientes.DataBind();
+                            }
+                        }
+                    }
+                }
+
+
+            }
+
         }
     }
 }

@@ -210,9 +210,67 @@ namespace DAO
             return listaOrden;
         }
 
+
+
+        public List<TOOrden> buscarPedidosClienteEstado(string estado, string cedula)
+        {
+            List<TOOrden> listaOrden = new List<TOOrden>();
+
+            string query = "select * from Orden where Estado_pedido = @estado and Cedula = @ced; ";
+
+            if (conexion.State != ConnectionState.Open)
+            {
+                conexion.Open();
+            }
+            SqlCommand comand = new SqlCommand(query, conexion);
+            comand.Parameters.AddWithValue("@estado", estado);
+            comand.Parameters.AddWithValue("@ced", cedula);
+            SqlDataReader reader = comand.ExecuteReader();
+
+
+            if (reader.HasRows)
+            {
+                while (reader.Read())
+                {
+                    listaOrden.Add(new TOOrden(Int32.Parse(reader["Codigo_Orden"].ToString()),
+                       reader["Fecha/Hora_pedido"].ToString(), reader["Cedula"].ToString(),
+                       reader["Estado_Pedido"].ToString(), Convert.ToDouble(reader["Costo_Total"].ToString())));
+                }
+            }
+
+
+            if (conexion.State != ConnectionState.Closed)
+            {
+                conexion.Close();
+            }
+
+            return listaOrden;
+        }
+
+
+        public int cambiarEstadoOrden(string codigo, string estado)
+        {
+           int filasAfectadas;
+
+            string query = "UPDATE Orden SET Estado_pedido = @estado where Codigo_Orden = @cod" ;
+
+            if (conexion.State != ConnectionState.Open)
+            {
+                conexion.Open();
+            }
+            SqlCommand comand = new SqlCommand(query, conexion);
+            comand.Parameters.AddWithValue("@estado", estado);
+            comand.Parameters.AddWithValue("@cod", codigo);
+            filasAfectadas = comand.ExecuteNonQuery();
+
+            if (conexion.State != ConnectionState.Closed)
+            {
+                conexion.Close();
+            }
+
+            return filasAfectadas;
+        }
+
         
-
-
-
     }
 }
