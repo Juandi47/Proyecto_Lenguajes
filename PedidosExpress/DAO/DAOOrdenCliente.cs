@@ -211,7 +211,6 @@ namespace DAO
         }
 
 
-
         public List<TOOrden> buscarPedidosClienteEstado(string estado, string cedula)
         {
             List<TOOrden> listaOrden = new List<TOOrden>();
@@ -246,6 +245,8 @@ namespace DAO
 
             return listaOrden;
         }
+
+        
 
 
         public int cambiarEstadoOrden(string codigo, string estado)

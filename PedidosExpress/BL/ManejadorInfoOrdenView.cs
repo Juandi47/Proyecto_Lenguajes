@@ -14,12 +14,14 @@ namespace BL
 
         public List<InfoOrdenView> ListaOrdenes() {
 
-            DAOInfoOrdenView orden = new DAOInfoOrdenView();
+            DAOInfoOrdenView dao = new DAOInfoOrdenView();
 
-            List<TOInfoOrdenView> listaTO = orden.ListaOrdenes();
+            List<TOInfoOrdenView> listaTO = dao.ListaOrdenes();
 
             foreach (TOInfoOrdenView x in listaTO) {
-                lista.Add(new InfoOrdenView(x.Cedula, x.Nombre, x.Apellido1, x.Apellido2, x.Codigo_Orden, x.Hora));
+                InfoOrdenView orden = new InfoOrdenView(x.Cedula, x.Nombre, x.Apellido1, x.Apellido2, x.Codigo_Orden, x.Hora);
+                orden.clonarDetalles(x.detalles);
+                lista.Add(orden);
             }
             return lista;
         }
@@ -30,7 +32,7 @@ namespace BL
 
             DAOInfoOrdenView orden = new DAOInfoOrdenView();
 
-            List<TOInfoOrdenView> listaTO = orden.ListaOrdenesCliente(cedula);
+            List<TOInfoOrdenView> listaTO = orden.ListaOrdenes();
 
             foreach (TOInfoOrdenView x in listaTO)
             {
