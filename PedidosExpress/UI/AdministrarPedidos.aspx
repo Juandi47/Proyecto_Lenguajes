@@ -38,17 +38,6 @@
             <asp:Label ID="Label2" runat="server" Text="Filtrar busqueda por estados de pedido"></asp:Label>
             <br />
             <br />
-            <asp:CheckBox ID="checkATiempo" runat="server" Text="Estado a tiempo" />
-&nbsp;&nbsp;&nbsp;
-            <asp:CheckBox ID="checkSobreTiempo" runat="server" Text="Sobre tiempo" />
-&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:CheckBox ID="checkDemorado" runat="server" Text="Demorado" />
-&nbsp;&nbsp;&nbsp;
-            <asp:CheckBox ID="checkAnulado" runat="server" Text="Anulado" />
-&nbsp;&nbsp;&nbsp;
-            <asp:CheckBox ID="checkEntregado" runat="server" Text="Entregado" />
-            <br />
-            <br />
             <asp:Button ID="btnBuscarPorEstados" runat="server" OnClick="btnBuscarPorEstados_Click" Text="Buscar" />
             <br />
             <br />
