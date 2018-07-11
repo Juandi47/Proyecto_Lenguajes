@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master.Master.cs" Inherits="UI.master" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div style="background-color: #D5DBDB">
+        <h1>&nbsp&nbsp&nbsp Sistema de Restaurante</h1>
+        <br />
+        <br />
+    </div>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <div style="background-color: #D5DBDB">
+                <br />
+                <h5>&nbsp&nbsp&nbsp Hecho por 4 pelaos</h5>
+                <h5>&nbsp&nbsp&nbsp UCR. Chancletas</h5>
+                <br />
+            </div>
+        </div>
+    </form>
+</body>
+</html>
