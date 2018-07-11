@@ -11,7 +11,7 @@ namespace UI
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+           
         }
 
         protected void btnAdministrarPlatos_Click(object sender, EventArgs e)
@@ -21,7 +21,7 @@ namespace UI
 
         protected void btnAdministrarUsuario_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("AdministracionUsuarios.aspx");
         }
 
         protected void btnBloquear_Click(object sender, EventArgs e)

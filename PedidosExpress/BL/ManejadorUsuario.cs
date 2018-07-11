@@ -13,20 +13,19 @@ namespace BL
         public DAOUsuario daoUsuario = new DAOUsuario();
 
 
-        public void agregarUsuario(BLUsuario usuario)
+        public void agregarUsuario(string nombre, string contrasenna, string rol)
         {
-            TOUsuario toUsuario = new TOUsuario(usuario.nombreUsuario, usuario.contrasennaUsuario, usuario.rol);
-            daoUsuario.insertarUsuario(toUsuario);
+           daoUsuario.insertarUsuario(nombre, contrasenna, rol);
         }
 
-        public void eliminarUsuario(string identificacion)
+        public void eliminarUsuario(string nombre, string contrasenna)
         {
-            daoUsuario.eliminarUsuario(identificacion);
+            daoUsuario.eliminarUsuario(nombre, contrasenna);
         }
 
-        public void modificarUsuario(string identificacion, string atributo, string nuevoValor)
+        public void modificarUsuario(string nombre, string contrasenna,string rol)
         {
-            daoUsuario.modificarUsuario(identificacion, atributo, nuevoValor);   
+            daoUsuario.modificarUsuario(nombre, contrasenna, rol);   
         }
 
         Boolean existe;

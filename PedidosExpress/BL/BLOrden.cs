@@ -9,7 +9,13 @@ namespace BL
 {
     public class BLOrden
     {
-        public BLOrden(int codigo_Orden, string fecha_Hora, string cedula, string estado_Pedido, string costo_Total)
+
+
+        public BLOrden()
+        {
+        }
+
+        public BLOrden(int codigo_Orden, DateTime fecha_Hora, string cedula, string estado_Pedido, double costo_Total)
         {
             Codigo_Orden = codigo_Orden;
             Fecha_Hora = fecha_Hora;
@@ -18,15 +24,11 @@ namespace BL
             Costo_Total = costo_Total;
         }
 
-        public BLOrden()
-        {
-        }
-
         public int Codigo_Orden { get; set; }
-        public string Fecha_Hora { get; set; }
+        public DateTime Fecha_Hora { get; set; }
         public string Cedula { get; set; }
         public string Estado_Pedido { get; set; }
-        public string Costo_Total { get; set; }
+        public double Costo_Total { get; set; }
 
 
     }

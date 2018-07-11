@@ -29,10 +29,10 @@ namespace DAO
                         x["Apellido1"].ToString(), x["Apellido2"].ToString(), x["Correo"].ToString(),
                         x["Contrasenna"].ToString(), Int32.Parse(x["Estado_cliente"].ToString()),
                         x["Codigo_postal"].ToString(), x["Nombre_usuario"].ToString())),
-                        (new TOInfoOrdenView(x["Cedula"].ToString(), x["Nombre"].ToString(), x["Apellido1"].ToString(),
-                        x["Apellido2"].ToString(), Int32.Parse(x["Codigo_Orden"].ToString()),
-                        x["Codigo_Plato"].ToString(), x["Nombre_Plato"].ToString(), 
-                        Int32.Parse(x["Cantidad"].ToString()), x["Hora"].ToString()))));
+                        (new TOOrden(Int32.Parse(x["Codigo_Orden"].ToString()),
+                        Convert.ToDateTime(x["Fecha_Hora"].ToString()), x["Cedula"].ToString(), x["Estado_Pedido"].ToString(),
+                        Convert.ToDouble(x["Costo_Total"].ToString())))));
+                //areglar lo del la fecha 
             }
 
             return lista;
