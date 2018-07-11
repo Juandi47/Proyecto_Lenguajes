@@ -115,6 +115,12 @@
     <Content Include="WSRest\WSCliente.svc" />
     <None Include="Properties\PublishProfiles\Default Settings %2810%29.pubxml" />
     <None Include="Properties\PublishProfiles\Default Settings %2811%29.pubxml" />
+    <None Include="Properties\PublishProfiles\Default Settings %2812%29.pubxml" />
+    <None Include="Properties\PublishProfiles\Default Settings %2813%29.pubxml" />
+    <None Include="Properties\PublishProfiles\Default Settings %2814%29.pubxml" />
+    <None Include="Properties\PublishProfiles\Default Settings %2815%29.pubxml" />
+    <None Include="Properties\PublishProfiles\Default Settings %2816%29.pubxml" />
+    <None Include="Properties\PublishProfiles\Default Settings %2817%29.pubxml" />
     <None Include="Properties\PublishProfiles\Default Settings %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\Default Settings %283%29.pubxml" />
     <None Include="Properties\PublishProfiles\Default Settings %284%29.pubxml" />

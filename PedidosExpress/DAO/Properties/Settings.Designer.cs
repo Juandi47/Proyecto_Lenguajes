@@ -26,8 +26,8 @@ namespace DAO.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=SQL5021.site4now.net;Initial Catalog=DB_A3D056_Juandi47;User Id=DB_A3" +
-            "D056_Juandi47_admin;Password=123Queso;")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=SQL5021.site4now.net;Initial Catalog=DB_A3D056_Juandi47; User Id=DB_A" +
+            "3D056_Juandi47_admin;Password=123Queso;")]
         public string ConnectionString {
             get {
                 return ((string)(this["ConnectionString"]));

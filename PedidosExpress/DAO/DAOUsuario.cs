@@ -134,6 +134,56 @@ namespace DAO
 
 
 
+        //public TOUsuario buscarUsuario1(string nombre, string contrasenna)
+        //{
+        //    if (conexion.State != ConnectionState.Open)
+        //    {
+        //        conexion.Open();
+        //    }
+
+        //    try
+        //    {
+        //        sentencia.Transaction = transa;
+        //        sentencia.Connection = conexion;
+
+
+        //        sentencia.CommandText = "SELECT  Nombre_usuario, Contrasenna, Rol FROM Usuario WHERE Nombre_usuario = @nom and Contrasenna = @cont;";
+        //        sentencia.Parameters.AddWithValue("@nom", nombre);
+        //        sentencia.Parameters.AddWithValue("@cont", contrasenna);
+
+        //        using (SqlDataReader reader = sentencia.ExecuteReader())
+        //        {
+        //            if (reader.HasRows)
+        //            {
+        //                while (reader.Read())
+        //                {
+        //                    toUsuario.Nombre = reader["Nombre_usuario"].ToString();
+        //                    toUsuario.Contrasenna = reader["Contrasenna"].ToString();
+        //                    toUsuario.Rol = reader["Rol"].ToString();
+        //                }
+        //            }
+        //            else {
+        //                toUsuario.Nombre = "";
+        //                toUsuario.Contrasenna = "";
+        //                toUsuario.Rol = "";
+        //            }
+
+
+        //        }
+
+        //    }
+
+
+        //    catch (Exception ex)
+        //    {
+        //        Console.WriteLine(ex.ToString());
+        //    }
+        //    conexion.Close();
+        //    return toUsuario;
+        //}
+
+
+
         public void modificarUsuario(string nombre, string contrasenna, string rol)
         {
             establecerConexion();
