@@ -5,7 +5,17 @@
     <link rel="stylesheet" href="Diseños/estilos.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+         .info123 {
+         width:5%; 
+         height:5%;
+         float:left;
+         background-color:antiquewhite;
+         resize:inherit;  
+         }
 
+    </style>
+    
 </asp:Content>
 <asp:Content ID="content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     
@@ -17,15 +27,19 @@
             <div class="col-md-2">
             </div>
             <div class="col-md-8" style="background-color: #FDEBD0">
-                <p id="grdInfoOrden1" accesskey="grdInfoOrden1" ></p>
-                <textarea id="txt" name="S1" rows="1"></textarea><br />
+                <br />
+                <asp:TextBox  CssClass="info123" ID="infoO1" runat="server" ReadOnly="True" Width="639px"></asp:TextBox>
+                <br />
                 <asp:Label ID="estadoO1" runat="server" Text="Estado: "></asp:Label>
                 <asp:Label ID="res_estadoO1" runat="server" Text="Desconocido"></asp:Label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <br />
-                <asp:Button ID="entregarBTN1" runat="server" Text="Marcar como entregada" OnClick="entregarBTN1_Click" />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Button ID="entregarBTN1" runat="server" Text="Marcar como entregada" OnClick="entregarBTN1_Click" BorderStyle="Solid" />
                 <br />
+                Detalles de orden:<br />
+                <asp:TextBox ID="detallesO1" runat="server" Height="116px" ReadOnly="True" TextMode="MultiLine" Width="865px"></asp:TextBox>
                 <br />
-                <p id="infoPlatosP1">Aqui irian los datos de los platos</p>
                 <br />
             </div>
             <div class="col-md-2">
@@ -37,7 +51,7 @@
             <div class="col-md-2">
             </div>
             <div class="col-md-8" style="background-color: #EAEDED">
-                <p id="grdInfoOrden2" ></p>
+                <p id="grdInfoOrden2" draggable="auto" style="background-color: #C0C0C0" >asdsdffffffsdfsdfsfsd</p>
                 <asp:Label ID="estadoO2" runat="server" Text="Estado: "></asp:Label>
                 <asp:Label ID="res_estadoO2" runat="server" Text="Desconocido"></asp:Label>
                 <br />

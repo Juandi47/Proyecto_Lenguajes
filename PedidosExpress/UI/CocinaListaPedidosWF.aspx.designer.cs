@@ -13,6 +13,15 @@ namespace UI {
     public partial class CocinaListaPedidosWF {
         
         /// <summary>
+        /// infoO1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox infoO1;
+        
+        /// <summary>
         /// estadoO1 control.
         /// </summary>
         /// <remarks>
@@ -38,6 +47,15 @@ namespace UI {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button entregarBTN1;
+        
+        /// <summary>
+        /// detallesO1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox detallesO1;
         
         /// <summary>
         /// estadoO2 control.

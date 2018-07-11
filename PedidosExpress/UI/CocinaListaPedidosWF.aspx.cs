@@ -16,7 +16,19 @@ namespace UI
         protected void Page_Load(object sender, EventArgs e)
         {
              ordenes = blOrdenes.ListaOrdenes();
-          
+            infoO1.Text = ordenes[0].Codigo_Orden + "-" + ordenes[0].Hora.ToLocalTime().ToShortTimeString() 
+                + ".     Cliente: " + ordenes[0].Nombre + " " + ordenes[0].Apellido1 + " " + ordenes[0].Apellido2;
+            estadoO1.Text = " " + ordenes[0].Estado;
+
+            string detalles = "";
+            for (int i = 0; i < ordenes[0].detallesOrden.Count; i++)
+            {
+                detalles += i+1 + ") " + ordenes[0].detallesOrden[i].Codigo_plato + "-"
+                    + ordenes[0].detallesOrden[i].Nombre_plato + ". Cantidad    " + ordenes[0].detallesOrden[i].Cantidad + ".\n";
+            }
+            detallesO1.Text = detalles;
+
+
         }
 
         protected void entregarBTN1_Click(object sender, EventArgs e)
@@ -25,7 +37,7 @@ namespace UI
         }
 
         private void cargarDivs() {
-
+           
             switch (ordenes.Count)
             {
                 case 1:
