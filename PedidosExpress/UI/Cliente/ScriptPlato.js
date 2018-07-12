@@ -1,8 +1,8 @@
 function MostrarPlatos(){
 	var plato = getParameterByName('codigoPlato');
-	alert(plato);
+	$("#x").val(plato);
 	var req = $.ajax({
-		url: "http://localhost:50408/WSRest/WSCliente.svc/infoPlato?codigoPlato=" + plato,
+		url: "http://localhost:50408/WSRest/WSCliente.svc/InfoPlato?codigoPlato=" + $("#x").val(),
 		timeout:10000,
 		dataType: "jsonp"
 	});

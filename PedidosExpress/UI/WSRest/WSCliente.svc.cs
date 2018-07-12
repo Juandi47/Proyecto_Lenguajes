@@ -12,6 +12,11 @@ namespace UI.WSRest
     // NOTE: In order to launch WCF Test Client for testing this service, please select WSCliente.svc or WSCliente.svc.cs at the Solution Explorer and start debugging.
     public class WSCliente : IWSCliente
     {
+        public BLPlato InfoPlato(string codigoPlato)
+        {
+            return new ManejadorPlato().buscarPlato(codigoPlato);
+        }
+
         public List<BLPlato> listaPlatos()
         {
             return new ManejadorPlato().listaPlatos();

@@ -27,5 +27,10 @@ namespace UI.WSRest
         [WebGet(RequestFormat = WebMessageFormat.Json,
             ResponseFormat = WebMessageFormat.Json)]
         List<BLPlato> listaPlatos();
+
+        [OperationContract]
+        [WebGet(RequestFormat = WebMessageFormat.Json,
+            ResponseFormat = WebMessageFormat.Json)]
+        BLPlato InfoPlato(String codigoPlato);
     }    
 }

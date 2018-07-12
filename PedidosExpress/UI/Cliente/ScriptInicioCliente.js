@@ -16,6 +16,6 @@ function Loguearse(){
 
 function ProcesarLogueo(datos){
 	if (datos) {
-		window.location.href = "PrincipalCliente.html?usuario=" + $("#nombUser").val();
+		window.location.href = "PrincipalCliente.html";
 	}
 }
