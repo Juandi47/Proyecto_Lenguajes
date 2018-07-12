@@ -13,7 +13,7 @@
         <div class="col-md-4">
             <div class="form">
                 <br />
-                <div class="form-group">
+                <div class="form-group"> 
                     <label for="detallesO1">Ingrese su nombre de usuario:</label>
                     <asp:TextBox CssClass="form-control" ID="txtNombreUsuario" runat="server" TextMode="SingleLine"></asp:TextBox>
                 </div>
