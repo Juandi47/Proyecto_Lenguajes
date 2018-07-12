@@ -22,19 +22,19 @@ namespace UI
         protected void btnBuscar_Click(object sender, EventArgs e)
         {
             
-            BLPlato plato = manejador.buscarPlato(txtPlato.Text);
+            BLPlato plato = manejador.buscarPlato(txtCodigoBus.Value);
             if (plato.codigoPlato.Equals(""))
             {
                 Response.Redirect("AdministracionPlatos.aspx");
             }
             else {
-                LabelPlato.Text = plato.informacion();
+                LabelPlatoBusqueda.InnerText = plato.informacion();
             }
         }
 
         protected void btnModificar_Click(object sender, EventArgs e)
         {
-            if (manejador.modificarPlato(txtCodigo.Text, txtNombre.Text, txtDescripcion.Text, txtPrecio.Text, txtEstado.Text, txtImagen.Text) > 0)
+            if (manejador.modificarPlato(txtCodigoMod.Value, txtNombreMod.Value, txtDescripcionMod.Value, txtPrecioMod.Value, txtEstadoMod.Value, txtImagenMod.Value) > 0)
             {
                 string modificado = "Modificado";
             }
@@ -45,7 +45,7 @@ namespace UI
 
         protected void btnAgregar_Click(object sender, EventArgs e)
         {
-            if (manejador.agregarPlato(txtCodAgregar.Text, txtNomAgregar.Text, txtDesAgregar.Text, txtPreAgregar.Text, txtEstAgregar.Text, txtImaAgregar.Text) > 0)
+            if (manejador.agregarPlato(txtCodigoAdd.Value, txtNombreAdd.Value, txtDescripcionAdd.Value, txtPrecioAdd.Value, txtEstadoAdd.Value, txtImagenAdd.Value) > 0)
             {
                 string agregado = "Agregado";
             }
@@ -56,7 +56,7 @@ namespace UI
 
         protected void btnEliminar_Click(object sender, EventArgs e)
         {
-            if (manejador.eliminarPlato(txtEliminar.Text) > 0)
+            if (manejador.eliminarPlato(txtCodigoEli.Value) > 0)
             {
             }
             else {

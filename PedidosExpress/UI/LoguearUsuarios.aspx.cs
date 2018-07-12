@@ -18,8 +18,8 @@ namespace UI
         protected void btnRegistrarUsuario_Click(object sender, EventArgs e)
         {
             ManejadorUsuario manejador = new ManejadorUsuario();
-            string texto = txtPassword.Text;
-            BLUsuario usuariobl = manejador.consultarUsuario(txtNombreAdmin.Text, texto);
+            string texto = txtContrasenna.Value;
+            BLUsuario usuariobl = manejador.consultarUsuario(txtNombreUsuario.Text, texto);
             if (usuariobl.nombreUsuario.Equals("") && usuariobl.contrasennaUsuario.Equals(""))
             {
                 Response.Redirect("LoguearUsuarios.aspx");
