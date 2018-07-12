@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+	<title>Cliente</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous">		
+	</script>
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="cssPrincipalCliente.css" rel="stylesheet" />
+<script type="text/javascript" src="ScriptPrincipalCliente.js"></script>
+
+
+</head>
+<body onload="MostrarPlatos()">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="dropdown">
+				<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+					<span class="caret"></span></button>
+					<ul class="dropdown-menu">
+						<li><a href="#">HTML</a></li>
+						<li><a href="#">CSS</a></li>
+						<li><a href="#">JavaScript</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-3"></div>
+			<div class="col-md-8">
+				<form>
+					<h3 style="font-weight: bold">Platos que ofrecemos:</h3>
+					<ul id="ListaPlatos"></ul>
+				</form>				
+			</div>
+			<div class="col-md-3"></div>
+		</div>
+	</div>
+</body>
+</html>  

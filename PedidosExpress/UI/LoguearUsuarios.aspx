@@ -9,7 +9,7 @@
     <br />
     <asp:Label ID="Label2" runat="server" Text="Ingrese su contraseña"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <asp:TextBox ID="txtPassword" runat="server" Width="135px"></asp:TextBox>
+    <asp:TextBox ID="txtPassword" runat="server" Width="135px" TextMode="Password"></asp:TextBox>
     <br />
     <br />
 &nbsp;&nbsp;

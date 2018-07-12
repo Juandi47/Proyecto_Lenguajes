@@ -12,13 +12,14 @@ namespace UI
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         protected void btnRegistrarUsuario_Click(object sender, EventArgs e)
         {
             ManejadorUsuario manejador = new ManejadorUsuario();
-            BLUsuario usuariobl = manejador.consultarUsuario(txtNombreAdmin.Text, txtPassword.Text);
+            string texto = txtPassword.Text;
+            BLUsuario usuariobl = manejador.consultarUsuario(txtNombreAdmin.Text, texto);
             if (usuariobl.nombreUsuario.Equals("") && usuariobl.contrasennaUsuario.Equals(""))
             {
                 Response.Redirect("LoguearUsuarios.aspx");

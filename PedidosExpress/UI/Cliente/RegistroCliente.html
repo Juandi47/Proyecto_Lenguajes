@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous">
+</script>
+<link href="cssInicioCliente.css" rel="stylesheet" />
+<script src="ScriptRegistroCliente.js"></script>
+
+<title>Inicio</title>
+</head>
+<body>
+    <div class="login-page" >
+        <div class="form">
+            <form class="login-form">
+                <div class="container">
+                    <div class="row">
+                            <div class="col-xs-12">
+                                <h3>Registro Cliente</h3>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="text" placeholder="Cedula" id="cedula" />
+                            <input type="text" placeholder="Nombre" id="nombre"/>
+                            <input type="text" placeholder="Apellido 1" id="apellido1"/>
+                            <input type="text" placeholder="Apellido 2" id="apellido2"/>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" placeholder="Codigo postal" id="codPostal"/>                
+                            <input type="text" placeholder="Provincia" id="provincia"/>
+                            <input type="text" placeholder="Cantón" id="canton"/>
+                            <input type="text" placeholder="Distrito" id="distrito"/></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <input type="text" placeholder="Correo" id="correo"/>
+                                <input type="text" placeholder="Nombre Usuario" id="nombreUsuario"/>
+                                <input type="password" placeholder="Contraseña" id="contrasenna"/>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="row">
+                        <div class="col-xs-12">
+                                <button onclick="Registrarse()">Registrar</button>
+                        </div>
+                    </div>              
+                <p class="message">Already registered? <a href="InicioCliente.html">Sign In</a></p>
+                </form>
+            </div>
+        </div>    
+    </body>
+    </html>
