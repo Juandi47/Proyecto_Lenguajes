@@ -32,3 +32,37 @@ C:\Users\tanni\Desktop\Lenguajes\Proyecto Programado\PedidosExpress\DAO\bin\Rele
 C:\Users\tanni\Desktop\Lenguajes\Proyecto Programado\PedidosExpress\DAO\bin\Release\roslyn\vbc.exe
 C:\Users\tanni\Desktop\Lenguajes\Proyecto Programado\PedidosExpress\DAO\bin\Release\roslyn\VBCSCompiler.exe
 C:\Users\tanni\Desktop\Lenguajes\Proyecto Programado\PedidosExpress\DAO\bin\Release\roslyn\VBCSCompiler.exe.config
+C:\Users\juand\Source\Repos\Proyecto_Lenguajes\PedidosExpress\DAO\bin\Release\bin\roslyn\csc.exe
+C:\Users\juand\Source\Repos\Proyecto_Lenguajes\PedidosExpress\DAO\bin\Release\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\juand\Source\Repos\Proyecto_Lenguajes\PedidosExpress\DAO\bin\Release\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\juand\Source\Repos\Proyecto_Lenguajes\PedidosExpress\DAO\bin\Release\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\juand\Source\Repos\Proyecto_Lenguajes\PedidosExpress\DAO\bin\Release\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\juand\Source\Repos\Proyecto_Lenguajes\PedidosExpress\DAO\bin\Release\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\juand\Source\Repos\Proyecto_Lenguajes\PedidosExpress\DAO\bin\Release\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\juand\Source\Repos\Proyecto_Lenguajes\PedidosExpress\DAO\bin\Release\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\juand\Source\Repos\Proyecto_Lenguajes\PedidosExpress\DAO\bin\Release\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\juand\Source\Repos\Proyecto_Lenguajes\PedidosExpress\DAO\bin\Release\bin\roslyn\vbc.exe
+C:\Users\juand\Source\Repos\Proyecto_Lenguajes\PedidosExpress\DAO\bin\Release\bin\roslyn\VBCSCompiler.exe
+C:\Users\juand\Source\Repos\Proyecto_Lenguajes\PedidosExpress\DAO\bin\Release\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\juand\Source\Repos\Proyecto_Lenguajes\PedidosExpress\DAO\bin\Release\DAO.dll.config
+C:\Users\juand\Source\Repos\Proyecto_Lenguajes\PedidosExpress\DAO\bin\Release\DAO.dll
+C:\Users\juand\Source\Repos\Proyecto_Lenguajes\PedidosExpress\DAO\bin\Release\DAO.pdb
+C:\Users\juand\Source\Repos\Proyecto_Lenguajes\PedidosExpress\DAO\bin\Release\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\juand\Source\Repos\Proyecto_Lenguajes\PedidosExpress\DAO\bin\Release\TO.dll
+C:\Users\juand\Source\Repos\Proyecto_Lenguajes\PedidosExpress\DAO\bin\Release\TO.pdb
+C:\Users\juand\Source\Repos\Proyecto_Lenguajes\PedidosExpress\DAO\bin\Release\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\juand\Source\Repos\Proyecto_Lenguajes\PedidosExpress\DAO\obj\Release\DAO.csprojResolveAssemblyReference.cache
+C:\Users\juand\Source\Repos\Proyecto_Lenguajes\PedidosExpress\DAO\obj\Release\DAO.dll
+C:\Users\juand\Source\Repos\Proyecto_Lenguajes\PedidosExpress\DAO\obj\Release\DAO.pdb
+C:\Users\juand\Source\Repos\Proyecto_Lenguajes\PedidosExpress\DAO\bin\Release\roslyn\csc.exe
+C:\Users\juand\Source\Repos\Proyecto_Lenguajes\PedidosExpress\DAO\bin\Release\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\juand\Source\Repos\Proyecto_Lenguajes\PedidosExpress\DAO\bin\Release\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\juand\Source\Repos\Proyecto_Lenguajes\PedidosExpress\DAO\bin\Release\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\juand\Source\Repos\Proyecto_Lenguajes\PedidosExpress\DAO\bin\Release\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\juand\Source\Repos\Proyecto_Lenguajes\PedidosExpress\DAO\bin\Release\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\juand\Source\Repos\Proyecto_Lenguajes\PedidosExpress\DAO\bin\Release\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\juand\Source\Repos\Proyecto_Lenguajes\PedidosExpress\DAO\bin\Release\roslyn\System.Collections.Immutable.dll
+C:\Users\juand\Source\Repos\Proyecto_Lenguajes\PedidosExpress\DAO\bin\Release\roslyn\System.Reflection.Metadata.dll
+C:\Users\juand\Source\Repos\Proyecto_Lenguajes\PedidosExpress\DAO\bin\Release\roslyn\vbc.exe
+C:\Users\juand\Source\Repos\Proyecto_Lenguajes\PedidosExpress\DAO\bin\Release\roslyn\VBCSCompiler.exe
+C:\Users\juand\Source\Repos\Proyecto_Lenguajes\PedidosExpress\DAO\bin\Release\roslyn\VBCSCompiler.exe.config

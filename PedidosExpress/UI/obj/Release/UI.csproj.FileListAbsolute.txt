@@ -49,3 +49,6 @@ C:\Users\tanni\Desktop\Lenguajes\Proyecto Programado\PedidosExpress\UI\bin\rosly
 C:\Users\tanni\Desktop\Lenguajes\Proyecto Programado\PedidosExpress\UI\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\tanni\Desktop\Lenguajes\Proyecto Programado\PedidosExpress\UI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\tanni\Desktop\Lenguajes\Proyecto Programado\PedidosExpress\UI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\juand\Source\Repos\Proyecto_Lenguajes\PedidosExpress\UI\obj\Release\UI.csprojResolveAssemblyReference.cache
+C:\Users\juand\Source\Repos\Proyecto_Lenguajes\PedidosExpress\UI\obj\Release\UI.dll
+C:\Users\juand\Source\Repos\Proyecto_Lenguajes\PedidosExpress\UI\obj\Release\UI.pdb

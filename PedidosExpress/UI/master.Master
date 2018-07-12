@@ -7,27 +7,44 @@
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
         <link href="Diseños/estilo.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
-    <div style="background-color: #D5DBDB">
-        <h1>&nbsp&nbsp&nbsp Sistema de Restaurante</h1>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:ImageButton ID="HomeButton" runat="server" Height="37px" ImageUrl="~/Diseños/61972.png" OnClick="HomeButton_Click" style="margin-top: 0px" Width="43px" />
-&nbsp;&nbsp;&nbsp;
-        <asp:ImageButton ID="signout" runat="server" Height="37px" ImageUrl="~/Diseños/stock-vector-sign-out-button-512159662.jpg" OnClick="signout_Click" Width="89px" />
-        <br />
-        <br />
-    </div>
-        <div>
+    <div class="container" style="background-color: #D5DBDB">
+
+      <div class="row">
+          <div class="col-md-4">
+              <h1>&nbsp Sistema de Restaurante</h1>
+          </div>
+          <div class="col-md-4">
+              
+                  <asp:ImageButton ID="HomeButton" runat="server" Height="37px" ImageUrl="~/Diseños/61972.png" OnClick="HomeButton_Click" CssClass="page-header" />
+                  <asp:ImageButton ID="signout" runat="server" Height="35px" ImageUrl="~/Diseños/stock-vector-sign-out-button-512159662.png" OnClick="signout_Click" Width="48px" />
+
+             
+              <br />
+              <br />
+          </div>
+      </div>
+    
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+
+
+       <%-- <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
 
-            <div style="background-color: #D5DBDB" id="divFooter" class="footer">
+            <div style="";  id="divFooter" class="footer">
                 <br />
-                <div class="REDES" style="width: 195px; height: 86px; top: 9px; left: -321px; margin-left: 1218px">
-&nbsp;&nbsp;
+                <div class="REDES">
+
                     <asp:ImageButton ID="FacebookID" runat="server" Height="40px" ImageUrl="~/Diseños/facebook-770688_960_720.png" OnClick="FacebookID_Click" Width="32px" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:ImageButton ID="TwitterID" runat="server" Height="38px" ImageUrl="~/Diseños/download.jpg" OnClick="TwitterID_Click" Width="33px" />
@@ -40,10 +57,16 @@
                 </p>
                 <h5 style="height: 37px"><span style="border: 0px; font-family: Whitney, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 15px; font-style: normal; font-weight: normal; margin: 0px; padding: 0px; vertical-align: baseline; outline: 0px; color: rgba(255, 255, 255, 0.701961); font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: pre-wrap; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(54, 57, 63);">©</span><span style="color: rgba(255, 255, 255, 0.701961); font-family: Whitney, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: pre-wrap; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(54, 57, 63); display: inline !important; float: none;"> 
                     2018 Todos los derechos reservados.</span></h5>
-                <p style="height: 37px">&nbsp;</p>
                 <br />
             </div>
+        </div>--%>
+    <%--</form>--%>
+
+        <div class="panel-footer">
+            <h3>Universidad de Costa Rica. SO</h3>
         </div>
-    </form>
+
+        </div>
+        </form>
 </body>
 </html>

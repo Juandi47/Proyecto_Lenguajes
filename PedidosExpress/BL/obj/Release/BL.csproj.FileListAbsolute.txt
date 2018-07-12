@@ -33,3 +33,6 @@ C:\Users\tanni\Desktop\Lenguajes\Proyecto Programado\PedidosExpress\BL\bin\Relea
 C:\Users\tanni\Desktop\Lenguajes\Proyecto Programado\PedidosExpress\BL\bin\Release\roslyn\vbc.exe
 C:\Users\tanni\Desktop\Lenguajes\Proyecto Programado\PedidosExpress\BL\bin\Release\roslyn\VBCSCompiler.exe
 C:\Users\tanni\Desktop\Lenguajes\Proyecto Programado\PedidosExpress\BL\bin\Release\roslyn\VBCSCompiler.exe.config
+C:\Users\juand\Source\Repos\Proyecto_Lenguajes\PedidosExpress\BL\obj\Release\BL.csprojResolveAssemblyReference.cache
+C:\Users\juand\Source\Repos\Proyecto_Lenguajes\PedidosExpress\BL\obj\Release\BL.dll
+C:\Users\juand\Source\Repos\Proyecto_Lenguajes\PedidosExpress\BL\obj\Release\BL.pdb

@@ -39,12 +39,13 @@
                     <div class="form-group" >
                         <label for="infoOrden1">Info orden:</label>
                         <input runat="server" type="text" class="form-control" id="infoOrden1" readonly="True"/>
-                         <label runat="server" id="estado1"></label>
+                        <asp:label runat="server" id="e1"></asp:label>
                     </div>
                     <div class="form-group">
                         <label for="detallesO1">Detalles:</label>
                         <asp:TextBox CssClass="form-control" ID="detallesO1" runat="server" Height="116px" ReadOnly="True" TextMode="MultiLine" ></asp:TextBox>
                     </div>
+                <asp:Button ID="Button0" runat="server" Text="Marcar como entregada" OnClick="Button0_Click" />
             </div>  
         </div>
 
@@ -55,12 +56,14 @@
                     <div class="form-group">
                         <label for="infoOrden2">Info orden:</label>
                         <input runat="server" type="text" class="form-control" id="infoOrden2" readonly="True"/>
-                        <label runat="server" id="estado2"></label>
+                         <asp:label runat="server" id="e2"></asp:label>
                     </div>
                     <div class="form-group">
                         <label for="detallesO2">Detalles:</label>
                         <asp:TextBox CssClass="form-control" ID="detallesO2" runat="server" Height="116px" ReadOnly="True" TextMode="MultiLine" ></asp:TextBox>
                     </div>
+                <asp:Button ID="Button1" runat="server" Text="Marcar como entregada" OnClick="Button1_Click" />
+                
             </div>  
         </div>
 
@@ -71,12 +74,13 @@
                     <div class="form-group">
                         <label for="infoOrden3">Info orden:</label>
                         <input runat="server" type="text" class="form-control" id="infoOrden3" readonly="True"/>
-                        <label runat="server" id="estado3"></label>
+                         <asp:label runat="server" id="e3"></asp:label>
                     </div>
                     <div class="form-group">
                         <label for="detallesO3">Detalles:</label>
                         <asp:TextBox CssClass="form-control" ID="detallesO3" runat="server" Height="116px" ReadOnly="True" TextMode="MultiLine" ></asp:TextBox>
                     </div>
+                 <asp:Button ID="Button2" runat="server" Text="Marcar como entregada" OnClick="Button2_Click" />
             </div>  
         </div>
 
@@ -87,12 +91,13 @@
                     <div class="form-group">
                         <label for="infoOrden4">Info orden:</label>
                         <input runat="server" type="text" class="form-control" id="infoOrden4" readonly="True"/>
-                          <label runat="server" id="estado4"></label>
+                       <asp:label runat="server" id="e4"></asp:label>
                     </div>
                     <div class="form-group">
                         <label for="detallesO4">Detalles:</label>
                         <asp:TextBox CssClass="form-control" ID="detallesO4" runat="server" Height="116px" ReadOnly="True" TextMode="MultiLine" ></asp:TextBox>
                     </div>
+                <asp:Button ID="Button3" runat="server" Text="Marcar como entregada" OnClick="Button3_Click" />
             </div>  
         </div>
 
@@ -103,12 +108,13 @@
                     <div class="form-group">
                         <label for="infoOrden5">Info orden:</label>
                         <input runat="server" type="text" class="form-control" id="infoOrden5" readonly="True"/>
-                        <label runat="server" id="estado5"></label>
+                        <asp:label runat="server" id="e5"></asp:label>
                     </div>
                     <div class="form-group">
                         <label for="detallesO5">Detalles:</label>
                         <asp:TextBox CssClass="form-control" ID="detallesO5" runat="server" Height="116px" ReadOnly="True" TextMode="MultiLine" ></asp:TextBox>
                     </div>
+                 <asp:Button ID="Button4" runat="server" Text="Marcar como entregada" OnClick="Button4_Click" />
             </div>  
         </div>
 

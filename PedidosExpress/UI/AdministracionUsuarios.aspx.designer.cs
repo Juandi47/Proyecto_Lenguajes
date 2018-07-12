@@ -13,174 +13,138 @@ namespace UI {
     public partial class AdministracionUsuarios1 {
         
         /// <summary>
-        /// Label2 control.
+        /// txtNombreMod control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtNombreMod;
         
         /// <summary>
-        /// nombreUsuarioTXTagregar control.
+        /// txtCedulaMod control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox nombreUsuarioTXTagregar;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtCedulaMod;
         
         /// <summary>
-        /// contrasenaTXTagregar control.
+        /// lista1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox contrasenaTXTagregar;
+        protected global::System.Web.UI.WebControls.DropDownList lista1;
         
         /// <summary>
-        /// rolesDDLagregar control.
+        /// btnModificar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList rolesDDLagregar;
+        protected global::System.Web.UI.WebControls.Button btnModificar;
         
         /// <summary>
-        /// aceptarBTNagregar control.
+        /// txtNombreAdd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button aceptarBTNagregar;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtNombreAdd;
         
         /// <summary>
-        /// Label17 control.
+        /// txtCedulaAdd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label17;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtCedulaAdd;
         
         /// <summary>
-        /// nombreUsuarioTXTmodificar control.
+        /// lista2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox nombreUsuarioTXTmodificar;
+        protected global::System.Web.UI.WebControls.DropDownList lista2;
         
         /// <summary>
-        /// contrasenaTXTmodificar control.
+        /// btnAgregar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox contrasenaTXTmodificar;
+        protected global::System.Web.UI.WebControls.Button btnAgregar;
         
         /// <summary>
-        /// rolesDDLmodificar control.
+        /// txtCedulaBus control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList rolesDDLmodificar;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtCedulaBus;
         
         /// <summary>
-        /// aceptarBTNmodificar control.
+        /// txtNombreBus control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button aceptarBTNmodificar;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtNombreBus;
         
         /// <summary>
-        /// Label18 control.
+        /// btnBuscar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label18;
+        protected global::System.Web.UI.WebControls.Button btnBuscar;
         
         /// <summary>
-        /// nombreUsuarioTXTconsultar control.
+        /// LabelPlatoBusqueda control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox nombreUsuarioTXTconsultar;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl LabelPlatoBusqueda;
         
         /// <summary>
-        /// contrasenaTXTconsultar control.
+        /// txtCedulaEli control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox contrasenaTXTconsultar;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtCedulaEli;
         
         /// <summary>
-        /// datosTXTconsultar control.
+        /// txtNombreEli control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox datosTXTconsultar;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtNombreEli;
         
         /// <summary>
-        /// aceptarBTNconsultar control.
+        /// btnEliminar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button aceptarBTNconsultar;
-        
-        /// <summary>
-        /// Label19 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label19;
-        
-        /// <summary>
-        /// nombreUsuarioTXTeliminar control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox nombreUsuarioTXTeliminar;
-        
-        /// <summary>
-        /// contrasenaTXTeliminar control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox contrasenaTXTeliminar;
-        
-        /// <summary>
-        /// aceptarBTNeliminar control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button aceptarBTNeliminar;
+        protected global::System.Web.UI.WebControls.Button btnEliminar;
     }
 }
