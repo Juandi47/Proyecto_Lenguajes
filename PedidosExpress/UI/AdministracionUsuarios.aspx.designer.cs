@@ -13,15 +13,6 @@ namespace UI {
     public partial class AdministracionUsuarios1 {
         
         /// <summary>
-        /// txtCodigoMod control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtCodigoMod;
-        
-        /// <summary>
         /// txtNombreMod control.
         /// </summary>
         /// <remarks>
@@ -31,40 +22,22 @@ namespace UI {
         protected global::System.Web.UI.HtmlControls.HtmlInputText txtNombreMod;
         
         /// <summary>
-        /// txtDescripcionMod control.
+        /// txtCedulaMod control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtDescripcionMod;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtCedulaMod;
         
         /// <summary>
-        /// txtPrecioMod control.
+        /// lista1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtPrecioMod;
-        
-        /// <summary>
-        /// txtEstadoMod control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtEstadoMod;
-        
-        /// <summary>
-        /// txtImagenMod control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtImagenMod;
+        protected global::System.Web.UI.WebControls.DropDownList lista1;
         
         /// <summary>
         /// btnModificar control.
@@ -76,15 +49,6 @@ namespace UI {
         protected global::System.Web.UI.WebControls.Button btnModificar;
         
         /// <summary>
-        /// txtCodigoAdd control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtCodigoAdd;
-        
-        /// <summary>
         /// txtNombreAdd control.
         /// </summary>
         /// <remarks>
@@ -94,40 +58,22 @@ namespace UI {
         protected global::System.Web.UI.HtmlControls.HtmlInputText txtNombreAdd;
         
         /// <summary>
-        /// txtDescripcionAdd control.
+        /// txtCedulaAdd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtDescripcionAdd;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtCedulaAdd;
         
         /// <summary>
-        /// txtPrecioAdd control.
+        /// lista2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtPrecioAdd;
-        
-        /// <summary>
-        /// txtEstadoAdd control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtEstadoAdd;
-        
-        /// <summary>
-        /// txtImagenAdd control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtImagenAdd;
+        protected global::System.Web.UI.WebControls.DropDownList lista2;
         
         /// <summary>
         /// btnAgregar control.
@@ -139,13 +85,22 @@ namespace UI {
         protected global::System.Web.UI.WebControls.Button btnAgregar;
         
         /// <summary>
-        /// txtCodigoBus control.
+        /// txtCedulaBus control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtCodigoBus;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtCedulaBus;
+        
+        /// <summary>
+        /// txtNombreBus control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtNombreBus;
         
         /// <summary>
         /// btnBuscar control.
@@ -166,13 +121,22 @@ namespace UI {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl LabelPlatoBusqueda;
         
         /// <summary>
-        /// txtCodigoEli control.
+        /// txtCedulaEli control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtCodigoEli;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtCedulaEli;
+        
+        /// <summary>
+        /// txtNombreEli control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtNombreEli;
         
         /// <summary>
         /// btnEliminar control.

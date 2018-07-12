@@ -96,7 +96,7 @@ namespace DAO
                 sentencia.Connection = conexion;
 
 
-                sentencia.CommandText = "SELECT  Nombre_usuario, Contrasenna, Rol FROM Usuario WHERE Nombre_usuario = @nom and Contrasenna = @cont;";
+                sentencia.CommandText = "SELECT  * FROM Usuario WHERE Nombre_usuario = @nom and Contrasenna = @cont;";
                 sentencia.Parameters.AddWithValue("@nom", nombre);
                 sentencia.Parameters.AddWithValue("@cont", contrasenna);
 
