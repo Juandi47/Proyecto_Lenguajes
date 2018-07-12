@@ -33,3 +33,26 @@ C:\Users\tanni\Desktop\Lenguajes\Proyecto Programado\PedidosExpress\BL\bin\Debug
 C:\Users\tanni\Desktop\Lenguajes\Proyecto Programado\PedidosExpress\BL\bin\Debug\roslyn\vbc.exe
 C:\Users\tanni\Desktop\Lenguajes\Proyecto Programado\PedidosExpress\BL\bin\Debug\roslyn\VBCSCompiler.exe
 C:\Users\tanni\Desktop\Lenguajes\Proyecto Programado\PedidosExpress\BL\bin\Debug\roslyn\VBCSCompiler.exe.config
+C:\Users\AnthonyCV\Source\Repos\PoyectoLenguajes\PedidosExpress\BL\bin\Debug\bin\roslyn\csc.exe
+C:\Users\AnthonyCV\Source\Repos\PoyectoLenguajes\PedidosExpress\BL\bin\Debug\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\AnthonyCV\Source\Repos\PoyectoLenguajes\PedidosExpress\BL\bin\Debug\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\AnthonyCV\Source\Repos\PoyectoLenguajes\PedidosExpress\BL\bin\Debug\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\AnthonyCV\Source\Repos\PoyectoLenguajes\PedidosExpress\BL\bin\Debug\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\AnthonyCV\Source\Repos\PoyectoLenguajes\PedidosExpress\BL\bin\Debug\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\AnthonyCV\Source\Repos\PoyectoLenguajes\PedidosExpress\BL\bin\Debug\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\AnthonyCV\Source\Repos\PoyectoLenguajes\PedidosExpress\BL\bin\Debug\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\AnthonyCV\Source\Repos\PoyectoLenguajes\PedidosExpress\BL\bin\Debug\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\AnthonyCV\Source\Repos\PoyectoLenguajes\PedidosExpress\BL\bin\Debug\bin\roslyn\vbc.exe
+C:\Users\AnthonyCV\Source\Repos\PoyectoLenguajes\PedidosExpress\BL\bin\Debug\bin\roslyn\VBCSCompiler.exe
+C:\Users\AnthonyCV\Source\Repos\PoyectoLenguajes\PedidosExpress\BL\bin\Debug\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\AnthonyCV\Source\Repos\PoyectoLenguajes\PedidosExpress\BL\bin\Debug\BL.dll
+C:\Users\AnthonyCV\Source\Repos\PoyectoLenguajes\PedidosExpress\BL\bin\Debug\BL.pdb
+C:\Users\AnthonyCV\Source\Repos\PoyectoLenguajes\PedidosExpress\BL\bin\Debug\DAO.dll
+C:\Users\AnthonyCV\Source\Repos\PoyectoLenguajes\PedidosExpress\BL\bin\Debug\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\AnthonyCV\Source\Repos\PoyectoLenguajes\PedidosExpress\BL\bin\Debug\TO.dll
+C:\Users\AnthonyCV\Source\Repos\PoyectoLenguajes\PedidosExpress\BL\bin\Debug\DAO.pdb
+C:\Users\AnthonyCV\Source\Repos\PoyectoLenguajes\PedidosExpress\BL\bin\Debug\TO.pdb
+C:\Users\AnthonyCV\Source\Repos\PoyectoLenguajes\PedidosExpress\BL\bin\Debug\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\AnthonyCV\Source\Repos\PoyectoLenguajes\PedidosExpress\BL\obj\Debug\BL.csprojResolveAssemblyReference.cache
+C:\Users\AnthonyCV\Source\Repos\PoyectoLenguajes\PedidosExpress\BL\obj\Debug\BL.dll
+C:\Users\AnthonyCV\Source\Repos\PoyectoLenguajes\PedidosExpress\BL\obj\Debug\BL.pdb
