@@ -121,7 +121,7 @@
     <Content Include="Diseños\estilos.css" />
     <Content Include="Diseños\facebook-770688_960_720.png" />
     <Content Include="Diseños\Gray-Wallpaper-60.jpg" />
-    <Content Include="Diseños\stock-vector-sign-out-button-512159662.jpg" />
+    <Content Include="Diseños\stock-vector-sign-out-button-512159662.png" />
     <Content Include="Diseños\Whatsapp-icon-1.png" />
     <Content Include="LoguearUsuarios.aspx" />
     <Content Include="packages.config" />
@@ -142,6 +142,8 @@
     <None Include="Properties\PublishProfiles\Default Settings %2819%29.pubxml" />
     <None Include="Properties\PublishProfiles\Default Settings %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\Default Settings %2820%29.pubxml" />
+    <None Include="Properties\PublishProfiles\Default Settings %2821%29.pubxml" />
+    <None Include="Properties\PublishProfiles\Default Settings %2822%29.pubxml" />
     <None Include="Properties\PublishProfiles\Default Settings %283%29.pubxml" />
     <None Include="Properties\PublishProfiles\Default Settings %284%29.pubxml" />
     <None Include="Properties\PublishProfiles\Default Settings %285%29.pubxml" />

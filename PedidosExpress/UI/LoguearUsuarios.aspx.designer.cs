@@ -13,48 +13,30 @@ namespace UI {
     public partial class LoguearUsuarios {
         
         /// <summary>
-        /// Label1 control.
+        /// txtNombreUser control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtNombreUser;
         
         /// <summary>
-        /// txtNombreUsuario control.
+        /// txtContrasennaUser control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtNombreUsuario;
+        protected global::System.Web.UI.HtmlControls.HtmlInputPassword txtContrasennaUser;
         
         /// <summary>
-        /// Label2 control.
+        /// btnLoguear control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
-        
-        /// <summary>
-        /// txtContrasenna control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtContrasenna;
-        
-        /// <summary>
-        /// btnRegistrarUsuario control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnRegistrarUsuario;
+        protected global::System.Web.UI.WebControls.Button btnLoguear;
     }
 }
