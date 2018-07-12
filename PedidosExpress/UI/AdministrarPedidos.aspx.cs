@@ -173,8 +173,23 @@ namespace UI
         protected void calendarioFiltro_SelectionChanged(object sender, EventArgs e)
         {
             string fecha = calendarioFiltro.SelectedDate.Year.ToString();
-            fecha += "/0" + calendarioFiltro.SelectedDate.Month.ToString();
-            fecha += "/" + calendarioFiltro.SelectedDate.Day.ToString();
+            string mes = calendarioFiltro.SelectedDate.Month.ToString();
+            if (Int32.Parse(mes) < 10)
+            {
+                fecha += "/0" + mes;
+            }
+            else {
+                fecha += "/" + mes;
+            }
+
+            string dia = calendarioFiltro.SelectedDate.Day.ToString();
+            if (Int32.Parse(dia) < 10)
+            {
+                fecha += "/0" + dia;
+            }
+            else {
+                fecha += "/" +  dia;
+            }
 
             coleccionFechas.Add(fecha);
             

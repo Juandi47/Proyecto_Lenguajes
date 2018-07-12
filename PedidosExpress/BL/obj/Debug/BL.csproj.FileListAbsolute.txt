@@ -21,18 +21,6 @@ C:\Users\tanni\Desktop\Lenguajes\Proyecto Programado\PedidosExpress\BL\bin\Debug
 C:\Users\tanni\Desktop\Lenguajes\Proyecto Programado\PedidosExpress\BL\bin\Debug\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\tanni\Desktop\Lenguajes\Proyecto Programado\PedidosExpress\BL\bin\Debug\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\tanni\Desktop\Lenguajes\Proyecto Programado\PedidosExpress\BL\bin\Debug\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\tanni\Desktop\Lenguajes\Proyecto Programado\PedidosExpress\BL\bin\Debug\roslyn\csc.exe
-C:\Users\tanni\Desktop\Lenguajes\Proyecto Programado\PedidosExpress\BL\bin\Debug\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\Users\tanni\Desktop\Lenguajes\Proyecto Programado\PedidosExpress\BL\bin\Debug\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\tanni\Desktop\Lenguajes\Proyecto Programado\PedidosExpress\BL\bin\Debug\roslyn\Microsoft.CodeAnalysis.dll
-C:\Users\tanni\Desktop\Lenguajes\Proyecto Programado\PedidosExpress\BL\bin\Debug\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-C:\Users\tanni\Desktop\Lenguajes\Proyecto Programado\PedidosExpress\BL\bin\Debug\roslyn\Microsoft.CSharp.Core.targets
-C:\Users\tanni\Desktop\Lenguajes\Proyecto Programado\PedidosExpress\BL\bin\Debug\roslyn\Microsoft.VisualBasic.Core.targets
-C:\Users\tanni\Desktop\Lenguajes\Proyecto Programado\PedidosExpress\BL\bin\Debug\roslyn\System.Collections.Immutable.dll
-C:\Users\tanni\Desktop\Lenguajes\Proyecto Programado\PedidosExpress\BL\bin\Debug\roslyn\System.Reflection.Metadata.dll
-C:\Users\tanni\Desktop\Lenguajes\Proyecto Programado\PedidosExpress\BL\bin\Debug\roslyn\vbc.exe
-C:\Users\tanni\Desktop\Lenguajes\Proyecto Programado\PedidosExpress\BL\bin\Debug\roslyn\VBCSCompiler.exe
-C:\Users\tanni\Desktop\Lenguajes\Proyecto Programado\PedidosExpress\BL\bin\Debug\roslyn\VBCSCompiler.exe.config
 C:\Users\AnthonyCV\Source\Repos\PoyectoLenguajes\PedidosExpress\BL\bin\Debug\bin\roslyn\csc.exe
 C:\Users\AnthonyCV\Source\Repos\PoyectoLenguajes\PedidosExpress\BL\bin\Debug\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
 C:\Users\AnthonyCV\Source\Repos\PoyectoLenguajes\PedidosExpress\BL\bin\Debug\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
