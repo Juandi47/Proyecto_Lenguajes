@@ -16,20 +16,26 @@ namespace UI
         {
             manejador = new ManejadorUsuario();
 
+
             rolesDDLagregar.Items.Add("Cocinero");
             rolesDDLagregar.Items.Add("Administrador");
-            rolesDDLmodificar.Items.Add("Cocinero");
-            rolesDDLmodificar.Items.Add("Administrador");
+            rolesDDLagregar.Items.Add("Cocinero");
+            rolesDDLagregar.Items.Add("Administrador");
 
-            
-       
+            //rolesDDLagregar.Items.Add("Cocinero");
+            //rolesDDLagregar.Items.Add("Administrador");
+            //rolesDDLmodificar.Items.Add("Cocinero");
+            //rolesDDLmodificar.Items.Add("Administrador");
+
+
+
         }
 
         protected void aceptarBTNagregar_Click(object sender, EventArgs e)
         {
-            string nombreUsuario = nombreUsuarioTXTagregar.Text;
-            string contrasena = contrasenaTXTagregar.Text;
-            string rol = rolesDDLagregar.Text;  
+            string nombreUsuario = txtNombreAdd.Value;
+            string contrasena = txtContrasennaAdd.Text;
+            string rol = txtRolAdd.Text;  
 
             if (!nombreUsuario.Equals("") && !contrasena.Equals("") && !rol.Equals(""))
             {

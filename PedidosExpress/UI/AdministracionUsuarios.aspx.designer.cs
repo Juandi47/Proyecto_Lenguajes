@@ -13,174 +13,174 @@ namespace UI {
     public partial class AdministracionUsuarios1 {
         
         /// <summary>
-        /// Label2 control.
+        /// txtCodigoMod control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtCodigoMod;
         
         /// <summary>
-        /// nombreUsuarioTXTagregar control.
+        /// txtNombreMod control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox nombreUsuarioTXTagregar;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtNombreMod;
         
         /// <summary>
-        /// contrasenaTXTagregar control.
+        /// txtDescripcionMod control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox contrasenaTXTagregar;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtDescripcionMod;
         
         /// <summary>
-        /// rolesDDLagregar control.
+        /// txtPrecioMod control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList rolesDDLagregar;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtPrecioMod;
         
         /// <summary>
-        /// aceptarBTNagregar control.
+        /// txtEstadoMod control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button aceptarBTNagregar;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtEstadoMod;
         
         /// <summary>
-        /// Label17 control.
+        /// txtImagenMod control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label17;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtImagenMod;
         
         /// <summary>
-        /// nombreUsuarioTXTmodificar control.
+        /// btnModificar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox nombreUsuarioTXTmodificar;
+        protected global::System.Web.UI.WebControls.Button btnModificar;
         
         /// <summary>
-        /// contrasenaTXTmodificar control.
+        /// txtCodigoAdd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox contrasenaTXTmodificar;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtCodigoAdd;
         
         /// <summary>
-        /// rolesDDLmodificar control.
+        /// txtNombreAdd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList rolesDDLmodificar;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtNombreAdd;
         
         /// <summary>
-        /// aceptarBTNmodificar control.
+        /// txtDescripcionAdd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button aceptarBTNmodificar;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtDescripcionAdd;
         
         /// <summary>
-        /// Label18 control.
+        /// txtPrecioAdd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label18;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtPrecioAdd;
         
         /// <summary>
-        /// nombreUsuarioTXTconsultar control.
+        /// txtEstadoAdd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox nombreUsuarioTXTconsultar;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtEstadoAdd;
         
         /// <summary>
-        /// contrasenaTXTconsultar control.
+        /// txtImagenAdd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox contrasenaTXTconsultar;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtImagenAdd;
         
         /// <summary>
-        /// datosTXTconsultar control.
+        /// btnAgregar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox datosTXTconsultar;
+        protected global::System.Web.UI.WebControls.Button btnAgregar;
         
         /// <summary>
-        /// aceptarBTNconsultar control.
+        /// txtCodigoBus control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button aceptarBTNconsultar;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtCodigoBus;
         
         /// <summary>
-        /// Label19 control.
+        /// btnBuscar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label19;
+        protected global::System.Web.UI.WebControls.Button btnBuscar;
         
         /// <summary>
-        /// nombreUsuarioTXTeliminar control.
+        /// LabelPlatoBusqueda control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox nombreUsuarioTXTeliminar;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl LabelPlatoBusqueda;
         
         /// <summary>
-        /// contrasenaTXTeliminar control.
+        /// txtCodigoEli control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox contrasenaTXTeliminar;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtCodigoEli;
         
         /// <summary>
-        /// aceptarBTNeliminar control.
+        /// btnEliminar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button aceptarBTNeliminar;
+        protected global::System.Web.UI.WebControls.Button btnEliminar;
     }
 }
