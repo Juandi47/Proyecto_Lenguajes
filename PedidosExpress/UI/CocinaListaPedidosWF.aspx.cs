@@ -5,7 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Threading;
+using System.Drawing;
 using BL;
+using System.Reflection;
 
 namespace UI
 {
@@ -14,11 +16,12 @@ namespace UI
         
         ManejadorInfoOrdenView blOrdenes = new ManejadorInfoOrdenView();
         List<InfoOrdenView> ordenes;
-        public Thread hilo;
-        //private Timer Tiempo { get; set; }
-        //public Double Result { get; set; }
-        //public DateTime nowTime = DateTime.Now;
-        //public DateTime limitTime = new DateTime();
+        private DateTime tiempoLimitOrden1;
+        private DateTime tiempoLimitOrden2;
+        private DateTime tiempoLimitOrden3;
+        private DateTime tiempoLimitOrden4;
+        private DateTime tiempoLimitOrden5;
+        private double limiteMin = 5;
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -29,13 +32,13 @@ namespace UI
         protected void Timer1_Tick1(object sender, EventArgs e)
         {
             Label1.Text = DateTime.Now.ToLongTimeString().ToString();
+            cambiarEstadoAuto(0, DateTime.Now);
+            //cambiarEstadoAuto(1, DateTime.Now);
+            //cambiarEstadoAuto(2, DateTime.Now);
+            //cambiarEstadoAuto(3, DateTime.Now);
+            //cambiarEstadoAuto(4, DateTime.Now);
         }
 
-        //void Tiempo_Tick(object sender, EventArgs e)
-        //{
-        //    Result++;
-        //    //cada tick representa 100 milisegundos
-        //}
 
         protected void entregarBTN1_Click(object sender, EventArgs e)
         {
@@ -89,11 +92,35 @@ namespace UI
             String estado = "";
             String detallesInfo = "";
             int index = position - 1;
+            Color c = new Color();
+
             orderInfo = "Hr: " + ordenes[index].Hora.ToShortTimeString() + ". Cliente: " 
                 + ordenes[index].Cedula + " " + ordenes[index].Nombre + " " 
                 + ordenes[index].Apellido1 + " " + ordenes[index].Apellido2;
 
             estado = "Estado: " + ordenes[index].Estado;
+            switch (ordenes[index].Estado) {
+                case "A Tiempo":
+                    c = Color.LightGreen;
+                    
+                    break;
+                case "Sobre Tiempo":
+                    c = Color.LightYellow;
+                    break;
+                case "Demorado":
+                    c = Color.Yellow;
+                    break;
+                case "Anulado":
+                    c = Color.Red;
+                    break;
+                case "Entregado":
+                    c = Color.LightBlue;
+                    break;
+                default:
+                    c = Color.White;
+                    break;
+
+            }
 
             foreach (BLDetalleOrden d in ordenes[index].detallesOrden)
             {
@@ -103,33 +130,42 @@ namespace UI
             switch (position)
             {
              case 1:
-
+                    tiempoLimitOrden1 = ordenes[index].Hora.AddMinutes(limiteMin) ;
                     infoOrden1.Value = orderInfo;
-                    estado1.InnerText = estado;
+                    e1.Text = estado;
+                    e1.BackColor = c;
                     detallesO1.Text = detallesInfo;
                     break;
 
                 case 2:
+                    tiempoLimitOrden2 = ordenes[index].Hora.AddMinutes(limiteMin);
                     infoOrden2.Value = orderInfo;
-                    estado2.InnerText = estado;
+                    e2.Text = estado;
+                    e2.BackColor = c;
                     detallesO2.Text = detallesInfo;
                     break;
 
                 case 3:
+                    tiempoLimitOrden3 = ordenes[index].Hora.AddMinutes(limiteMin);
                     infoOrden3.Value = orderInfo;
-                    estado3.InnerText = estado;
+                    e3.Text = estado;
+                    e3.BackColor = c;
                     detallesO3.Text = detallesInfo;
                     break;
 
                 case 4:
+                    tiempoLimitOrden4 = ordenes[index].Hora.AddMinutes(limiteMin);
                     infoOrden4.Value = orderInfo;
-                    estado4.InnerText = estado;
+                    e4.Text = estado;
+                    e4.BackColor = c;
                     detallesO4.Text = detallesInfo;
                     break;
 
                 case 5:
+                    tiempoLimitOrden5 = ordenes[index].Hora.AddMinutes(limiteMin);
                     infoOrden5.Value = orderInfo;
-                    estado5.InnerText = estado;
+                    e5.Text = estado;
+                    e5.BackColor = c;
                     detallesO5.Text = detallesInfo;
                     break;
 
@@ -138,5 +174,163 @@ namespace UI
         }
     }
 
+
+        public void cambiarEstadoAuto(int index, DateTime tiempo) {
+            String nuevoEstado = "";
+            switch (index) {
+
+                case 0:
+                    if (  (tiempoLimitOrden1.Minute - tiempo.Minute) < 0) {
+                        nuevoEstado = siguienteEstado(ordenes[0].Estado);
+                        blOrdenes.actualizarEstado(ordenes[0].Codigo_Orden, nuevoEstado);
+                        actualizarLabelEstado(0, nuevoEstado);
+                        tiempoLimitOrden1.AddMinutes(limiteMin);
+                        Response.Redirect(Request.RawUrl);
+                    }
+                    break;
+                case 1:
+                    if (tiempo >= tiempoLimitOrden2)
+                    {
+                        nuevoEstado = siguienteEstado(ordenes[1].Estado);
+                        blOrdenes.actualizarEstado(ordenes[1].Codigo_Orden, nuevoEstado);
+                        actualizarLabelEstado(1, nuevoEstado);
+                    }
+                    break;
+                case 2:
+                    if (tiempo >= tiempoLimitOrden3)
+                    {
+                        nuevoEstado = siguienteEstado(ordenes[2].Estado);
+                        blOrdenes.actualizarEstado(ordenes[2].Codigo_Orden, nuevoEstado);
+                        actualizarLabelEstado(2, nuevoEstado);
+                    }
+                    break;
+                case 3:
+                    if (tiempo >= tiempoLimitOrden4)
+                    {
+                        nuevoEstado = siguienteEstado(ordenes[3].Estado);
+                        blOrdenes.actualizarEstado(ordenes[3].Codigo_Orden, nuevoEstado);
+                        actualizarLabelEstado(3, nuevoEstado);
+                    }
+                    break;
+                case 4:
+                    if (tiempo >= tiempoLimitOrden5)
+                    {
+
+                        nuevoEstado = siguienteEstado(ordenes[4].Estado);
+                        blOrdenes.actualizarEstado(ordenes[4].Codigo_Orden, nuevoEstado);
+                        actualizarLabelEstado(4, nuevoEstado);
+                    }
+                    break;
+                default:
+
+                    break;
+
+            }
+        }
+
+        private void actualizarLabelEstado(int index, string nuevoEstado) {
+
+            Color c = new Color();
+
+            switch (nuevoEstado) {
+                case "A Tiempo":
+                    c = Color.LightGreen;
+
+                    break;
+                case "Sobre Tiempo":
+                    c = Color.LightYellow;
+                    break;
+                case "Demorado":
+                    c = Color.Yellow;
+                    break;
+                case "Anulado":
+                    c = Color.Red;
+                    break;
+                case "Entregado":
+                    c = Color.LightBlue;
+                    break;
+                default:
+                    c = Color.White;
+                    break;
+            }
+
+            switch (index) {
+                case 0:
+                    e1.Text = nuevoEstado;
+                    e1.BackColor = c;
+                    break;
+                case 1:
+                    e2.Text = nuevoEstado;
+                    e2.BackColor = c;
+                    break;
+                case 2:
+                    e3.Text = nuevoEstado;
+                    e3.BackColor = c;
+                    break;
+                case 3:
+                    e4.Text = nuevoEstado;
+                    e4.BackColor = c;
+                    break;
+                case 4:
+                    e5.Text = nuevoEstado;
+                    e5.BackColor = c;
+                    break;
+                default:
+
+                    break;
+            }
+
+        }
+
+        private string siguienteEstado(string estadoActual) {
+            String c = "Demorado";
+            switch (estadoActual)
+            {
+                case "A Tiempo":
+                    c = "Sobre Tiempo";
+                    break;
+                case "Sobre Tiempo":
+                    c = "Demorado";
+                    break;
+                case "Demorado":
+                    c = "Anulado";
+                    return c;
+                   
+                default:
+                   
+                    break;
+            }
+            return c;
+        }
+
+        protected void Button0_Click(object sender, EventArgs e)
+        {
+            blOrdenes.entregarOrden(ordenes[0].Codigo_Orden);
+            Response.Redirect(Request.RawUrl);
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            blOrdenes.entregarOrden(ordenes[1].Codigo_Orden);
+            Response.Redirect(Request.RawUrl);
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            blOrdenes.entregarOrden(ordenes[2].Codigo_Orden);
+            Response.Redirect(Request.RawUrl);
+        }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            blOrdenes.entregarOrden(ordenes[3].Codigo_Orden);
+            Response.Redirect(Request.RawUrl);
+        }
+
+        protected void Button4_Click(object sender, EventArgs e)
+        {
+            blOrdenes.entregarOrden(ordenes[4].Codigo_Orden);
+            Response.Redirect(Request.RawUrl);
+        }
     }
 }
