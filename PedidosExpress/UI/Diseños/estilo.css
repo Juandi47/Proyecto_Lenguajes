@@ -12,10 +12,10 @@
     font-family: Bahnschrift;
     /*float: left;
     /*margin: 40px; 
-    margin-left: 270px;*/*/ 
+    margin-left: 270px;*/ 
    
 }
 
-.logueo {
-
+#divFooter {
+    background-color: black;
 }

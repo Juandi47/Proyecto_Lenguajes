@@ -6,6 +6,7 @@
 <head runat="server">
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
+        <link href="Diseños/estilo.css" rel="stylesheet" type="text/css" />
     </asp:ContentPlaceHolder>
 </head>
 <body>
@@ -19,7 +20,7 @@
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
 
-            <div style="background-color: #D5DBDB">
+            <div style="background-color: #D5DBDB" id="divFooter" class="footer">
                 <br />
                 <h5>&nbsp&nbsp&nbsp Hecho por 4 pelaos</h5>
                 <h5>&nbsp&nbsp&nbsp UCR. Chancletas</h5>
