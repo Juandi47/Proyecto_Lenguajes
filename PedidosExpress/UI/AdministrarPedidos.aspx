@@ -30,7 +30,7 @@
             <asp:Label ID="labelFecha" runat="server" Text="Filtrar por fecha"></asp:Label>
             <asp:CheckBox ID="checkFiltrarPorFecha" runat="server" />
             <asp:Calendar ID="calendarioFiltro" runat="server" OnSelectionChanged="calendarioFiltro_SelectionChanged" SelectedDate="07/10/2018 23:13:22"></asp:Calendar>
-            <asp:Button ID="btnBuscarPorFecha" runat="server" Text="Inicio fecha" OnClick="btnBuscarPorFecha_Click" />
+            <asp:Button ID="btnBuscarPorFecha" runat="server" Text="Ingresar Fechas" OnClick="btnBuscarPorFecha_Click" />
             <br />
 
         </div>
