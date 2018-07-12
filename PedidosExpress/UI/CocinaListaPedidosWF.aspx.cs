@@ -32,7 +32,7 @@ namespace UI
         protected void Timer1_Tick1(object sender, EventArgs e)
         {
             Label1.Text = DateTime.Now.ToLongTimeString().ToString();
-            cambiarEstadoAuto(0, DateTime.Now);
+            //cambiarEstadoAuto(0, DateTime.Now);
             //cambiarEstadoAuto(1, DateTime.Now);
             //cambiarEstadoAuto(2, DateTime.Now);
             //cambiarEstadoAuto(3, DateTime.Now);
