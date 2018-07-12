@@ -33,5 +33,10 @@ namespace UI
         {
             Response.Redirect("AdministrarPedidos.aspx");
         }
+
+        protected void btnAdministrarEstados_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("AdministrarTiempoEstados.aspx"); 
+        }
     }
 }

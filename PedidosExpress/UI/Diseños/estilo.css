@@ -1,0 +1,21 @@
+﻿body {
+    background-image: url("Gray-Wallpaper-60.jpg");
+}
+
+.general {
+    text-align: center;
+    background-color: lightgrey;
+    position: relative;
+    border: 1px dashed black;
+    outline: 3px dashed black;
+    padding: 12px;
+    font-family: Bahnschrift;
+    /*float: left;
+    /*margin: 40px; 
+    margin-left: 270px;*/*/ 
+   
+}
+
+.logueo {
+
+}

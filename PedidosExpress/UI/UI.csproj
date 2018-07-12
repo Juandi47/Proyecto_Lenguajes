@@ -25,6 +25,7 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -98,7 +99,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AdministracionUsuarios.aspx" />
     <Content Include="AdministrarPedidos.aspx" />
+    <Content Include="AdministrarTiempoEstados.aspx" />
     <Content Include="BloquearClientes.aspx" />
     <Content Include="Cliente\cssInicioCliente.css" />
     <Content Include="Cliente\cssPrincipalCliente.css" />
@@ -112,7 +115,9 @@
     <Content Include="Cliente\ScriptRegistroCliente.js" />
     <Content Include="CocinaListaPedidosWF.aspx" />
     <Content Include="AdministracionPlatos.aspx" />
+    <Content Include="Diseños\estilo.css" />
     <Content Include="Diseños\estilos.css" />
+    <Content Include="Diseños\Gray-Wallpaper-60.jpg" />
     <Content Include="LoguearUsuarios.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
@@ -158,12 +163,26 @@
     <Compile Include="AdministracionPlatos.aspx.designer.cs">
       <DependentUpon>AdministracionPlatos.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AdministracionUsuarios.aspx.cs">
+      <DependentUpon>AdministracionUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministracionUsuarios.aspx.designer.cs">
+      <DependentUpon>AdministracionUsuarios.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AdministrarPedidos.aspx.cs">
       <DependentUpon>AdministrarPedidos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="AdministrarPedidos.aspx.designer.cs">
       <DependentUpon>AdministrarPedidos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdministrarTiempoEstados.aspx.cs">
+      <DependentUpon>AdministrarTiempoEstados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministrarTiempoEstados.aspx.designer.cs">
+      <DependentUpon>AdministrarTiempoEstados.aspx</DependentUpon>
     </Compile>
     <Compile Include="BloquearClientes.aspx.cs">
       <DependentUpon>BloquearClientes.aspx</DependentUpon>

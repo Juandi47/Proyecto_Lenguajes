@@ -1,7 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/master.Master" AutoEventWireup="true" CodeBehind="BloquearClientes.aspx.cs" Inherits="UI.BloquearClientes" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link href="Diseños/estilo.css" rel="stylesheet" type="text/css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <br />
+    <div class="general" style="width: 627px; height: 151px; top: -9px; left: 428px">
     <asp:Label ID="Label2" runat="server" Text="Ver el estado de un cliente"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <asp:TextBox ID="txtBuscarCliente" runat="server"></asp:TextBox>
@@ -28,4 +31,6 @@
 &nbsp;&nbsp;&nbsp;
     <asp:Label ID="labelbloquear" runat="server"></asp:Label>
 &nbsp; 
+    </div>
+    <br />
 </asp:Content>

@@ -57,7 +57,7 @@ namespace BL
             string bloquear = "";
             if (daoCliente.desbloquearCliente(cedula) > 0)
             {
-                bloquear = "Cliente bloqueado";
+                bloquear = "Cliente desbloqueado";
             }
 
             return bloquear;

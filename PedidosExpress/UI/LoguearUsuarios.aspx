@@ -1,9 +1,12 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/master.Master" AutoEventWireup="true" CodeBehind="LoguearUsuarios.aspx.cs" Inherits="UI.LoguearUsuarios" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link href="Diseños/estilo.css" rel="stylesheet" type="text/css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <br />
+    <div class="general" style="width: 365px; top: -4px; left: 550px; margin-left: 75px">
+&nbsp;&nbsp;
     <asp:Label ID="Label1" runat="server" Text="Ingrese su nombre de usuario"></asp:Label>
-&nbsp;
     <asp:TextBox ID="txtNombreAdmin" runat="server" Width="128px"></asp:TextBox>
     <br />
     <br />
@@ -14,5 +17,7 @@
     <br />
 &nbsp;&nbsp;
     <asp:Button ID="btnRegistrarUsuario" runat="server" OnClick="btnRegistrarUsuario_Click" Text="Registrar" />
+&nbsp;</div>
+    <br />
 &nbsp;
 </asp:Content>

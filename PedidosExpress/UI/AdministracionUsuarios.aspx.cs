@@ -21,8 +21,8 @@ namespace UI
             rolesDDLmodificar.Items.Add("Cocinero");
             rolesDDLmodificar.Items.Add("Administrador");
 
-            string clave = Request.QueryString["Clave"];
-           
+            
+       
         }
 
         protected void aceptarBTNagregar_Click(object sender, EventArgs e)
@@ -33,7 +33,7 @@ namespace UI
 
             if (!nombreUsuario.Equals("") && !contrasena.Equals("") && !rol.Equals(""))
             {
-                manejador.agregarUsuario(nombreUsuario, contrasena, rol);
+                manejador.agregarUsuario(nombreUsuario.ToLower(), contrasena, rol);
             }
             else
             {
@@ -48,7 +48,7 @@ namespace UI
 
             if (!nombreUsuario.Equals("") && !contrasena.Equals(""))
             {
-                manejador.eliminarUsuario(nombreUsuario, contrasena);
+                manejador.eliminarUsuario(nombreUsuario.ToLower(), contrasena);
             }
             else
             {
@@ -63,16 +63,32 @@ namespace UI
 
             if (!nombreUsuario.Equals("") && !contrasena.Equals(""))
             {
-                BLUsuario usuario = manejador.consultarUsuario(nombreUsuario, contrasena);
-                consultaTXT.Text = "DATOS USUARIO:\n\t" + usuario.nombreUsuario + " Puesto: " + usuario.rol;
+                BLUsuario usuario = manejador.consultarUsuario(nombreUsuario.ToLower(), contrasena);
+                datosTXTconsultar.Text = usuario.nombreUsuario + " Puesto: " + usuario.rol;
             }
             else
             {
-                consultaTXT.Text = "DATOS USUARIO:\n\t NO SE HA ENCONTRADO EL USUARIO";
+                datosTXTconsultar.Text = "NO SE HA ENCONTRADO EL USUARIO";
             }
         }
 
-        protected void aceptarBTNmodificar_Click1(object sender, EventArgs e)
+        protected void aceptarBTNagregar_Click1(object sender, EventArgs e)
+        {
+            string nombreUsuario = nombreUsuarioTXTagregar.Text;
+            string contrasena = contrasenaTXTagregar.Text;
+            string rol = rolesDDLagregar.Text;
+
+            if (!nombreUsuario.Equals("") && !contrasena.Equals("") && !rol.Equals(""))
+            {
+                manejador.agregarUsuario(nombreUsuario.ToLower(), contrasena, rol);
+            }
+            else
+            {
+
+            }
+        }
+
+        protected void aceptarBTNmodificar_Click(object sender, EventArgs e)
         {
             string nombreUsuario = nombreUsuarioTXTmodificar.Text;
             string contrasena = contrasenaTXTmodificar.Text;
@@ -80,7 +96,7 @@ namespace UI
 
             if (!nombreUsuario.Equals("") && !contrasena.Equals(""))
             {
-                manejador.modificarUsuario(nombreUsuario, contrasena, rol);
+                manejador.modificarUsuario(nombreUsuario.ToLower(), contrasena, rol);
 
             }
             else
