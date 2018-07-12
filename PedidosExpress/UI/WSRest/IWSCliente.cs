@@ -21,7 +21,7 @@ namespace UI.WSRest
         [OperationContract]
         [WebGet(RequestFormat = WebMessageFormat.Json,
             ResponseFormat = WebMessageFormat.Json)]
-        Boolean logueo(String NombreUsuario, String contrasenna);
+        String logueo(String NombreUsuario, String contrasenna);
 
         [OperationContract]
         [WebGet(RequestFormat = WebMessageFormat.Json,
@@ -32,5 +32,20 @@ namespace UI.WSRest
         [WebGet(RequestFormat = WebMessageFormat.Json,
             ResponseFormat = WebMessageFormat.Json)]
         BLPlato InfoPlato(String codigoPlato);
+
+        [OperationContract]
+        [WebGet(RequestFormat = WebMessageFormat.Json,
+            ResponseFormat = WebMessageFormat.Json)]
+        void agregarCarrito(String cedula, String plato);
+
+        [OperationContract]
+        [WebGet(RequestFormat = WebMessageFormat.Json,
+            ResponseFormat = WebMessageFormat.Json)]
+        List<BLPlato> listaCarrito(String cedula);
+
+        [OperationContract]
+        [WebGet(RequestFormat = WebMessageFormat.Json,
+            ResponseFormat = WebMessageFormat.Json)]
+        void borrarCarrito(String cedula, String plato);
     }    
 }

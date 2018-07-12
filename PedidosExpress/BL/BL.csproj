@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLCarrito.cs" />
     <Compile Include="BLCliente.cs" />
     <Compile Include="BLDetalleOrden.cs" />
     <Compile Include="BLDetalleView.cs" />
@@ -57,6 +58,7 @@
     <Compile Include="BLOrdenCliente.cs" />
     <Compile Include="BLPlato.cs" />
     <Compile Include="BLUsuario.cs" />
+    <Compile Include="ManejadorCarrito.cs" />
     <Compile Include="ManejadorCliente.cs" />
     <Compile Include="ManejadorDireccionCliente.cs" />
     <Compile Include="ManejadorInfoOrdenView.cs" />

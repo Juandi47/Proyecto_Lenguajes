@@ -12,9 +12,25 @@ namespace UI.WSRest
     // NOTE: In order to launch WCF Test Client for testing this service, please select WSCliente.svc or WSCliente.svc.cs at the Solution Explorer and start debugging.
     public class WSCliente : IWSCliente
     {
+        public void agregarCarrito(string cedula, string plato)
+        {
+            new ManejadorCarrito().agregarCarrito(cedula, plato);
+        }
+
+        public void borrarCarrito(string cedula, string plato)
+        {
+            new ManejadorCarrito().borrarCarrito(cedula, plato);
+        }
+
         public BLPlato InfoPlato(string codigoPlato)
         {
             return new ManejadorPlato().buscarPlato(codigoPlato);
+        }
+
+        public List<BLPlato> listaCarrito(string cedula)
+        {
+            List<BLPlato> x = new ManejadorCarrito().listaCarrito(cedula);
+            return x;
         }
 
         public List<BLPlato> listaPlatos()
@@ -22,7 +38,7 @@ namespace UI.WSRest
             return new ManejadorPlato().listaPlatos();
         }
 
-        public bool logueo(string NombreUsuario, string contrasenna)
+        public string logueo(string NombreUsuario, string contrasenna)
         {
             return new ManejadorCliente().loguearCliente(NombreUsuario, contrasenna);
         }

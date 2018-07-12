@@ -29,7 +29,8 @@ namespace DAO
 
             if (reader.HasRows)
             {
-                while (reader.Read()) {
+                while (reader.Read())
+                {
                     listaClientes.Add(new TOCliente(reader["Cedula"].ToString(), reader["Nombre"].ToString(),
                         reader["Apellido1"].ToString(), reader["Apellido2"].ToString(), reader["Correo"].ToString(),
                         reader["Contrasenna"].ToString(), Int32.Parse(reader["Estado_cliente"].ToString()), reader["Codigo_postal"].ToString(),
@@ -45,7 +46,8 @@ namespace DAO
         }
 
 
-        public TOCliente buscarCliente(string cedula) {
+        public TOCliente buscarCliente(string cedula)
+        {
             if (conexion.State != ConnectionState.Open)
             {
                 conexion.Open();
@@ -95,7 +97,8 @@ namespace DAO
 
         }
 
-        public int bloquearCliente(string cedula) {
+        public int bloquearCliente(string cedula)
+        {
             int modificado;
             int estado = 1;
 
@@ -146,9 +149,11 @@ namespace DAO
 
         }
 
-        public String RegistrarCliente(String cedula, String Nombre, String Apellido1, String Apellido2, String correo, String contrasenna, String CodPostal, String NombreUsuario, String Provincia, String Canton, String Distrito) {
+        public String RegistrarCliente(String cedula, String Nombre, String Apellido1, String Apellido2, String correo, String contrasenna, String CodPostal, String NombreUsuario, String Provincia, String Canton, String Distrito)
+        {
 
-            if (validarCedulaYUsuario(cedula, NombreUsuario)) {
+            if (validarCedulaYUsuario(cedula, NombreUsuario))
+            {
                 return "Ya hay un cliente con este número de cedula";
             }
 
@@ -158,9 +163,9 @@ namespace DAO
 
             String query = "Insert into Cliente values(@ced,@nomb,@ape1,@ape2,@cor,@cont,0,@cod,@nombUs);";
 
-            
 
-            SqlCommand comando = new SqlCommand(query,conexion);
+
+            SqlCommand comando = new SqlCommand(query, conexion);
 
             comando.Parameters.AddWithValue("@ced", cedula);
             comando.Parameters.AddWithValue("@nomb", Nombre);
@@ -187,33 +192,38 @@ namespace DAO
 
         }
 
-        public Boolean logueo(String NombreUsuario, String contrasenna) {
-            String query = "select count(*) from Cliente where Nombre_usuario = @nombUs and Contrasenna = @cont;";
+        public String logueo(String NombreUsuario, String contrasenna)
+        {
+            String query = "select cedula from Cliente where Nombre_usuario = @nombUs and Contrasenna = @cont;";
 
             SqlCommand comando = new SqlCommand(query, conexion);
 
             comando.Parameters.AddWithValue("@nombUs", NombreUsuario);
             comando.Parameters.AddWithValue("@cont", contrasenna);
 
-            int existencia = 0;
+            String cedula = "";
 
             if (ConnectionState.Open != conexion.State)
             {
                 conexion.Open();
             }
 
-            existencia = Int32.Parse(comando.ExecuteScalar().ToString());
+            if (comando.ExecuteScalar() != null)
+                cedula = comando.ExecuteScalar().ToString();
+            else
+                return "";
 
             if (ConnectionState.Closed != conexion.State)
             {
                 conexion.Close();
             }
 
-            return existencia > 0 ? true : false;
+            return cedula;
 
         }
 
-        public Boolean validarCedulaYUsuario(String cedula, String NombreUsuario) {
+        public Boolean validarCedulaYUsuario(String cedula, String NombreUsuario)
+        {
 
             String query = "select count(*) from Cliente where Cedula = @ced or Nombre_usuario = @nombUs;";
 
@@ -239,6 +249,6 @@ namespace DAO
             return existencia > 0 ? true : false;
 
         }
-           
+
     }
 }

@@ -6,7 +6,7 @@ function Loguearse(){
 	});
 
 	req.done(function(datos){
-		ProcesarLogueo(datos);		
+		pasar(datos);
 	});
 
 	req.fail(function(){
@@ -14,8 +14,11 @@ function Loguearse(){
 	});
 }
 
-function ProcesarLogueo(datos){
-	if (datos) {
-		window.location.href = "PrincipalCliente.html";
+function pasar(datos){
+	if(datos != ""){
+		window.location="PrincipalCliente.html?cedula=" + datos;
+	}else{
+
+		alert("Nombre de usuario o contraseña no validos");
 	}
 }

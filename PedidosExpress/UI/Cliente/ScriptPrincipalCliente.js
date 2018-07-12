@@ -18,6 +18,8 @@ function ProcesarPlatos(datos){
 
 	$.each(datos, function(){
 
+		$("#carrito").attr("href","Carrito.html?cedula=" + getParameterByName('cedula'));
+
 		var newLi = document.createElement("li");
 		var newdiv = document.createElement("div");
 		newdiv.setAttribute("id",this.nombrePlato);
@@ -25,7 +27,7 @@ function ProcesarPlatos(datos){
 		var newRef = document.createElement("a");
 		newRef.innerHTML = "Ver plato";
 		newRef.setAttribute("id",this.nombrePlato);
-		newRef.setAttribute("href","Plato.html?codigoPlato=" + this.codigoPlato);
+		newRef.setAttribute("href","Plato.html?codigoPlato=" + this.codigoPlato + "&cedula=" + getParameterByName('cedula'));
 		var newH = document.createElement("h4");
 		newH.innerHTML = "Plato: " + this.nombrePlato;
 		newdiv.appendChild(newH);
@@ -36,5 +38,15 @@ function ProcesarPlatos(datos){
 		newLi.appendChild(newdiv);
 		$('#ListaPlatos').append(newLi);
 	});
+}
+
+function getParameterByName(name, url) {
+	if (!url) url = window.location.href;
+	name = name.replace(/[\[\]]/g, '\\$&');
+	var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+	results = regex.exec(url);
+	if (!results) return null;
+	if (!results[2]) return '';
+	return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
 

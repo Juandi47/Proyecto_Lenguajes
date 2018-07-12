@@ -7,26 +7,44 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
 	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 	crossorigin="anonymous">		
-	</script>
-	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link href="cssPrincipalCliente.css" rel="stylesheet" />
 <script type="text/javascript" src="ScriptPlato.js"></script>
 
 
 </head>
 <body onload="MostrarPlatos()">
-    <input type="t" id="x" style="display: none">
-	<div class="container">
-    <div class="row">
-        <div class="col-md-6" id="IS">
-        	
+
+        <input type="t" id="x" style="display: none">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <button class="btn btn-primary" onclick="agregarCarrito()"><span class="glyphicon glyphicon-shopping-cart"></span> Agregar</button>
+                </div>
+                <div class="col-md-6">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <button class="btn btn-primary" onclick="volver()"><span class="glyphicon glyphicons-fast-food"></span>Platos</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6" id="IS"> </div>
+                <div class="col-md-6" id="DS"></div>
+                <div class="col-md-6" id="II"></div>
+                <div class="col-md-6" id="DI"></div>
+            </div>
         </div>
-        <div class="col-md-6" id="DS"></div>
-        <div class="col-md-6" id="II"></div>
-        <div class="col-md-6" id="DI"></div>
-    </div>
-</div>
+    
 </body>
 </html>  

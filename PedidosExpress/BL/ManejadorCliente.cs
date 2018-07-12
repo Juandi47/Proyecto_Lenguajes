@@ -47,7 +47,7 @@ namespace BL
             return daoCliente.RegistrarCliente(cedula, Nombre, Apellido1, Apellido2, correo, contrasenna, CodPostal, NombreUsuario, Provincia, Canton, Distrito);
         }
 
-        public Boolean loguearCliente(String NombreUsuario, String contrasenna) {
+        public String loguearCliente(String NombreUsuario, String contrasenna) {
             return daoCliente.logueo(NombreUsuario, contrasenna);
 
         }
