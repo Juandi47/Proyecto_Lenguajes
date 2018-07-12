@@ -247,8 +247,6 @@ namespace DAO
         }
 
         
-
-
         public int cambiarEstadoOrden(string codigo, string estado)
         {
            int filasAfectadas;
