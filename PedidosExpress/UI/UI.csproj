@@ -115,9 +115,14 @@
     <Content Include="Cliente\ScriptRegistroCliente.js" />
     <Content Include="CocinaListaPedidosWF.aspx" />
     <Content Include="AdministracionPlatos.aspx" />
+    <Content Include="Diseños\61972.png" />
+    <Content Include="Diseños\download.jpg" />
     <Content Include="Diseños\estilo.css" />
     <Content Include="Diseños\estilos.css" />
+    <Content Include="Diseños\facebook-770688_960_720.png" />
     <Content Include="Diseños\Gray-Wallpaper-60.jpg" />
+    <Content Include="Diseños\stock-vector-sign-out-button-512159662.jpg" />
+    <Content Include="Diseños\Whatsapp-icon-1.png" />
     <Content Include="LoguearUsuarios.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">

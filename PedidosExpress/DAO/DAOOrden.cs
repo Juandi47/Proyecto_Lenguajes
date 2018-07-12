@@ -38,7 +38,7 @@ namespace DAO
             sentencia.Transaction = transa;
             sentencia.Connection = conexion;
 
-            sentencia.CommandText = "Insert into Orden values(@codigo_Orden, @fecha_hora_pedido, @cedula, @estadoPedido, @costoTotal)";
+            sentencia.CommandText = "Insert into Orden(codigo_Orden, [Fecha/Hora_pedido], cedula, Estado_pedido, Costo_total) values(@codigo_Orden, @fecha_hora_pedido, @cedula, @estadoPedido, @costoTotal)";
             sentencia.Parameters.AddWithValue("@codigo_Orden", codigo_Orden);
             sentencia.Parameters.AddWithValue("@fecha_hora_pedido", fecha_Hora);
             sentencia.Parameters.AddWithValue("@cedula", cedula);
@@ -117,7 +117,7 @@ namespace DAO
             sentencia.Connection = conexion;
 
 
-            sentencia.CommandText = "SELECT Codigo_orden, Fecha/Hora_pedido , Cedula, Estado_pedido, Costo_total FROM Orden WHERE Codigo_orden=@codigo_Orden;";
+            sentencia.CommandText = "SELECT Codigo_orden, [Fecha/Hora_pedido] , Cedula, Estado_pedido, Costo_total FROM Orden WHERE Codigo_orden=@codigo_Orden;";
             sentencia.Parameters.AddWithValue("@codigo_Orden", Codigo_orden.ToString());
 
 
