@@ -19,7 +19,7 @@ namespace BL
             List<TOInfoOrdenView> listaTO = dao.ListaOrdenes();
 
             foreach (TOInfoOrdenView x in listaTO) {
-                InfoOrdenView orden = new InfoOrdenView(x.Cedula, x.Nombre, x.Apellido1, x.Apellido2, x.Codigo_Orden, x.Hora);
+                InfoOrdenView orden = new InfoOrdenView(x.Cedula, x.Nombre, x.Apellido1, x.Apellido2, x.Codigo_Orden, x.Estado_pedido, DateTime.Parse(x.Hora));
                 orden.clonarDetalles(x.detalles);
                 lista.Add(orden);
             }
@@ -36,7 +36,7 @@ namespace BL
 
             foreach (TOInfoOrdenView x in listaTO)
             {
-                lista.Add(new InfoOrdenView(x.Cedula, x.Nombre, x.Apellido1, x.Apellido2, x.Codigo_Orden, x.Hora));
+                lista.Add(new InfoOrdenView(x.Cedula, x.Nombre, x.Apellido1, x.Apellido2, x.Codigo_Orden, x.Estado_pedido, DateTime.Parse(x.Hora)));
             }
             return lista;
         }

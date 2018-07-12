@@ -89,24 +89,32 @@ namespace DAO
             {
                 conexion.Open();
             }
-
-            query = "insert into Plato values(@cod, @nom, @des, @pre, @est, @img)";
-            SqlCommand comand = new SqlCommand(query, conexion);
-            comand.Parameters.AddWithValue("@cod", codigo);
-            comand.Parameters.AddWithValue("@nom", nombre);
-            comand.Parameters.AddWithValue("@des", descripcion);
-            comand.Parameters.AddWithValue("@pre", precio);
-            comand.Parameters.AddWithValue("@est", estado);
-            comand.Parameters.AddWithValue("@img", imagen);
-
-            rowAfec = comand.ExecuteNonQuery();
-
-            if (conexion.State != ConnectionState.Closed)
+            try
             {
-                conexion.Close();
-            }
+                query = "insert into Plato values(@cod, @nom, @des, @pre, @est, @img)";
+                SqlCommand comand = new SqlCommand(query, conexion);
+                comand.Parameters.AddWithValue("@cod", codigo);
+                comand.Parameters.AddWithValue("@nom", nombre);
+                comand.Parameters.AddWithValue("@des", descripcion);
+                comand.Parameters.AddWithValue("@pre", precio);
+                comand.Parameters.AddWithValue("@est", estado);
+                comand.Parameters.AddWithValue("@img", imagen);
 
-            return rowAfec;
+                rowAfec = comand.ExecuteNonQuery();
+
+                if (conexion.State != ConnectionState.Closed)
+                {
+                    conexion.Close();
+                }
+
+                return rowAfec;
+            }
+            catch (SqlException e)
+            {
+                //string mensaje = "Error de conversion";
+                return 0;
+            }
+          
         }
 
         public int eliminarPlato(string codigo) {

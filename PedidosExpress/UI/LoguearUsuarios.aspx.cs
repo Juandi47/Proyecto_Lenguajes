@@ -12,13 +12,13 @@ namespace UI
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+           
         }
 
         protected void btnRegistrarUsuario_Click(object sender, EventArgs e)
         {
             ManejadorUsuario manejador = new ManejadorUsuario();
-            string texto = txtContrasenna.Value;
+            string texto = txtContrasenna.Text;
             BLUsuario usuariobl = manejador.consultarUsuario(txtNombreUsuario.Text, texto);
             if (usuariobl.nombreUsuario.Equals("") && usuariobl.contrasennaUsuario.Equals(""))
             {

@@ -85,7 +85,7 @@ namespace DAO
 
 
 
-        public TOUsuario buscarUsuario(string nombre, string contrasenna)
+        public TOUsuario buscarUsuario(string nombre, string contrasenna) 
         {
             TOUsuario toUsuario = new TOUsuario();
             establecerConexion();

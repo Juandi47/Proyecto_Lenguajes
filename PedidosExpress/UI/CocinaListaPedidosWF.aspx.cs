@@ -4,20 +4,38 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Threading;
 using BL;
 
 namespace UI
 {
     public partial class CocinaListaPedidosWF : System.Web.UI.Page
     {
-
+        
         ManejadorInfoOrdenView blOrdenes = new ManejadorInfoOrdenView();
         List<InfoOrdenView> ordenes;
+        public Thread hilo;
+        //private Timer Tiempo { get; set; }
+        //public Double Result { get; set; }
+        //public DateTime nowTime = DateTime.Now;
+        //public DateTime limitTime = new DateTime();
+
         protected void Page_Load(object sender, EventArgs e)
         {
             ordenes = blOrdenes.ListaOrdenes();
             cargarDivs();
         }
+
+        protected void Timer1_Tick1(object sender, EventArgs e)
+        {
+            Label1.Text = DateTime.Now.ToLongTimeString().ToString();
+        }
+
+        //void Tiempo_Tick(object sender, EventArgs e)
+        //{
+        //    Result++;
+        //    //cada tick representa 100 milisegundos
+        //}
 
         protected void entregarBTN1_Click(object sender, EventArgs e)
         {
@@ -71,15 +89,15 @@ namespace UI
             String estado = "";
             String detallesInfo = "";
             int index = position - 1;
-            orderInfo = ordenes[index].Codigo_Orden + ". Cliente: " 
+            orderInfo = "Hr: " + ordenes[index].Hora.ToShortTimeString() + ". Cliente: " 
                 + ordenes[index].Cedula + " " + ordenes[index].Nombre + " " 
                 + ordenes[index].Apellido1 + " " + ordenes[index].Apellido2;
 
-            estado = "Estado: " + ordenes[index].Hora;
+            estado = "Estado: " + ordenes[index].Estado;
 
             foreach (BLDetalleOrden d in ordenes[index].detallesOrden)
             {
-                detallesInfo += d.Cantidad + "orden(es) de " + d.Nombre_plato + "\n";
+                detallesInfo += d.Cantidad + " orden(es) de " + d.Nombre_plato + "\n";
             }
 
             switch (position)
@@ -119,6 +137,6 @@ namespace UI
                     break;
         }
     }
-        
+
     }
 }

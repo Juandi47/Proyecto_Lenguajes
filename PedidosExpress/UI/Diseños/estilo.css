@@ -10,12 +10,12 @@
     outline: 3px dashed black;
     padding: 12px;
     font-family: Bahnschrift;
-    /*float: left;
-    /*margin: 40px; 
-    margin-left: 270px;*/*/ 
    
 }
 
-.logueo {
-
+.REDES {
+    text-align: center;
+    background-color: darkgray;
+    position: relative;
+    font-family: 'Comic Sans MS' ;
 }

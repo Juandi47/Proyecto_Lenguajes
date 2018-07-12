@@ -22,9 +22,19 @@ namespace UI
 
         protected void aceptarBTN_Click(object sender, EventArgs e)
         {
-            int tiempo = Int32.Parse(tiempoTXT.Text); 
-            ManejadorOrden manejador = new ManejadorOrden();
-            manejador.modificarEstado(tiempo);
+
+            try
+            {
+                int tiempo = Int32.Parse(tiempoTXT.Text);
+                ManejadorOrden manejador = new ManejadorOrden();
+                manejador.modificarEstado(tiempo);
+                Info.Text = "Actualizacion exitosa";
+
+            }catch(FormatException ex)
+            {
+                Info.Text = "Debe ingresar un número entero"; 
+               // Response.Redirect(Request.RawUrl);
+            }
             
         }
     }

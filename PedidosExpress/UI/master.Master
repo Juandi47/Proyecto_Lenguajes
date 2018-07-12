@@ -6,23 +6,41 @@
 <head runat="server">
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
+        <link href="Diseños/estilo.css" rel="stylesheet" type="text/css" />
     </asp:ContentPlaceHolder>
 </head>
 <body>
+    <form id="form1" runat="server">
     <div style="background-color: #D5DBDB">
         <h1>&nbsp&nbsp&nbsp Sistema de Restaurante</h1>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:ImageButton ID="HomeButton" runat="server" Height="37px" ImageUrl="~/Diseños/61972.png" OnClick="HomeButton_Click" style="margin-top: 0px" Width="43px" />
+&nbsp;&nbsp;&nbsp;
+        <asp:ImageButton ID="signout" runat="server" Height="37px" ImageUrl="~/Diseños/stock-vector-sign-out-button-512159662.jpg" OnClick="signout_Click" Width="89px" />
         <br />
         <br />
     </div>
-    <form id="form1" runat="server">
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
 
-            <div style="background-color: #D5DBDB">
+            <div style="background-color: #D5DBDB" id="divFooter" class="footer">
                 <br />
-                <h5>&nbsp&nbsp&nbsp Hecho por 4 pelaos</h5>
-                <h5>&nbsp&nbsp&nbsp UCR. Chancletas</h5>
+                <div class="REDES" style="width: 195px; height: 86px; top: 9px; left: -321px; margin-left: 1218px">
+&nbsp;&nbsp;
+                    <asp:ImageButton ID="FacebookID" runat="server" Height="40px" ImageUrl="~/Diseños/facebook-770688_960_720.png" OnClick="FacebookID_Click" Width="32px" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:ImageButton ID="TwitterID" runat="server" Height="38px" ImageUrl="~/Diseños/download.jpg" OnClick="TwitterID_Click" Width="33px" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:ImageButton ID="ContactoID" runat="server" Height="39px" ImageUrl="~/Diseños/Whatsapp-icon-1.png" OnClick="ContactoID_Click" Width="40px" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SIGUENOS&nbsp;&nbsp;&nbsp;
+                </div>
+                <p>
+                    <asp:Label ID="Label1" runat="server" Text=" Universidad de Costa Rica. Informatica Empresarial "></asp:Label>
+                </p>
+                <h5 style="height: 37px"><span style="border: 0px; font-family: Whitney, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 15px; font-style: normal; font-weight: normal; margin: 0px; padding: 0px; vertical-align: baseline; outline: 0px; color: rgba(255, 255, 255, 0.701961); font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: pre-wrap; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(54, 57, 63);">©</span><span style="color: rgba(255, 255, 255, 0.701961); font-family: Whitney, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: pre-wrap; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(54, 57, 63); display: inline !important; float: none;"> 
+                    2018 Todos los derechos reservados.</span></h5>
+                <p style="height: 37px">&nbsp;</p>
                 <br />
             </div>
         </div>
