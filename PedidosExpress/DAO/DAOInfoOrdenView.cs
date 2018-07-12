@@ -19,7 +19,7 @@ namespace DAO
 
         public List<TOInfoOrdenView> ListaOrdenes() {
 
-            string query = "select top 5 * from InfoOrdenView order by [Fecha/Hora_pedido] desc;";
+            string query = "select top 5 * from InfoOrdenView where [Estado_pedido] <> 'Entregado' and [Estado_pedido] <> 'Anulado' order by [Fecha/Hora_pedido] desc;";
 
             SqlDataAdapter adapter = new SqlDataAdapter(query,conexion);
             
@@ -49,6 +49,45 @@ namespace DAO
             }            
             return listaTO;
         }
-        
+
+        public void entregarOrden(int codigo_Orden)
+        {
+
+            if (conexion.State != ConnectionState.Open)
+            {
+                conexion.Open();
+            }
+
+            SqlCommand cmd = new SqlCommand("update Orden set Estado_pedido = 'Entregado' where Codigo_orden = @code;", conexion);
+            cmd.Parameters.AddWithValue("@code", codigo_Orden);
+
+            cmd.ExecuteNonQuery();
+
+            if (conexion.State != ConnectionState.Closed)
+            {
+                conexion.Close();
+            }
+
+        }
+
+        public void actualizarEstado(int codigo_Orden, string estado)
+        {
+            if (conexion.State != ConnectionState.Open) {
+                conexion.Open();
+            }
+
+            SqlCommand cmd = new SqlCommand("update Orden set Estado_pedido = @estado where Codigo_orden = @code;", conexion);
+            cmd.Parameters.AddWithValue("@code", codigo_Orden);
+            cmd.Parameters.AddWithValue("@estado", estado);
+
+
+            cmd.ExecuteNonQuery();
+
+            if (conexion.State != ConnectionState.Closed)
+            {
+                conexion.Close();
+            }
+
+        }
     }
 }
